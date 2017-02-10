@@ -1,0 +1,2000 @@
+#1438125748
+git log
+#1438280053
+cd ..
+#1438280056
+rm -rf switch2/
+#1438280060
+sudo rm -rf switch2/
+#1438280063
+ls
+#1438280064
+ncdu
+#1438280070
+git status
+#1438280086
+git clone git@github.com:barefootnetworks/p4factory.git exm_direct
+#1438280111
+cd exm_direct/
+#1438280115
+git submodule update --init
+#1438280325
+./autogen.sh 
+#1438280353
+./configure 
+#1438281018
+cd submodules/bf-drivers/
+#1438281022
+git checkout vk_movereg 
+#1438281027
+git pull origin vk_movereg 
+#1438281034
+git log
+#1438298937
+cd ../..
+#1438298938
+git status
+#1438298940
+git diff
+#1438299790
+git diff > diff
+#1438299791
+vim diff
+#1438362302
+git diff
+#1438362306
+cd submodules/bf-drivers/
+#1438362307
+git status
+#1438362309
+git diff
+#1438362316
+git status
+#1438362331
+git commit -a -m "Moving the idletime add to after adding tcam entry"
+#1438362336
+git push origin vk_movereg 
+#1438365484
+git diff
+#1438366285
+git status
+#1438366287
+git diff
+#1438366308
+git commit -a -m "Idle time move fixes"
+#1438366312
+git push origin vk_movereg 
+#1438366907
+cd ../oft-infra/
+#1438366910
+git checkout x
+#1438366912
+git pull origin x
+#1438366923
+cd ../bf-drivers/
+#1438366924
+git status
+#1438366927
+git diff
+#1438366935
+git commit -a -m "Added a log"
+#1438366938
+git push origin vk_movereg 
+#1438366939
+cd ../..
+#1438366941
+git status
+#1438367039
+git branch vk_movereg
+#1438367040
+git status
+#1438367047
+git checkout vk_movereg 
+#1438367049
+git status
+#1438367055
+git diff
+#1438367061
+git status
+#1438367067
+git add targets/generic/of-tests/exm_direct/test.py 
+#1438367083
+git commit -m "TCAM + Idle movereg test"
+#1438367085
+git status
+#1438367093
+git push
+#1438367130
+git push origin vk_movereg
+#1438369637
+git status
+#1438369659
+git fetch -p
+#1438369673
+git status
+#1438369701
+git remote add vk_movereg
+#1438369727
+git remote add -t vk_movereg
+#1438369741
+git help remote
+#1438369789
+git branch -u origin/vk_movereg 
+#1438369791
+git status
+#1438369803
+git pull origin master 
+#1438369808
+git status
+#1438369813
+git submodule update 
+#1438369815
+git status
+#1438369823
+git push origin vk_movereg 
+#1438369827
+cd submodules/bf-drivers/
+#1438369828
+git status
+#1438369832
+git checkout vk_movereg 
+#1438369835
+git pull origin vk_movereg 
+#1438369838
+git pull origin master 
+#1438369845
+git push origin vk_movereg 
+#1438369847
+git status
+#1438369875
+cd ../..
+#1438369878
+git status
+#1438378197
+./autogen.sh 
+#1438378228
+git clean -fxd
+#1438378230
+git status
+#1438378234
+tools/submodule-clean.sh 
+#1438378236
+git status
+#1438378241
+cd submodules/bf-drivers/
+#1438378242
+git status
+#1438378246
+cd ../..
+#1438378264
+git clean -fxd
+#1438378266
+git status
+#1438378272
+sudo rm -rf targets/generic/arch_model/
+#1438378274
+git status
+#1438378277
+cd submodules/bf-drivers/
+#1438378279
+git status
+#1438378282
+git clean -fxd
+#1438378285
+git status
+#1438378288
+cd ../..
+#1438378289
+git status
+#1438378292
+cd submodules/switchapi/
+#1438378294
+git status
+#1438378296
+git clean -fxd
+#1438378303
+cd ../switchsai/
+#1438378306
+git clean -fxd
+#1438378307
+git status
+#1438378309
+cd ../..
+#1438378312
+git status
+#1438378320
+./autogen.sh 
+#1438378351
+./configure 
+#1438378557
+git log
+#1438378589
+git log | grep 0ccc713b8a34aff1282a140e6c92954b0a834b54
+#1438378594
+git log | grep 0ccc713b8a34aff1282a140e6c92954b0a834b54 -A 10
+#1438379017
+cd submodules/bf-drivers/
+#1438379019
+git status
+#1438379032
+git checkout src/pipe_mgr/pipe_mgr_tcam_hw.c
+#1438379040
+cd ../..
+#1438379041
+git status
+#1438379045
+git diff
+#1438379050
+git status
+#1438379059
+git checkout targets/generic/of-tests/exm_direct/test.py
+#1438379061
+git status
+#1438624030
+git checkout master 
+#1438624034
+git fetch -p
+#1438624053
+git status
+#1438624056
+git submodule update 
+#1438624058
+git status
+#1438624065
+git pull origin master 
+#1438624067
+git status
+#1438624069
+git submodule update 
+#1438624071
+git status
+#1438624076
+./autogen.sh 
+#1438624104
+./configure 
+#1438624151
+git status
+#1438625644
+git diff
+#1438627451
+git status
+#1438627454
+git diff
+#1438627463
+cd submodules/bf-drivers/
+#1438627464
+git status
+#1438627465
+git diff
+#1438627481
+git commit -a -m "Fixing an issue with the init-value for idletime"
+#1438627485
+git status
+#1438627496
+git branch -b vk_idle
+#1438627508
+git branch vk_idle
+#1438627510
+git status
+#1438627513
+git checkout vk_idle 
+#1438627515
+git status
+#1438627517
+git log
+#1438627521
+git status
+#1438627526
+git push origin vk_idle 
+#1438627530
+git status
+#1438628378
+top
+#1438628425
+ps aux --sort -rss
+#1438628431
+ps aux --sort -rss | head
+#1438628483
+top
+#1438628675
+htop
+#1438629036
+top
+#1438629043
+htop
+#1438629304
+cd ../..
+#1438629305
+git status
+#1438629308
+git diff
+#1438635099
+git status
+#1438635102
+git diff
+#1438636196
+git status
+#1438636205
+git checkout targets/generic/of-tests/exm_direct/test.py
+#1438636207
+git status
+#1438796533
+ssh bigfoot
+#1438800035
+git status
+#1438800037
+git diff
+#1438998987
+git status
+#1438998995
+git pull origin master 
+#1438999022
+git stash
+#1438999024
+git pull origin master 
+#1438999027
+git status
+#1438999031
+git submodule update 
+#1438999033
+git status
+#1438999036
+git stash pop
+#1438999038
+git status
+#1438999040
+git stash list
+#1438999045
+git clean -fxd
+#1438999047
+git status
+#1438999052
+sudo git clean -fxd
+#1438999054
+git status
+#1438999059
+rm -rf submodules/bf-syslibs/
+#1438999064
+rm -rf submodules/bfnregs/
+#1438999067
+rm -rf submodules/bigcode/
+#1438999070
+rm -rf submodules/in
+#1438999073
+rm -rf submodules/infra/
+#1438999075
+git status
+#1438999078
+tools/submodule-clean.sh 
+#1438999080
+git status
+#1438999084
+vim tools/submodule-clean.sh 
+#1438999092
+tools/submodule-clean.sh 
+#1438999094
+git status
+#1438999100
+git assume tools/submodule-clean.sh
+#1438999102
+git diff
+#1438999106
+git status
+#1438999108
+./autogen.sh 
+#1438999138
+git status
+#1438999142
+git pull origin master 
+#1438999147
+git clean -fxd
+#1438999152
+git status
+#1438999158
+vim autogen.sh 
+#1438999216
+git submodule update --init --recursive
+#1438999393
+git status
+#1438999400
+./autogen.sh 
+#1438999431
+./configure 
+#1439000335
+cd submodules/bf-drivers/
+#1439000337
+git diff
+#1439001127
+git status
+#1439001134
+git checkout src/pipe_mgr/pipe_mgr_idle.c
+#1439001136
+git status
+#1439311582
+cd ../..
+#1439311583
+git status
+#1439311585
+git diff
+#1439311629
+git status
+#1439311777
+git diff
+#1439311805
+git status
+#1439311857
+git commit -a -m "Relaxing idle time test check because due to timing issues in the test script the checking of ttl is too late"
+#1439311859
+git status
+#1439311863
+git pull origin master 
+#1439311947
+git status
+#1439311951
+git push origin master 
+#1439311955
+git submodule update 
+#1439311957
+git status
+#1439429501
+git pull origin master 
+#1439429514
+git clean -fxd
+#1439429516
+git status
+#1439429523
+tools/submodule-clean.sh 
+#1439429525
+git status
+#1439429529
+sudo git clean -fxd
+#1439429531
+cd submodules/bf-drivers/
+#1439429532
+git status
+#1439429536
+git submodule update 
+#1439429538
+cd ../..
+#1439429539
+git status
+#1439429547
+rm -rf submodules/p4-hlir/
+#1439429549
+git sttaus
+#1439429552
+git status
+#1439429554
+git clean -fxd
+#1439429560
+./autogen.sh 
+#1439429589
+./configure 
+#1439566739
+git status
+#1439566741
+git pull origin master 
+#1439566754
+git status
+#1439566759
+git submodule update --recursive
+#1439566761
+git status
+#1439566766
+tools/submodule-clean.sh 
+#1439566769
+git status
+#1439566772
+git clean -fxd
+#1439566774
+git status
+#1439566778
+./autogen.sh 
+#1439566807
+git status
+#1439566811
+./configure 
+#1439571628
+vim programs/exm_direct/exm_direct.p4 
+#1439576733
+git status
+#1439576735
+git diff
+#1439576766
+git status
+#1439576774
+git 
+#1439576776
+git branch
+#1439576783
+git branch -d vk_movereg
+#1439576788
+git branch
+#1439576798
+git checkout vk_fix_exm_direct
+#1439576806
+git branch vk_fix_exm_direct
+#1439576810
+git checkout vk_fix_exm_direct 
+#1439576827
+git commit -a -m "Moving the exm_movereg table to the end of stage 9"
+#1439576829
+git status
+#1439576833
+git push origin vk_fix_exm_direct 
+#1442276111
+cd ../exm_direct/
+#1442276113
+git status
+#1442276120
+git submodule update --recursive
+#1442276126
+git fetch -p
+#1442276167
+git checkout vk_move 
+#1442276169
+git status
+#1442276173
+git submodule update --recursive
+#1442276178
+git status
+#1442276179
+tools/submodule-clean.sh 
+#1442276181
+git status
+#1442276186
+vim tools/submodule-clean.sh 
+#1442276194
+tools/submodule-clean.sh 
+#1442276196
+git status
+#1442276202
+git assume tools/submodule-clean.sh
+#1442276205
+git clean -fxd
+#1442276207
+git status
+#1442276210
+sudo git clean -fxd
+#1442276212
+git status
+#1442276215
+cd submodules/bf-drivers/
+#1442276218
+git status
+#1442276221
+git checkout vk_move 
+#1442276224
+git pull origin vk_move 
+#1442276228
+git status
+#1442276230
+cd ../..
+#1442276232
+./autogen.sh 
+#1442276273
+./configure 
+#1442335576
+git status
+#1442335579
+cd submodules/bf-drivers/
+#1442335580
+git status
+#1442335584
+git pull origin vk_move 
+#1442335618
+cd ../..
+#1442335626
+vim tools/run_p4factory_test.sh 
+#1442338438
+cd submodules/bf-drivers/
+#1442338439
+git diff
+#1442340487
+cd ../..
+#1442340489
+git status
+#1442341494
+cd submodules/bf-drivers/
+#1442341495
+git status
+#1442341497
+git diff
+#1442341513
+git status
+#1442341528
+git commit -a -m "Fixes to handle timing race conditions"
+#1442341532
+git push origin vk_move 
+#1442342496
+cd ..
+#1442342496
+git rev-parse --show-toplevel
+#1442342503
+cd ../targets/single_device/
+#1442342504
+git rev-parse --show-toplevel
+#1442343959
+cd -
+#1442343961
+cd bf-drivers/
+#1442343962
+git diff
+#1442343970
+git status
+#1442343983
+git commit -a -m "Reverting back errors to traces"
+#1442343986
+git push origin vk_move 
+#1442343998
+top
+#1442350343
+git status
+#1446837540
+cd ../../..
+#1446837541
+ls
+#1446837557
+git clone git@github.com:barefootnetworks/p4factory.git tofino_diag
+#1446837602
+cd tofino_diag/
+#1446837605
+git submodule update --init --recursive
+#1448059721
+cd ../
+#1448059722
+sls
+#1448059723
+ls
+#1448059728
+cd tofino_diag/
+#1448059730
+git status
+#1448059736
+git checkout master 
+#1448059738
+git pull origin master 
+#1448059800
+git status
+#1448059802
+git submodule update --init --recursive
+#1448059804
+git status
+#1448059809
+cd submodules/bf-drivers/
+#1448059815
+git checkout vk_learn_fixup 
+#1448059818
+git pull origin vk_learn
+#1448059821
+git pull origin vk_learn_fixup 
+#1448059825
+git log
+#1448059830
+cd ../p4c-tofino/
+#1448059832
+git checkout vk_learn_fixup 
+#1448059836
+git pull origin vk_learn_fixup 
+#1448059839
+cd ../model/
+#1448059852
+git checkout fix_lq_order 
+#1448059857
+git pull origin fix_lq_order 
+#1448059866
+cd ../p4c-tofino/
+#1448059867
+git status
+#1448059870
+git pull origin master 
+#1448059875
+cd ../bf-drivers/
+#1448059879
+git pull origin master 
+#1448059885
+cd ../model/
+#1448059887
+git pull origin master 
+#1448059892
+cd ../..
+#1448059893
+git status
+#1448060390
+sudo git clean -fxd
+#1448060393
+git status
+#1448060397
+rm -rf submodules/switchapi/
+#1448060401
+rm -rf submodules/switchlink/
+#1448060408
+rm -rf submodules/switchsai/
+#1448060413
+vim tools/submodule-clean.sh 
+#1448060430
+git assume tools/submodule-clean.sh
+#1448060435
+tools/submodule-clean.sh 
+#1448060436
+git status
+#1448060440
+cd submodules/bf-drivers/
+#1448060441
+git status
+#1448060445
+rm -rf py-compile 
+#1448060449
+git clean -fxd
+#1448060451
+git status
+#1448060453
+cd ../..
+#1448060454
+git status
+#1448060464
+vim tools/submodule-clean.sh 
+#1448060480
+git submodule | cut -d' ' -f3
+#1448060486
+git status
+#1448060489
+git submodule 
+#1448060494
+git submodule  status
+#1448060507
+vim tools/submodule-clean.sh 
+#1448060524
+vim tools/pull_new_top_p4f_ws 
+#1448060534
+vim tools/submodule-clean.sh 
+#1448060557
+tools/submodule-clean.sh 
+#1448060560
+git status
+#1448060568
+./autogen.sh && ./configure
+#1448061218
+find . -name "entry_format.c"
+#1448061225
+vim ./build/programs/basic_ipv4/api/tbl_packing/entry_format.c
+#1448061356
+cd submodules/model/
+#1448061358
+git diff origin/master 
+#1448061962
+git log
+#1448062243
+git status
+#1448062248
+git pull origin fix_lq_order 
+#1448062484
+git status
+#1448586379
+cd ../..
+#1448586381
+ls
+#1448586388
+git status
+#1448586394
+git submodule update --init --recursive
+#1448586399
+git pull origin master 
+#1448586410
+git status
+#1448586412
+git submodule update --init --recursive
+#1448586439
+ls programs/action_spec_format/
+#1448588915
+find . -name "pd.c"
+#1448588934
+vimdiff ./submodules/p4c-tofino/p4c_tofino/target/tofino/pd/templates/src/pd.c ../p4factory/./submodules/p4c-tofino/p4c_tofino/target/tofino/pd/templates/src/pd.c
+#1448589039
+vim ./build/programs/action_spec_format/api/src/pd.c
+#1448995221
+vim tools/submodule-clean.sh 
+#1452193821
+cd ..
+#1452193835
+git clone git@github.com:barefootnetworks/p4factory.git exm_utest
+#1452193842
+cd exm_
+#1452193844
+cd exm_utest/
+#1452193860
+export WORKSPACE=.
+#1452193881
+git submodule update --init --recursive
+#1452194039
+# This target needs oft-infra
+#1452194039
+git clone git@github.com:barefootnetworks/oft-infra.git $WORKSPACE/submodules/bf-drivers/oft-infra
+#1452194042
+cd $WORKSPACE/submodules/bf-drivers/oft-infra
+#1452194042
+git checkout 235b82
+#1452194042
+cd $WORKSPACE
+#1452194042
+git submodule update --init --recursive
+#1452194042
+./autogen.sh
+#1452194042
+./configure
+#1452194042
+cd build/bf-syslibs
+#1452194042
+make
+#1452194042
+make install
+#1452194042
+cd ../bf-drivers
+#1452194123
+export WORKSPACE=~/code/exm_utest/
+#1452194157
+cd $WORKSPACE/submodules/bf-drivers/oft-infra
+#1452194157
+git checkout 235b82
+#1452194157
+cd $WORKSPACE
+#1452194157
+git submodule update --init --recursive
+#1452194157
+./autogen.sh
+#1452194165
+./configure
+#1452194225
+cd build/bf-syslibs
+#1452194225
+make
+#1452194232
+make install
+#1452194232
+cd ../bf-drivers
+#1452194236
+make check TESTS= -j4
+#1452194374
+sudo bash $WORKSPACE/build/bf-drivers/tools/run_exm_utest exm
+#1452882659
+cd ../../..
+#1452882659
+ls
+#1452882662
+cd exm_direct/
+#1452882664
+git status
+#1452882672
+vim tools/submodule-clean.sh 
+#1452882689
+git assume tools/submodule-clean.sh
+#1452882693
+tools/submodule-clean.sh 
+#1452882698
+sudo git clean -fxd
+#1452882700
+git status
+#1452882703
+git pull origin master 
+#1452882842
+git submodule update --init --recursive
+#1452882846
+git status
+#1452882876
+git submodule sync
+#1452882878
+git status
+#1452882882
+git pull origin master 
+#1452882885
+git status
+#1452882890
+rm -rf submodules/oft-infra/
+#1452882895
+rm -rf submodules/switchapi/
+#1452882897
+rm -rf submodules/switchlink/
+#1452882900
+rm -rf submodules/switchsai/
+#1452882902
+git status
+#1452882904
+git submodule update --init --recursive
+#1452883103
+git submodule sync --recursive
+#1452883106
+git status
+#1452883111
+cd submodules/bf-drivers/
+#1452883112
+git status
+#1452883115
+rm -rf bf-syslibs/
+#1452883117
+cd ../..
+#1452883119
+git status
+#1452883121
+git submodule update --init --recursive
+#1452883124
+git status
+#1452884791
+cd submodules/p4c-tofino/
+#1452884792
+git log
+#1452884808
+git checkout 8a513bb
+#1452959115
+cd ../..
+#1452959118
+vim tools/run_switchd.sh 
+#1453764469
+git status
+#1453764475
+git fetch -p
+#1453764533
+git checkout mau_test 
+#1453764535
+git status
+#1453764537
+git submodule update --init --recursive
+#1453764543
+vim tools/submodule-clean.sh 
+#1453764547
+tools/submodule-clean.sh 
+#1453764549
+git status
+#1453764552
+git diff
+#1453764554
+git status
+#1453764558
+git checkout ptf-tests/
+#1453764563
+sudo git clean -fxd
+#1453764565
+git status
+#1453765066
+cd submodules/p4c-tofino/
+#1453765067
+git log
+#1453765092
+cd ../..
+#1453765093
+git status
+#1453765121
+git pull origin master 
+#1453765125
+git status
+#1453765130
+git push origin mau_test 
+#1453765133
+git submodule update --init --recursive
+#1453833861
+cd submodules/model/
+#1453833866
+git status
+#1453833867
+git diff
+#1453835716
+git diff > diff
+#1453835719
+grep cout diff
+#1453843334
+git status
+#1453843341
+git branch vk_idle_debug
+#1453843362
+git checkout vk_idle_debug 
+#1453843364
+git status
+#1453843375
+git commit -am "Some couts"
+#1453843383
+git push origin vk_idle_debug 
+#1453843388
+git checkout master 
+#1453843393
+git pull origin master 
+#1453843402
+git status
+#1453843414
+git branch -d vk_idle_debug 
+#1453843947
+git branch -D vk_idle_debug 
+#1453843950
+git status
+#1453844080
+cd ../..
+#1453844081
+git status
+#1453844085
+git diff
+#1453844087
+git status
+#1453844092
+git checkout ptf-tests/mau_test/
+#1453844095
+cd submodules/bf-drivers/
+#1453844097
+git status
+#1453844098
+git diff
+#1453844101
+git status
+#1453844104
+git checkout src/
+#1453844105
+cd ../..
+#1453844107
+git status
+#1453844109
+git checkout master 
+#1453844112
+git pull origin master 
+#1453844121
+git status
+#1453844124
+git submodule update --init --recursive
+#1453844128
+tools/submodule-clean.sh 
+#1453844130
+git status
+#1453844133
+sudo git clean -fxd
+#1453844135
+git status
+#1453845863
+cd submodules/bf-drivers/
+#1453845866
+git diff
+#1453845871
+git status
+#1453845877
+git branch vk_idle_fixup
+#1453845881
+git checkout vk_idle_fixup 
+#1453845906
+git commit -am "Wait for drain only if we are expecting an ack"
+#1453845907
+git status
+#1453845912
+git push -u origin vk_idle_fixup 
+#1453873321
+cd ../..
+#1453873323
+git status
+#1453873328
+git pull origin master 
+#1453873348
+git submodule update --init --recursive
+#1453873351
+git status
+#1453873612
+git log
+#1453922466
+git status
+#1453922469
+git pull origin master 
+#1453922473
+git submodule update --init --recursive
+#1453930231
+git status
+#1453930233
+git pull origin master 
+#1453930241
+git submodule update --init --recursive
+#1453930244
+tools/submodule-clean.sh 
+#1453930246
+git status
+#1453930251
+sudo git clean -fxd
+#1453930253
+git status
+#1453931375
+cd submodules/bf-drivers/
+#1453931377
+git diff > diff
+#1453931378
+vim diff
+#1453932026
+git diff > diff_2 
+#1453932027
+vim diff_2
+#1453932155
+git diff > diff_3
+#1453932158
+vim diff_3
+#1453937001
+git diff > diff_4
+#1453937004
+vim diff_4 
+#1453937122
+git status
+#1453937142
+git branch vk_idle_cleanup_tasks
+#1453937147
+git checkout vk_idle_cleanup_tasks 
+#1453937149
+git status
+#1453937189
+git commit -am "Simplifying the way idletime tasks are queued up for processing. Instead of a list of lists, using a single list with lock-ack tasks interleaved"
+#1453937191
+git status
+#1453937198
+git push -u origin vk_idle_cleanup_tasks 
+#1453937795
+git status
+#1453937969
+git commit -am "fixing a typo"
+#1453937974
+git push origin vk_idle_cleanup_tasks 
+#1454007627
+cd ../..
+#1454007628
+git status
+#1454007633
+git pull origin master 
+#1454007642
+git submodule update --init --recursive
+#1454007645
+git status
+#1454007649
+cd submodules/model/
+#1454007653
+git checkout synchronous_ops 
+#1454007655
+git log
+#1454007661
+git status
+#1454007701
+git pull origin master 
+#1454007708
+cd ../..
+#1454007709
+git status
+#1454007724
+tools/submodule-clean.sh 
+#1454007726
+git status
+#1454007730
+sudo git clean -fxd
+#1454007732
+git status
+#1454007738
+git checkout mau_test 
+#1454007740
+git status
+#1454007746
+git submodule update --init --recursive
+#1454007749
+git status
+#1454007752
+git pull origin master 
+#1454007756
+git status
+#1454007757
+git submodule update --init --recursive
+#1454007760
+cd submodules/model/
+#1454007762
+git checkout synchronous_ops 
+#1454007764
+git status
+#1454007766
+cd ../..
+#1454007768
+git status
+#1454009907
+vim programs/mau_test/mau_test.p4 
+#1454011023
+git status
+#1454011030
+git diff ptf-tests/mau_test/test.py
+#1454540923
+git status
+#1454540931
+git checkout master 
+#1454540937
+git stash list
+#1454540939
+git diff
+#1454540948
+git status
+#1454540951
+git checkout ptf-tests/
+#1454540953
+git checkout master 
+#1454540956
+git pull origin master 
+#1454541158
+git status
+#1454541161
+git submodule update --init --recursive
+#1454541173
+git submodule foreach --recursive 'git clean -fxd'
+#1454541176
+git status
+#1454541182
+sudo git clean -fxd
+#1454541184
+git status
+#1454548381
+git diff
+#1454548386
+git status
+#1454548395
+git branch vk_smoke_large_tbls
+#1454548399
+git checkout vk_smoke_large_tbls 
+#1454548401
+git status
+#1454548407
+git log
+#1454548703
+git status
+#1454548734
+git commit -am "Adding some sleeps so that tests are immune to race conditions"
+#1454548744
+git push -u origin vk_smoke_large_tbls 
+#1454549550
+git status
+#1454549553
+tools/submodule-clean.sh 
+#1454549555
+got status
+#1454549558
+git status
+#1454549563
+git checkout master 
+#1454549565
+git status
+#1454549568
+git pull origin master 
+#1454549574
+sudo git clean -fxd
+#1454549576
+git status
+#1454549580
+git submodule update --init --recursive
+#1454549583
+git status
+#1454549586
+cd submodules/bf-drivers/
+#1454549588
+git log
+#1454549598
+git checkout vk_idle_fastreconfig 
+#1454549603
+git pull origin vk_idle_fastreconfig 
+#1454549607
+git pull origin master 
+#1454549611
+git status
+#1454549616
+git push origin vk_idle_fastreconfig 
+#1454549621
+cd ../..
+#1454549622
+git status
+#1454608237
+cd submodules/bf-drivers/
+#1454608238
+git status
+#1454630131
+cd ../..
+#1454630133
+git diff
+#1454635319
+git status
+#1454635324
+git diff
+#1454635328
+git status
+#1454635335
+git checkout ptf-tests/exm_direct/test.py
+#1454635376
+cd submodules/bf-drivers/
+#1454635378
+git status
+#1454635383
+git diff > diff
+#1454635384
+vim diff
+#1454635444
+git commit -am "The movereg instruction idle_init value should be slightly different for 1 bit mode. Handling this"
+#1454635449
+git push origin vk_idle_fastreconfig 
+#1454635458
+git pull origin vk_idle_fastreconfig 
+#1454635462
+git status
+#1454635468
+git push origin vk_idle_fastreconfig 
+#1454643724
+git status
+#1454643788
+git diff origin/master > diff
+#1454643789
+vim diff
+#1454644063
+git diff origin/master > diff2
+#1454644065
+vim diff2
+#1454644196
+git status
+#1454644197
+git diff
+#1454644200
+git status
+#1454644242
+git commit -am "Tearing down moveregs after inter-stage moves. The movereg-pop-ctl initialization does not write the intended value"
+#1454644245
+git status
+#1454644250
+git push origin vk_idle_f
+#1454644256
+git push origin vk_idle_fastreconfig 
+#1454716621
+git pull origin vk_idle_fastreconfig 
+#1454716626
+cd ../..
+#1454716629
+git status
+#1454716631
+git pull origin master 
+#1454716647
+git status
+#1454716656
+git submodule update --init --recursive
+#1454716659
+git status
+#1454716661
+cd submodules/bf-drivers/
+#1454716666
+git checkout vk_idle_fastreconfig 
+#1454716668
+git log
+#1454716671
+cd ../..
+#1454716672
+git status
+#1454716679
+git checkout tools/run_tofino_model.sh
+#1455622232
+git status
+#1455622239
+git submodule update --init --recursive
+#1455622241
+git status
+#1455622258
+git submodule foreach --recursive 'git clean -fxd'
+#1455622261
+sudo git clean -fxd
+#1455622263
+git status
+#1455625961
+vim programs/exm_direct/exm_direct.p4 
+#1456990843
+cd ../basic_ipv4/
+#1456990845
+git status
+#1456990856
+git checkout master 
+#1456990859
+git pull origin master 
+#1456991145
+git status
+#1456991152
+git submodule foreach --recursive 'git clean -fxd'
+#1456991154
+git status
+#1456991157
+sudo git clean -fxd
+#1456991159
+git status
+#1456991166
+git submodule update --init --recursive
+#1456991170
+git status
+#1456991173
+git pull origin master 
+#1456991188
+git assumed
+#1456991192
+git unassume tools/run_tofino_model.sh
+#1456991194
+git status
+#1456991197
+git diff
+#1456991205
+git checkout tools/run_tofino_model.sh
+#1456991207
+git pull origin master 
+#1456991218
+vim tools/run_tofino_model.sh 
+#1456991227
+git status
+#1456991232
+git assume tools/run_tofino_model.sh
+#1456991234
+git submodule update --init --recursive
+#1456991750
+git status
+#1457414572
+git pull origin master 
+#1457414662
+git submodule foreach --recursive 'git clean -fxd'
+#1457414664
+git status
+#1457414683
+grep 0x12c bf_drivers.log*
+#1457414863
+git status
+#1457415079
+git submodule foreach --recursive 'git clean -fxd'
+#1457415082
+sudo git clean -fxd
+#1457415084
+git status
+#1457415107
+git pull origin master 
+#1457415268
+git submodule update --init --recursive
+#1457415271
+git status
+#1457415433
+git statu
+#1457415435
+git status
+#1457415642
+git submodule foreach --recursive 'git clean -fxd'
+#1457415645
+git status
+#1457415647
+sudo git clean -fxd
+#1457415649
+git status
+#1457415653
+git log
+#1457510573
+git submodule foreach --recursive 'git clean -fxd'
+#1457510576
+sudo git clean -fxd
+#1457513419
+git submodule foreach --recursive 'git clean -fxd'
+#1457513421
+git status
+#1457513428
+sudo git clean -fxd
+#1457513430
+git status
+#1457520744
+tail -f bf_drivers.log
+#1458341855
+git status
+#1458341858
+git diff
+#1458344505
+git checkout ptf-tests/
+#1458344507
+git status
+#1458345754
+cd submodules/bf-drivers/
+#1458345755
+git status
+#1458345761
+git diff include/
+#1458345763
+git status
+#1458345766
+git checkout include/
+#1458345769
+git checkout src/fbitset/
+#1458345771
+git diff
+#1458345789
+git checkout src/pipe_mgr/pipe_mgr_tcam_hw.c
+#1458345806
+git diff 
+#1458345865
+cd ../..
+#1458345866
+git status
+#1458345871
+git checkout ptf-tests/
+#1458666396
+git status
+#1458666400
+git diff
+#1458666403
+git checkout ptf-tests/
+#1458666639
+cd submodules/bf-drivers/
+#1458666689
+git status
+#1458666692
+git diff
+#1458666769
+git status
+#1458666806
+git branch vk_range_tcam
+#1458666808
+git status
+#1458666812
+git checkout vk_range_tcam 
+#1458666815
+git pull origin master 
+#1458666820
+git stash
+#1458666821
+git pull origin master 
+#1458666825
+git stash pop
+#1458666830
+cd ../..
+#1458666832
+git status
+#1458666836
+git pull origin master 
+#1458666872
+git status
+#1458666877
+git submodule update --init --recursive
+#1458666880
+git status
+#1458666883
+cd submodules/bf-drivers/
+#1458666884
+git status
+#1458667371
+git add src/pipe_mgr/pipe_mgr_tcam.c 
+#1458667372
+git add src/pipe_mgr/pipe_mgr_tcam.h
+#1458667404
+git commit -m "Changing the logic to figure out the entry moves for range entries"
+#1458667409
+git add src/dru_sim/dru_parse.c 
+#1458667428
+git commit -m "Initializing the data values each loop iteration"
+#1458667430
+git status
+#1458667434
+git push -u origin vk_range_tcam 
+#1458669043
+git status
+#1476379332
+cd ~/code/exm_direct/
+#1476379335
+git status
+#1476379354
+git pull origin master 
+#1476379393
+git status
+#1476379408
+git submodule update --init --recursive
+#1476379456
+git status
+#1476379469
+git submodule foreach --recursive 'git clean -fxd' && sudo git clean -fxd
+#1476379471
+git status
+#1476397614
+wget http://bigfoot.barefoot-int.lan:8080/job/harlyn-drivers-comb-test/238/consoleText
+#1476397617
+vim consoleText 
+#1476397684
+vim tools/drivers_test_comb.py 
+#1477086296
+git fetch -p
+#1477086326
+git status
+#1477086332
+git checkout rel_3_0
+#1477086335
+git submodule update --init --recursive
+#1477086338
+git submodule foreach --recursive 'git clean -fxd' && sudo git clean -fxd
+#1477086341
+cd submodules/bf-drivers/
+#1477086347
+git checkout DRV-340 
+#1477086349
+git status
+#1477093540
+cd -
+#1477093544
+git submodule foreach --recursive 'git clean -fxd' && sudo git clean -fxd
+#1477093554
+cd -
+#1477093556
+git status
+#1477096193
+../../tools/clang-format-check.py -r
+#1477096325
+../../tools/clang-format-check.py ./src/pipe_mgr/pipe_mgr_select_tbl.c
+#1477096717
+git status
+#1477096722
+git diff pd_api_gen/templates/thrift/p4_pd_rpc.thrift
+#1477097100
+cd -
+#1477097101
+git diff
+#1477097909
+git status
+#1477097915
+cd submodules/bf-drivers/
+#1477097916
+git status
+#1477097961
+git commit -am "DRV-340 Renaming the selector member activate/deactivate APIs to state-set. Added new API to get the member state"
+#1477097963
+git status
+#1477097969
+git push origin DRV-340 
+#1477097973
+cd ../..
+#1477097974
+git status
+#1477097981
+git diff
+#1477097997
+vim ptf-tests/exm_direct/test.py
+#1477098004
+git diff
+#1477098044
+git status
+#1477098051
+git add ptf-tests/
+#1477098052
+git status
+#1477098068
+git checkout -b DRV-240
+#1477098070
+git status
+#1477098109
+git commit -m "Smoke test for the selector member state get API. Changes for the renaming of the selector member activate/deactivate API"
+#1477098126
+git checkout -b DRV-340
+#1477098127
+git status
+#1477098135
+git push -u origin DRV-340 
+#1477170131
+grep -r activate_group_member * 
+#1477170152
+vim submodules/switch/switchapi/src/switch_pd.c
+#1477170178
+vim submodules/p4c-behavioral/p4c_bm/templates/thrift/p4_pd_rpc.thrift
+#1477170185
+vim submodules/switch/switchapi/src/switch_pd.c
+#1477332398
+vim submodules/p4c-bmv2/p4c_bm/templates/thrift-src/p4_pd_rpc_server.ipp
+#1477332547
+grep -r activate_group_member * 
+#1477332556
+vim submodules/p4c-bmv2/p4c_bm/templates/thrift/p4_pd_rpc.thrift
+#1477332687
+vim submodules/p4c-bmv2/p4c_bm/templates/thrift-src/p4_pd_rpc_server.ipp
+#1477333091
+cd submodules/p4c-bmv2/
+#1477333092
+git diff
+#1477333104
+cd ../..
+#1477333108
+vim submodules/p4c-bmv2/p4c_bm/templates/thrift-src/p4_pd_rpc_server.ipp
+#1477333204
+vim submodules/p4c-bmv2/p4c_bm/templates/thrift/p4_pd_rpc.thrift
+#1477333377
+grep -r activate_group_member * 
+#1477333391
+vim submodules/p4c-behavioral/p4c_bm/templates/src/pd.c
+#1477333405
+vim submodules/switch/switchapi/src/switch_pd.c
+#1477333572
+grep -r activate_group_member * 
+#1477333830
+git status
+#1477333837
+cd submodules/bf-drivers/
+#1477333839
+git status
+#1477333848
+cd ../p4c-bmv2/
+#1477333849
+git status
+#1477333851
+git diff
+#1477334071
+git status
+#1477334086
+git checkout -b DRV-340
+#1477334088
+git status
+#1477334135
+git commit -am "BMv2 changes to rename the selector group member activate/reactivate API to state_set"
+#1477334140
+git push -u origin DRV-340 
+#1477334144
+cd ../switch/
+#1477334146
+git status
+#1477334147
+git diff
+#1477334172
+git checkout -b DRV-340
+#1477334174
+git status
+#1477334189
+git commit -am "SwitchAPI changes to rename the selector group member activate/reactivate API to state_set"
+#1477334194
+git push -u origin DRV-340 
+#1477334219
+cd ../..
+#1477334220
+git status
+#1477334574
+grep -r activate_group_member * 
+#1477336965
+cd submodules/p4-bmv2/
+#1477336966
+git status
+#1477336969
+git log
+#1477336981
+cd ../p4c-bmv2/
+#1478022557
+cd ~/code/basic_ipv4/
+#1478022560
+git status
+#1478022566
+git diff
+#1478022568
+git status
+#1478022574
+git checkout ptf-tests/
+#1478022576
+git status
+#1478022580
+git pull origin master 
+#1478022684
+git status
+#1478022686
+git submodule update --init --recursive
+#1478022697
+git submodule foreach --recursive 'git clean -fxd' && sudo git clean -fxd
+#1478022700
+git status
+#1478022707
+cd submodules/bmv2-tofino/
+#1478022708
+git status
+#1478022716
+rm -rf bmv2/
+#1478022718
+git status
+#1478022719
+cd -
+#1478022721
+git status
+#1478026543
+git diff ptf-tests/basic_ipv4/test.py
+#1478026548
+git status
+#1478026581
+git checkout -b error_log_fix
+#1478026582
+git status
+#1478026586
+git diff
+#1478026592
+git add ptf-tests/basic_ipv4/test.py 
+#1478026593
+git status
+#1478026622
+git commit -m "Using the num of pipes from the test-param instead of 4. "
+#1478026626
+git push -u origin error_log_fix 
+#1478026784
+git status
+#1478033018
+cd submodules/bf-drivers/
+#1478033019
+mycscope
+#1479748982
+cd ../..
+#1479748984
+git status
+#1479748992
+git checkout master 
+#1479748998
+cd submodules/bf-drivers/
+#1479748999
+git status
+#1479749001
+git diff
+#1479749005
+git checkout src/
+#1479749007
+cd -
+#1479749009
+git status
+#1479749011
+git submodule foreach --recursive 'git clean -fxd' && sudo git clean -fxd
+#1479749014
+git status
+#1479749017
+git pull origin master 
+#1479749052
+git status
+#1479749054
+git submodule update --init --recursive
+#1479749254
+git status
+#1479749363
+vim programs/basic_ipv4/Makefile.am 
+#1479749385
+vim programs/basic_ipv4/basic_ipv4.p4 
+#1479749422
+git status
+#1479749431
+git fetch -p
+#1479749447
+git status
+#1479749451
+git checkout rel_3_0
+#1479749453
+git submodule update --init --recursive
+#1479749458
+git status
+#1479749462
+rm -rf submodules/bf-diags/
+#1479749467
+rm -rf submodules/sandals/
+#1479749469
+git diff
+#1479749678
+vim programs/basic_ipv4/basic_ipv4.p4 
+#1479794590
+git status
+#1479794603
+git pull origin rel_3_0
+#1479794610
+git status
+#1479794613
+git submodule update --init --recursive
+#1479794617
+git status
+#1479794626
+touch programs/basic_ipv4/basic_ipv4.p4 
+#1479794714
+cd submodules/p4c-tofino/
+#1479794716
+git log
+#1479794724
+cd -
+#1479937493
+git status
+#1479937499
+git checkout master 
+#1479937502
+git diff
+#1479937505
+git status
+#1479937510
+git checkout programs/
+#1479937513
+git checkout ptf-tests/
+#1479937516
+git checkout master 
+#1479937519
+git pull origin master 
+#1479937539
+git submodule update --init --recursive
+#1479937550
+git status
+#1479937555
+git submodule foreach --recursive 'git clean -fxd' && sudo git clean -fxd
+#1479937558
+git status
+#1479937562
+rm -rf submodules/bflibl4l/
+#1479937565
+cd submodules/bf-platforms/
+#1479937567
+git status
+#1479937571
+rm -rf p4-build/
+#1479937572
+cd -
+#1479937952
+grep "placement pragma" programs/ -r
+#1479937974
+grep "placement pragma" *.in -r
+#1479938003
+grep "placement pragma" programs/ -r | grep Makefile.in
+#1479938021
+vim programs/tofino_diag/Makefile.in 
+#1479938026
+vim programs/tofino_diag/tofino_diag.p4 
+#1479938063
+vim programs/multi_device/multi_device.p4 
+#1479938076
+vim programs/exm_direct/exm_direct.p4 
+#1479940558
+vim programs/basic_ipv4/basic_ipv4.p4 
+#1479940598
+grep "pragma stage" programs/basic_ipv4/basic_ipv4.p4 
+#1479940606
+vim programs/basic_ipv4/basic_ipv4.p4 
+#1479942626
+vim programs/exm_direct/exm_direct.p4 
+#1480378643
+git status
+#1480378649
+git diff
+#1480378652
+git status
+#1480378658
+git checkout programs/
+#1480378664
+git pull origin master 
+#1480378693
+git submodule update --init --recursive
+#1480378698
+git submodule foreach --recursive 'git clean -fxd' && sudo git clean -fxd
+#1480378701
+git status
+#1480383206
+git checkout c86d7ba7bd440e16665fb48a7c6837fa4ba83afb
+#1480383208
+git status
+#1480383213
+git submodule update --init --recursive
+#1480383216
+git status
+#1480384176
+git checkout master 
+#1480384179
+git pull origin master 
+#1480384184
+git submodule update --init --recursive
+#1480384188
+git status
+#1480390317
+git submodule foreach --recursive 'git clean -fxd' && sudo git clean -fxd
+#1480390320
+git status
+#1480552640
+vim tools/run_switchd.sh 
+#1480614871
+git status
+#1480614877
+git pull origin master 
+#1480615160
+git submodule foreach --recursive 'git clean -fxd' && sudo git clean -fxd
+#1480615163
+git status
+#1480615165
+git submodule update --init --recursive
+#1480615169
+git checkout programs/
+#1480615171
+git status
+#1480615180
+vim programs/basic_ipv4/basic_ipv4.p4 
+#1480615211
+vim programs/basic_ipv4/Makefile.am 
+#1480615235
+vim programs/basic_ipv4/basic_ipv4.p4 
+#1480620629
+git status
+#1480620647
+git diff programs/basic_ipv4/ > ~/code/diff/diff_flexible_keys
+#1480620654
+git checkout programs/basic_
+#1480620656
+git checkout programs/basic_ipv4/

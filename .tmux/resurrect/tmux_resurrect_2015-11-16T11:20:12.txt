@@ -1,0 +1,36 @@
+pane	pipe-mgr	1	:bash	0	: 	1	:/home/vkumar/code/bf-drivers/build/bf-drivers	0	bash	:
+pane	pipe-mgr	1	:bash	0	: 	2	:/home/vkumar/code/bf-drivers/submodules/bf-drivers	0	bash	:
+pane	pipe-mgr	1	:bash	0	: 	3	:/home/vkumar/code/bf-drivers/submodules/bf-drivers	1	bash	:-bash
+pane	pipe-mgr	2	:bash	0	: 	1	:/home/vkumar/code/p4-hlir	0	bash	:
+pane	pipe-mgr	2	:bash	0	: 	2	:/home/vkumar/code/p4factory/submodules/bf-drivers	1	bash	:
+pane	pipe-mgr	3	:bash	1	:*	1	:/home/vkumar/code/p4factory	0	bash	:
+pane	pipe-mgr	3	:bash	1	:*	2	:/home/vkumar/code/p4factory	1	bash	:
+pane	pipe-mgr	3	:bash	1	:*	3	:/home/vkumar/code/p4factory	0	bash	:
+pane	pipe-mgr	3	:bash	1	:*	4	:/home/vkumar/code/p4factory/submodules/bf-drivers	0	bash	:
+pane	pipe-mgr	3	:bash	1	:*	5	:/home/vkumar/code/p4factory/tools	0	bash	:
+pane	pipe-mgr	3	:bash	1	:*	6	:/home/vkumar/code/p4factory	0	bash	:
+pane	pipe-mgr	4	:bash	0	:-	1	:/home/vkumar/code/switch/submodules/model	0	bash	:
+pane	pipe-mgr	4	:bash	0	:-	2	:/home/vkumar/code/switch/install/bin	0	bash	:
+pane	pipe-mgr	4	:bash	0	:-	3	:/home/vkumar/code/switch	1	bash	:
+pane	pipe-mgr	4	:bash	0	:-	4	:/home/vkumar/code/switch/submodules/bf-drivers	0	bash	:
+pane	pipe-mgr	4	:bash	0	:-	5	:/home/vkumar/code/switch/targets/single_device	0	bash	:
+pane	pipe-mgr	4	:bash	0	:-	6	:/home/vkumar/code/switch	0	bash	:
+pane	pipe-mgr	5	:bash	0	: 	1	:/home/vkumar/code/tofino_diag	1	bash	:
+pane	pipe-mgr	5	:bash	0	: 	2	:/home/vkumar/code/exm_direct/targets/single_device/arch_model	0	bash	:
+pane	pipe-mgr	5	:bash	0	: 	3	:/home/vkumar/code/exm_direct/targets/single_device	0	bash	:
+pane	pipe-mgr	5	:bash	0	: 	4	:/home/vkumar/code/exm_direct/submodules/bf-drivers	0	bash	:
+pane	pipe-mgr	5	:bash	0	: 	5	:/home/vkumar/code/exm_direct/targets/single_device	0	bash	:
+pane	pipe-mgr	5	:bash	0	: 	6	:/home/vkumar/code/exm_direct/targets/single_device	0	bash	:
+pane	pipe-mgr	6	:bash	0	: 	1	:/home/vkumar/code/tofino_diag	0	bash	:
+pane	pipe-mgr	6	:bash	0	: 	2	:/home/vkumar/code/tofino_diag/install/bin	0	bash	:
+pane	pipe-mgr	6	:bash	0	: 	3	:/home/vkumar/code/tofino_diag	1	bash	:
+pane	pipe-mgr	6	:bash	0	: 	4	:/home/vkumar/code/bf-drivers	0	bash	:
+pane	pipe-mgr	6	:bash	0	: 	5	:/home/vkumar/code/tofino_diag/targets/single_device	0	bash	:
+pane	pipe-mgr	6	:bash	0	: 	6	:/home/vkumar/code/tofino_diag/install/bin	0	bash	:
+window	pipe-mgr	1	0	: 	9fb3,238x56,0,0{81x56,0,0[81x36,0,0,1,81x19,0,37,2],156x56,82,0,3}
+window	pipe-mgr	2	0	: 	5c8d,238x56,0,0{103x56,0,0,4,134x56,104,0,5}
+window	pipe-mgr	3	1	:*	d28b,238x56,0,0{118x56,0,0[118x22,0,0,6,118x18,0,23,7,118x14,0,42,8],119x56,119,0[119x20,119,0,9,119x12,119,21,10,119x22,119,34,22]}
+window	pipe-mgr	4	0	:-	7494,238x56,0,0{127x56,0,0[127x24,0,0,11,127x12,0,25,12,127x18,0,38,13],110x56,128,0[110x25,128,0,14,110x12,128,26,15,110x17,128,39,23]}
+window	pipe-mgr	5	0	: 	7096,238x56,0,0{136x56,0,0[136x28,0,0,16,136x13,0,29,17,136x13,0,43,18],101x56,137,0[101x28,137,0,19,101x13,137,29,20,101x13,137,43,21]}
+window	pipe-mgr	6	0	: 	847d,238x56,0,0{105x56,0,0[105x31,0,0,24,105x12,0,32,28,105x11,0,45,29],132x56,106,0[132x31,106,0,25,132x12,106,32,26,132x11,106,45,27]}
+state	pipe-mgr	

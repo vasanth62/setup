@@ -1,0 +1,2000 @@
+#1449019183
+sudo tools/compile.sh -j4  bfd_test --p4
+#1449019395
+touch programs/bfd_test/bfd_test.p4 
+#1449019398
+sudo tools/compile.sh -j4  bfd_test --p4
+#1449083141
+python
+#1449085599
+fg
+#1449085611
+vim tools/bfd_test_comb.py 
+#1449085635
+sudo -E python tools/bfd_test_comb.py  . -n 0
+#1449085982
+fg
+#1449085984
+vim tools/bfd_test_comb.py 
+#1449086099
+sudo -E python tools/bfd_test_comb.py  . 
+#1449086597
+sudo -E python tools/bfd_test_comb.py  . -n 2 1000
+#1449090101
+sudo -E python tools/bfd_test_comb.py  . -n 8 -d
+#1449094609
+fg
+#1449094611
+vim tools/bfd_test_comb.py 
+#1449095614
+./autogen.sh && ./configure && ./compile.sh -j4 drivers_test
+#1449095765
+tools/compile.sh -j4 drivers_test
+#1449096143
+sudo -E python tools/drivers_test_comb.py  . 
+#1449096306
+fg
+#1449096315
+vim tools/drivers_test_comb.py 
+#1449096331
+sudo -E python tools/drivers_test_comb.py  . -n 4
+#1449097937
+fg
+#1449097938
+vim tools/drivers_test_comb.py 
+#1449097958
+fg
+#1449097962
+vim tools/drivers_test_comb.py 
+#1449097974
+sudo -E python tools/drivers_test_comb.py  . -p
+#1449097976
+sudo -E python tools/drivers_test_comb.py  . 
+#1449099170
+sudo -E python tools/drivers_test_comb.py  . -n 5 10000
+#1449099933
+reset
+#1449100188
+telnet localhost 8000
+#1449100646
+tail -f bf_drivers.log
+#1449100753
+rm -rf bf_drivers.log*
+#1449100754
+ls
+#1449101781
+sudo -E python tools/drivers_test_comb.py  . -n 9 10000
+#1449102089
+fg
+#1449105494
+sudo -E python tools/drivers_test_comb.py  . -d
+#1449105715
+fg
+#1449105717
+vim tools/drivers_test_comb.py 
+#1449105728
+sudo -E python tools/drivers_test_comb.py  . -d
+#1449106145
+sudo -E python tools/drivers_test_comb.py . -n 1 1000
+#1449106592
+top
+#1449106599
+ps -aef | grep tofino
+#1449106722
+sudo -E python tools/drivers_test_comb.py . 
+#1449107128
+tools/compile.sh -j4 drivers_test
+#1449167809
+fg
+#1449172463
+cd ptf-tests/drivers_test/
+#1449172465
+ls
+#1449172466
+python
+#1449189960
+ls -l /var/log/syslog
+#1449189998
+cd /var/
+#1449189999
+ncdu
+#1449190005
+cd /
+#1449190007
+ncdu
+#1449190068
+cd ~/code/p4factory/ptf-tests/drivers_test/
+#1449190149
+python
+#1449273341
+cd ../..
+#1449273352
+sudo -E python tools/drivers_test_comb.py .  -n 0 -d
+#1449514734
+top
+#1449514801
+fg
+#1449514804
+vim tools/drivers_test_comb.py 
+#1449514814
+sudo -E python tools/drivers_test_comb.py .  -n 0 -d
+#1449516532
+vim zlog-cfg-cur 
+#1449516775
+tail -f /var/log/syslog
+#1449516827
+tools/compile.sh -j4 drivers_test
+#1449516858
+tail -f /var/log/syslog
+#1449516881
+vim zlog-cfg-cur 
+#1449516901
+sudo vim zlog-cfg-cur 
+#1449516911
+tail -f /var/log/syslog
+#1449535047
+sudo -E python tools/drivers_test_comb.py .  -n 0 -d
+#1449535100
+fg
+#1449535104
+sudo -E python tools/drivers_test_comb.py .  -n 0 -d
+#1449535575
+telnet localhost 8000
+#1449535978
+ls -l pcap_output/
+#1449536310
+python
+#1449536389
+ls -l pcap_output/
+#1449538294
+telnet localhost 8000
+#1449539006
+python
+#1449539205
+wireshark pcap_output/bfns.harlyn-port131.pcap &
+#1449539422
+python
+#1449557910
+fg
+#1449557916
+vim tools/drivers_test_comb.py 
+#1449557928
+sudo -E python tools/drivers_test_comb.py .  -n 0 -d
+#1449601364
+sudo -E python tools/drivers_test_comb.py .  -n 2 -d
+#1449602864
+sudo -E python tools/drivers_test_comb.py .  -n 1 2 -d
+#1449603015
+fg
+#1449603026
+sudo -E python tools/drivers_test_comb.py .  -n 1 2 -d
+#1449614428
+sudo -E python tools/drivers_test_comb.py .  -n  2 -d
+#1449623541
+sudo -E python tools/drivers_test_comb.py .  -n  4 5
+#1449635184
+sudo -E python tools/drivers_test_comb.py .  -n  3
+#1449635230
+tools/compile.sh -j4 drivers_test
+#1449635555
+sudo -E python tools/drivers_test_comb.py .  -n  3
+#1449682398
+ls -l pcap_output/
+#1449682491
+telnet localhost 8000
+#1449684354
+sudo -E python tools/drivers_test_comb.py . -n 0 -d
+#1449684810
+tools/compile.sh -j4 drivers_test --clean
+#1449684826
+tools/compile.sh -j4 drivers_test 
+#1449686358
+sudo tools/compile.sh -j4 drivers_test 
+#1449686438
+sudo -E python tools/drivers_test_comb.py . -p
+#1449686450
+sudo -E python tools/drivers_test_comb.py . -n 4 -d
+#1449687071
+sudo -E python tools/drivers_test_comb.py . -n 0 -d
+#1449688647
+sudo -E python tools/drivers_test_comb.py . -n 1 1000 -d
+#1449688881
+sudo -E python tools/drivers_test_comb.py . -n 1 1000 -p
+#1449688901
+sudo -E python tools/drivers_test_comb.py . -n 3 -d
+#1449689101
+sudo -E python tools/drivers_test_comb.py . -n 6 -d
+#1449689322
+sudo -E python tools/drivers_test_comb.py . -n 9 -d
+#1449785459
+ping github.com
+#1449790552
+fg
+#1449790556
+vim tools/drivers_test_comb.py 
+#1450469561
+sudo tools/compile.sh -j4 drivers_test 
+#1450484723
+./autogen.sh && ./configure && tools/compile.sh -j4 drivers_test
+#1450485172
+fg
+#1450485179
+vim tools/drivers_test_comb.py 
+#1450485352
+sudo -E python tools/drivers_test_comb.py . -n 0 -d
+#1450485732
+top
+#1450485843
+fg
+#1450485846
+ps -aef | grep vim
+#1450485849
+ps -aef | grep cscope
+#1450485857
+sudo reboot now
+#1442335720
+sudo arch_model/tofino-model -l arch_model/exm_direct.p4_name_lookup.json 
+#1448061128
+cd ../..
+#1448061131
+cd ../tofino_diag/
+#1448061199
+sudo -E ./install/bin/p4-tofino-test -c ./install/share/p4/targets/basic_ipv4.conf -t ptf-tests/basic_ipv4/
+#1448061562
+sudo gdb --args ./install/bin/tofino-model -l ~/code/p4factory/build/programs/bfd_test/basic_ipv4/p4_name_lookup.json  --logs-disable
+#1448062481
+sudo -E ./install/bin/p4-tofino-test -c ./install/share/p4/targets/basic_ipv4.conf -t ptf-tests/basic_ipv4/
+#1447802396
+sudo gdb --args ${P4FACTORY}/install/bin/tofino-model -l ~/code/p4factory/build/programs/bfd_test/context/bfd_test.p4_name_lookup.json  --logs-disable
+#1447813158
+sudo gdb --args ./install/bin/tofino-model -l ~/code/p4factory/build/programs/bfd_test/context/bfd_test.p4_name_lookup.json  --logs-disable
+#1447813465
+sudo ./install/bin/tofino-model -l ~/code/p4factory/build/programs/bfd_test/context/bfd_test.p4_name_lookup.json  --logs-disable
+#1447813626
+sudo gdb --args ./install/bin/tofino-model -l ~/code/p4factory/build/programs/bfd_test/context/bfd_test.p4_name_lookup.json  --logs-disable
+#1447814603
+ls
+#1447814611
+rm core 
+#1447814620
+sudo  ./install/bin/tofino-model -l ~/code/p4factory/build/programs/bfd_test/context/bfd_test.p4_name_lookup.json  --logs-disable
+#1447864606
+script 
+#1447864701
+mkdir /media/psf/vm/model_run_bfd_test/
+#1447864717
+cp model_0.log typescript /media/psf/vm/model_run_bfd_test/
+#1447864779
+cp build/programs/bfd_test/visualization/ /media/psf/vm/model_run_bfd_test/ -r
+#1447864794
+cp -r build/programs/bfd_test/context/ /media/psf/vm/model_run_bfd_test/
+#1447864804
+cp -r build/programs/bfd_test/logs/ /media/psf/vm/model_run_bfd_test/
+#1447864843
+vim typescript 
+#1447955192
+sudo gdb --args ./install/bin/tofino-model -l ~/code/p4factory/build/programs/bfd_test/context/p4_name_lookup.json  --logs-disable
+#1447975178
+ls -l pcap_output/
+#1447975254
+sudo gdb --args ./install/bin/tofino-model -l ~/code/p4factory/build/programs/bfd_test/context/p4_name_lookup.json  --logs-disable
+#1448417715
+sudo  ./install/bin/tofino-model -l ~/code/p4factory/build/programs/bfd_test/context/p4_name_lookup.json  --logs-disable
+#1448481523
+sudo -E install/bin/p4-tofino-test -c install/share/p4/targets/bfd_test.conf -t ptf-tests/bfd_test/ --bfd-test-json tools/bfd-test-info.json 
+#1448481676
+echo $?
+#1448487540
+sudo -E install/bin/p4-tofino-test -c install/share/p4/targets/bfd_test.conf -t ptf-tests/bfd_test/ --bfd-test-json tools/bfd-test-info.json 
+#1448487576
+sudo  ./install/bin/tofino-model -l ~/code/p4factory/build/programs/bfd_test/context/p4_name_lookup.json  --logs-disable
+#1448997437
+r
+#1448997438
+sudo  ./install/bin/tofino-model -l ~/code/p4factory/build/programs/bfd_test/context/p4_name_lookup.json  --logs-disable
+#1449007307
+sudo -E install/bin/p4-tofino-test -c install/share/p4/targets/bfd_test.conf -t ptf-tests/bfd_test/ --bfd-test-json bfd-test-info.json 
+#1449010230
+sudo  ./install/bin/tofino-model -l ~/code/p4factory/build/programs/bfd_test/context/p4_name_lookup.json  --logs-disable
+#1449010771
+sudo  .gdb --args /install/bin/tofino-model -l ~/code/p4factory/build/programs/bfd_test/context/p4_name_lookup.json  --logs-disable
+#1449010784
+sudo  gdb --args ./install/bin/tofino-model -l ~/code/p4factory/build/programs/bfd_test/context/p4_name_lookup.json  --logs-disable
+#1449014817
+sudo ./install/bin/tofino-model -l ~/code/p4factory/build/programs/bfd_test/context/p4_name_lookup.json  --logs-disable
+#1449085929
+sudo ./install/bin/tofino-model -l ~/code/p4factory/build/programs/bfd_test/context/p4_name_lookup.json  --logs-disable -f ptf-tests/bfd_test/ports.json 
+#1449098745
+top
+#1449098879
+sudo ./install/bin/tofino-model -l ~/code/p4factory/build/programs/drivers_test/context/p4_name_lookup.json  --logs-disable -f ptf-tests/drivers_test/ports.json 
+#1449100898
+ncdu
+#1449100905
+cd ../..
+#1449100907
+ncdu
+#1449100923
+top
+#1449101036
+sudo ./install/bin/tofino-model -l ~/code/p4factory/build/programs/drivers_test/context/p4_name_lookup.json  --logs-disable -f ptf-tests/drivers_test/ports.json 
+#1449101041
+cd code/p4factory/
+#1449101043
+sudo ./install/bin/tofino-model -l ~/code/p4factory/build/programs/drivers_test/context/p4_name_lookup.json  --logs-disable -f ptf-tests/drivers_test/ports.json 
+#1449105992
+r
+#1449105994
+sudo ./install/bin/tofino-model -l ~/code/p4factory/build/programs/drivers_test/context/p4_name_lookup.json  --logs-disable -f ptf-tests/drivers_test/ports.json 
+#1449167858
+fg
+#1449247597
+vim /var/log/syslog
+#1449273391
+sudo ./install/bin/tofino-model -l ~/code/p4factory/build/programs/drivers_test/context/p4_name_lookup.json  --logs-disable -f ptf-tests/drivers_test/ports.json 
+#1449557310
+r
+#1449557311
+sudo ./install/bin/tofino-model -l ~/code/p4factory/build/programs/drivers_test/context/p4_name_lookup.json  --logs-disable -f ptf-tests/drivers_test/ports.json 
+#1442335736
+gdb ./harlyn-bfd 
+#1448061569
+cd ~/code/tofino_diag/
+#1448061612
+sudo LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib:./install/lib gdb --args ./install/bin/switchd ./install/share/switchd/bf-switchd.json ./install/share/p4/targets/bfd_test.conf
+#1448061632
+sudo LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib:./install/lib gdb --args ./install/bin/switchd ./install/share/switchd/bf-switchd.json ./install/share/p4/targets/basic_ipv4.conf 
+#1447723360
+mycscope
+#1447863167
+mycsope
+#1447863170
+mycscope
+#1447867819
+cd ../model/
+#1447867822
+mycscope
+#1447873623
+cd ../bf-drivers/
+#1447873625
+mycscope
+#1447978101
+cd ../model/
+#1447978102
+mycscope
+#1448050139
+cd ../p4c-tofino
+#1448050141
+mycscope
+#1448050184
+cd ../bf-drivers/
+#1448050186
+mycscope
+#1448050435
+cd ../p4c-tofino/
+#1448050437
+mycscope
+#1448315849
+cd ../bf-drivers/
+#1448315850
+mycscope
+#1449000323
+cd ../ptf/
+#1449000325
+vim ptf 
+#1449000493
+mycscope
+#1449000551
+ls
+#1449000554
+vim ptf
+#1449000689
+cd src/
+#1449000690
+ls
+#1449000691
+vim ptf/
+#1449000703
+cd ptf/
+#1449000704
+ls
+#1449000710
+grep "test_params" *
+#1449000717
+grep "test-params" *
+#1449012863
+cd ../../../bf-drivers/
+#1449012865
+mycscope
+#1449879532
+cd ../..
+#1449879536
+cd ptf-tests/
+#1449879539
+mycscope
+#1450202011
+cd drivers_test/
+#1450202012
+ls
+#1450202018
+vim bf_tables.py 
+#1450291506
+cd ../..
+#1450291511
+vim tools/drivers_test_comb.py 
+#1450484761
+top
+#1448061803
+cd ~/code/tofino_diag/
+#1448061808
+cd submodules/bf-drivers/
+#1448061809
+mycscope
+#1446837605
+git submodule update --init --recursive
+#1448059721
+cd ../
+#1448059722
+sls
+#1448059723
+ls
+#1448059728
+cd tofino_diag/
+#1448059730
+git status
+#1448059736
+git checkout master 
+#1448059738
+git pull origin master 
+#1448059800
+git status
+#1448059802
+git submodule update --init --recursive
+#1448059804
+git status
+#1448059809
+cd submodules/bf-drivers/
+#1448059815
+git checkout vk_learn_fixup 
+#1448059818
+git pull origin vk_learn
+#1448059821
+git pull origin vk_learn_fixup 
+#1448059825
+git log
+#1448059830
+cd ../p4c-tofino/
+#1448059832
+git checkout vk_learn_fixup 
+#1448059836
+git pull origin vk_learn_fixup 
+#1448059839
+cd ../model/
+#1448059852
+git checkout fix_lq_order 
+#1448059857
+git pull origin fix_lq_order 
+#1448059866
+cd ../p4c-tofino/
+#1448059867
+git status
+#1448059870
+git pull origin master 
+#1448059875
+cd ../bf-drivers/
+#1448059879
+git pull origin master 
+#1448059885
+cd ../model/
+#1448059887
+git pull origin master 
+#1448059892
+cd ../..
+#1448059893
+git status
+#1448060390
+sudo git clean -fxd
+#1448060393
+git status
+#1448060397
+rm -rf submodules/switchapi/
+#1448060401
+rm -rf submodules/switchlink/
+#1448060408
+rm -rf submodules/switchsai/
+#1448060413
+vim tools/submodule-clean.sh 
+#1448060430
+git assume tools/submodule-clean.sh
+#1448060435
+tools/submodule-clean.sh 
+#1448060436
+git status
+#1448060440
+cd submodules/bf-drivers/
+#1448060441
+git status
+#1448060445
+rm -rf py-compile 
+#1448060449
+git clean -fxd
+#1448060451
+git status
+#1448060453
+cd ../..
+#1448060454
+git status
+#1448060464
+vim tools/submodule-clean.sh 
+#1448060480
+git submodule | cut -d' ' -f3
+#1448060486
+git status
+#1448060489
+git submodule 
+#1448060494
+git submodule  status
+#1448060507
+vim tools/submodule-clean.sh 
+#1448060524
+vim tools/pull_new_top_p4f_ws 
+#1448060534
+vim tools/submodule-clean.sh 
+#1448060557
+tools/submodule-clean.sh 
+#1448060560
+git status
+#1448060568
+./autogen.sh && ./configure
+#1448061218
+find . -name "entry_format.c"
+#1448061225
+vim ./build/programs/basic_ipv4/api/tbl_packing/entry_format.c
+#1448061356
+cd submodules/model/
+#1448061358
+git diff origin/master 
+#1448061962
+git log
+#1448062243
+git status
+#1448062248
+git pull origin fix_lq_order 
+#1448062484
+git status
+#1448586379
+cd ../..
+#1448586381
+ls
+#1448586388
+git status
+#1448586394
+git submodule update --init --recursive
+#1448586399
+git pull origin master 
+#1448586410
+git status
+#1448586412
+git submodule update --init --recursive
+#1448586439
+ls programs/action_spec_format/
+#1448588915
+find . -name "pd.c"
+#1448588934
+vimdiff ./submodules/p4c-tofino/p4c_tofino/target/tofino/pd/templates/src/pd.c ../p4factory/./submodules/p4c-tofino/p4c_tofino/target/tofino/pd/templates/src/pd.c
+#1448589039
+vim ./build/programs/action_spec_format/api/src/pd.c
+#1448995221
+vim tools/submodule-clean.sh 
+#1449100983
+cd
+#1449100986
+pwd
+#1449100987
+ls
+#1449100997
+cd code/p4factory/
+#1449100998
+ls
+#1449101009
+ls -lrt
+#1449101022
+typescript
+#1449101025
+script
+#1449101153
+vim typescript 
+#1449101331
+grep "'Stats', 4026" typescript 
+#1449101494
+vim typescript 
+#1449101517
+sudo PATH=${P4FACTORY}/install/bin:$PATH python ${P4FACTORY}/install/lib/pythoon2.7/site-packages/p4testutils/run_ptf_tests.py --test-dir /home/vkumar/code/p4factory/ptf-tests/drivers_test/ --device--type asic --drivers-test-info drivers-test-info.json --port-info ptf-tests/drivers_test/ports.json
+#1449101534
+sudo PATH=./install/bin:$PATH python ./install/lib/pythoon2.7/site-packages/p4testutils/run_ptf_tests.py --test-dir /home/vkumar/code/p4factory/ptf-tests/drivers_test/ --device--type asic --drivers-test-info drivers-test-info.json --port-info ptf-tests/drivers_test/ports.json
+#1449101570
+sudo PATH=./install/bin:$PATH python ./install/lib/python2.7/site-packages/p4/testutils/run_ptf_tests.py --test-dir ./ptf-tests/drivers_test/ --device--type asic --drivers-test-info drivers-test-info.json --port-info ptf-tests/drivers_test/ports.json
+#1449101616
+sudo PATH=./install/bin:$PATH python ./install/lib/python2.7/site-packages/p4testutils/run_ptf_tests.py --test-dir ./ptf-tests/drivers_test/ --device--type asic --drivers-test-info drivers-test-info.json --port-info ptf-tests/drivers_test/ports.json
+#1449101632
+sudo PATH=./install/bin:$PATH python ./install/lib/python2.7/site-packages/p4testutils/run_ptf_tests.py --test-dir ./ptf-tests/drivers_test/ --device-type asic --drivers-test-info drivers-test-info.json --port-info ptf-tests/drivers_test/ports.json
+#1449167852
+fg
+#1449273409
+sudo PATH=./install/bin:$PATH python ./install/lib/python2.7/site-packages/p4testutils/run_ptf_tests.py --test-dir ./ptf-tests/drivers_test/ --device-type asic --drivers-test-info drivers-test-info.json --port-info ptf-tests/drivers_test/ports.json
+#1449514452
+reset
+#1449514472
+sudo PATH=./install/bin:$PATH python ./install/lib/python2.7/site-packages/p4testutils/run_ptf_tests.py --test-dir ./ptf-tests/drivers_test/ --device-type asic --drivers-test-info drivers-test-info.json --port-info ptf-tests/drivers_test/ports.json
+#1449514718
+reset
+#1449514726
+sudo PATH=./install/bin:$PATH python ./install/lib/python2.7/site-packages/p4testutils/run_ptf_tests.py --test-dir ./ptf-tests/drivers_test/ --device-type asic --drivers-test-info drivers-test-info.json --port-info ptf-tests/drivers_test/ports.json
+#1449535740
+reset
+#1449535779
+sudo PATH=./install/bin:$PATH python ./install/lib/python2.7/site-packages/p4testutils/run_ptf_tests.py --test-dir ./ptf-tests/drivers_test/ --device-type asic --drivers-test-info drivers-test-info.json --port-info ptf-tests/drivers_test/ports.json
+#1449535945
+rest
+#1449535947
+reset
+#1449535968
+sudo PATH=./install/bin:$PATH python ./install/lib/python2.7/site-packages/p4testutils/run_ptf_tests.py --test-dir ./ptf-tests/drivers_test/ --device-type asic --drivers-test-info drivers-test-info.json --port-info ptf-tests/drivers_test/ports.json
+#1449536095
+reset
+#1449536130
+sudo PATH=./install/bin:$PATH python ./install/lib/python2.7/site-packages/p4testutils/run_ptf_tests.py --test-dir ./ptf-tests/drivers_test/ --device-type asic --drivers-test-info drivers-test-info.json --port-info ptf-tests/drivers_test/ports.json
+#1449537199
+reset
+#1449537218
+sudo PATH=./install/bin:$PATH python ./install/lib/python2.7/site-packages/p4testutils/run_ptf_tests.py --test-dir ./ptf-tests/drivers_test/ --device-type asic --drivers-test-info drivers-test-info.json --port-info ptf-tests/drivers_test/ports.json
+#1449538426
+reset
+#1449538458
+sudo PATH=./install/bin:$PATH python ./install/lib/python2.7/site-packages/p4testutils/run_ptf_tests.py --test-dir ./ptf-tests/drivers_test/ --device-type asic --drivers-test-info drivers-test-info.json --port-info ptf-tests/drivers_test/ports.json
+#1449539360
+reset
+#1449539391
+sudo PATH=./install/bin:$PATH python ./install/lib/python2.7/site-packages/p4testutils/run_ptf_tests.py --test-dir ./ptf-tests/drivers_test/ --device-type asic --drivers-test-info drivers-test-info.json --port-info ptf-tests/drivers_test/ports.json
+#1449557230
+ls
+#1449557238
+sudo PATH=./install/bin:$PATH python ./install/lib/python2.7/site-packages/p4testutils/run_ptf_tests.py --test-dir ./ptf-tests/drivers_test/ --device-type asic --drivers-test-info drivers-test-info.json --port-info ptf-tests/drivers_test/ports.json
+#1449619307
+ls
+#1449619328
+sudo PATH=./install/bin:$PATH python ./install/lib/python2.7/site-packages/p4testutils/run_ptf_tests.py --test-dir ./ptf-tests/drivers_test/ --device-type asic --drivers-test-info drivers-test-info.json --port-info ptf-tests/drivers_test/ports.json
+#1449620274
+reset
+#1449620283
+sudo PATH=./install/bin:$PATH python ./install/lib/python2.7/site-packages/p4testutils/run_ptf_tests.py --test-dir ./ptf-tests/drivers_test/ --device-type asic --drivers-test-info drivers-test-info.json --port-info ptf-tests/drivers_test/ports.json
+#1449635133
+tmux detach -a
+#1449635135
+reset
+#1449682318
+ls
+#1449682359
+sudo PATH=./install/bin:$PATH python ./install/lib/python2.7/site-packages/p4testutils/run_ptf_tests.py --test-dir ./ptf-tests/drivers_test/ --device-type asic --drivers-test-info drivers-test-info.json --port-info ptf-tests/drivers_test/ports.json
+#1449682768
+reset
+#1449682782
+sudo PATH=./install/bin:$PATH python ./install/lib/python2.7/site-packages/p4testutils/run_ptf_tests.py --test-dir ./ptf-tests/drivers_test/ --device-type asic --drivers-test-info drivers-test-info.json --port-info ptf-tests/drivers_test/ports.json
+#1449684520
+history
+#1449684525
+sudo PATH=./install/bin:$PATH python ./install/lib/python2.7/site-packages/p4testutils/run_ptf_tests.py --test-dir ./ptf-tests/drivers_test/ --device-type asic --drivers-test-info drivers-test-info.json --port-info ptf-tests/drivers_test/ports.json
+#1447710928
+vim ptf-tests/bfd_test/test.py
+#1448933978
+fg
+#1448933980
+vim ptf-tests/bfd_test/test.py
+#1448996351
+fg
+#1448996353
+vim ptf-tests/bfd_test/test.py
+#1448997789
+fg
+#1448997791
+vim ptf-tests/bfd_test/test.py
+#1449008196
+fg
+#1449008198
+vim ptf-tests/bfd_test/test.py
+#1449009293
+vim ptf-tests/bfd_test/bf_log.py
+#1449014654
+vim ptf-tests/bfd_test/test.py
+#1449014779
+fg
+#1449014781
+vim ptf-tests/bfd_test/test.py
+#1449081816
+fg
+#1449081817
+vim ptf-tests/bfd_test/test.py
+#1449098141
+fg
+#1449098157
+rm -rf ptf-tests/bfd_test/
+#1449098169
+vim ptf-tests/drivers_test/test.py
+#1449098897
+fg
+#1449098899
+vim ptf-tests/drivers_test/test.py
+#1449106706
+fg
+#1449164049
+vim ptf-tests/drivers_test/test.py
+#1449168314
+cd ptf-tests/drivers_test/
+#1449168315
+vim test.py
+#1449602878
+fg
+#1449602879
+vim test.py
+#1442430025
+fg
+#1448061638
+cd ~/code/tofino_diag/
+#1448061685
+sudo PATH=./install/bin:$PATH python ./install/lib/python2.7/site-packages/p4testutils/run_ptf_tests.py --test-dir ptf-tests/basic_ipv4/ --device-type asic
+#1448061711
+sudo PATH=./install/bin:$PATH python ./install/lib/python2.7/site-packages/p4testutils/run_ptf_tests.py --test-dir ptf-tests/basic_ipv4/ --device-type asic test.TestLearning
+#1448586794
+vim install/lib/python2.7/site-packages/action_spec_format_p4_pd_rpc/action_spec_format.py
+#1450485884
+tmux
+#1450735963
+tmux attach
+#1450758681
+tmux kill-ses -t 0
+#1450758683
+tmux attach
+#1450482243
+git pull origin master 
+#1450901112
+tmux attach
+#1450905266
+tmux attach
+#1452021525
+tmux 
+#1450482243
+git pull origin master 
+#1452194414
+git fetch -p
+#1452194419
+git checkout vk_sym 
+#1452194421
+git log
+#1452194425
+git status
+#1452194494
+cd ../..
+#1452194502
+export WORKSPACE=~/code/bf-drivers/
+#1452194503
+cd $WORKSPACE
+#1452194503
+cd submodules/bf-drivers
+#1452194503
+git checkout master
+#1452194503
+git pull
+#1452194504
+cd $WORKSPACE
+#1452194504
+./autogen.sh
+#1452194511
+./configure CFLAGS='-O0 -g' CXXFLAGS='-O0 -g' --enable-thrift
+#1452194542
+cd build/bf-syslibs
+#1452194542
+make
+#1452194542
+make install
+#1452194542
+cd ../bf-drivers
+#1452194551
+git status
+#1452194560
+cd ../../submodules/bf-drivers/
+#1452194569
+git status
+#1452194573
+git checkout vk_sym 
+#1452194576
+git pull origin vk_sym 
+#1452195183
+git status
+#1452195186
+git checkout 833c48a7ceed5a1e07e4499fa3e1605b14cf4340
+#1452195188
+git status
+#1452195258
+git checkout vk_sym 
+#1452195260
+git status
+#1452195261
+git log
+#1453226414
+git fetch -p
+#1453226431
+git checkout stful_sel 
+#1453226433
+git status
+#1453226437
+git diff origin/master > diff
+#1453226439
+vim diff
+#1453228466
+vim diff_1 
+#1453762862
+git status
+#1453762868
+git fetch -p
+#1453762879
+git checkout master 
+#1453762881
+git pull origin master 
+#1453764373
+tmux detach -a
+#1454363793
+cd ../../../rough/
+#1454363794
+ls
+#1454363796
+vim main.c 
+#1454363804
+vim intv.c
+#1454363825
+gcc intv.c
+#1454363829
+fg
+#1454363836
+gcc intv.c
+#1454363841
+./a.ot
+#1454363843
+./a.out 
+#1454363848
+fg
+#1454363891
+gcc intv.c
+#1454363894
+fg
+#1454363898
+gcc intv.c
+#1454363901
+./a.out 
+#1454363906
+fg
+#1454363919
+gcc intv.c
+#1454363921
+./a.out 
+#1454363925
+gcc intv.c -O0
+#1454363926
+./a.out 
+#1454363928
+fg
+#1454363943
+gcc intv.c -O0
+#1454363945
+./a.out 
+#1454363947
+fg
+#1454540975
+vim intv.c
+#1454540983
+gcc intv.c -O0
+#1454540985
+./a.out 
+#1454540987
+fg
+#1454541208
+vim intv.c
+#1454541228
+gcc intv.c -O0
+#1454541230
+./a.out 
+#1454541232
+fg
+#1454541263
+gcc intv.c -O0
+#1454541267
+./a.out 
+#1454541268
+fg
+#1454541277
+gcc intv.c -O0
+#1454541278
+./a.out 
+#1454541280
+fg
+#1454542344
+vim intv.c 
+#1454542441
+gcc intv2.c 
+#1454542443
+fg
+#1454542453
+gcc intv2.c 
+#1454542456
+./a.out 
+#1454542464
+vim intv2.c 
+#1454542467
+fg
+#1454543840
+gcc intv.c 
+#1454543842
+./a.out 
+#1454543848
+fg
+#1454543880
+gcc intv.c 
+#1454543882
+./a.out 
+#1454543887
+fg
+#1454543906
+gcc intv.c 
+#1454543908
+./a.out 
+#1454543910
+fg
+#1454544158
+gcc intv.c 
+#1454544161
+fg
+#1454544167
+gcc intv.c 
+#1454544168
+./a.out 
+#1454544174
+fg
+#1454544194
+gcc intv.c 
+#1454544196
+./a.out 
+#1454544206
+gcc intv.c  -Wall
+#1454544213
+fg
+#1454544234
+gcc intv.c  -Wall
+#1454544236
+./a.out 
+#1454544238
+fg
+#1454544246
+gcc intv.c  -Wall
+#1454544248
+./a.out 
+#1454544250
+fg
+#1454544466
+gcc intv.c  -Wall
+#1454544471
+./a.out 
+#1454544476
+fg
+#1454544495
+gcc intv.c  -Wall
+#1454544498
+./a.out 
+#1454544499
+fg
+#1454544526
+gcc intv.c  -Wall
+#1454544528
+./a.out 
+#1454544530
+fg
+#1454544539
+gcc intv.c  -Wall
+#1454544541
+./a.out 
+#1454544543
+fg
+#1454544659
+gcc intv.c  -Wall
+#1454544661
+./a.out 
+#1454544663
+fg
+#1454544782
+gcc intv.c  -Wall
+#1454544784
+./a.out 
+#1454544786
+fg
+#1454544793
+gcc intv.c  -Wall
+#1454544795
+./a.out 
+#1454544797
+fg
+#1454545083
+gcc intv.c  -Wall
+#1454545088
+rm a.out 
+#1454545090
+gcc intv.c  -Wall
+#1454545105
+./a.out 
+#1454545109
+fg
+#1454545161
+gcc intv.c  -Wall
+#1454545163
+fg
+#1454545247
+gcc intv.c  -Wall
+#1454545250
+fg
+#1454545255
+gcc intv.c  -Wall
+#1454545265
+fg
+#1454545308
+gcc intv.c  -Wall
+#1454545310
+./a.out 
+#1454545314
+fg
+#1454545713
+gcc intv.c  -Wall
+#1454545715
+./a.out 
+#1454545717
+fg
+#1454545746
+gcc intv.c  -Wall
+#1454545747
+./a.out 
+#1454545749
+fg
+#1454547363
+gcc intv3.c 
+#1454547364
+./a.out 
+#1454547369
+gcc intv3.c -Wall
+#1454547372
+./a.out 
+#1454547374
+fg
+#1454547395
+gcc intv3.c -Wall
+#1454547397
+./a.out 
+#1454547398
+fg
+#1454547446
+gcc intv3.c -Wall
+#1454547448
+./a.out 
+#1454547451
+fg
+#1454547684
+gcc intv2.c -Wall
+#1454547686
+./a.out 
+#1454547687
+fg
+#1454547705
+gcc intv2.c -Wall
+#1454547706
+./a.out 
+#1454547713
+fg
+#1454547789
+gcc intv2.c -Wall
+#1454547791
+./a.out 
+#1454547796
+rm co
+#1454547798
+rm core 
+#1454547800
+fg
+#1454611226
+clear
+#1454615030
+vim intv2.c 
+#1454624980
+clear
+#1454626254
+vim intv2.c 
+#1454697673
+cd ../bf-drivers/submodules/bf-drivers/
+#1454697675
+git status
+#1454697677
+git pull origin master 
+#1454697687
+git status
+#1454697711
+top
+#1454698306
+git status
+#1454698308
+git diff
+#1454698327
+git branch vk_utest_fixup
+#1454698330
+git checkout vk_utest_fixup 
+#1454698332
+git status
+#1454698386
+git commit -am "Tcam utest asserts were commented out by mistake. Fixing it"
+#1454698387
+git status
+#1454698393
+git push -u origin vk_utest_fixup 
+#1454698437
+git status
+#1454698439
+git log
+#1454698449
+git pull origin vk_utest_fixup 
+#1454698454
+git log
+#1454959869
+git status
+#1454959877
+git pull origin master 
+#1454959884
+git status
+#1454959930
+git checkout master 
+#1454959932
+git pull origin master 
+#1454959935
+git status
+#1454959940
+git branch
+#1454959942
+git fetch -d
+#1454959944
+git fetch -p
+#1454959949
+git status
+#1454959952
+git branch
+#1454959957
+git branch -d utest_fix 
+#1454959961
+git branch -d vk_utest_fixup 
+#1454959967
+git branch -d vk_sym
+#1454959972
+git branch -d stful_sel
+#1454959977
+git branch
+#1454959984
+git branch -d vk_idle_sym
+#1454959987
+git status
+#1454973170
+git pull origin master 
+#1454973174
+git status
+#1455058252
+git pull origin master 
+#1455058509
+cd ../..
+#1455058519
+git submodule foreach --recursive 'git clean -fxd'
+#1455058585
+echo $WORKSPACE
+#1455058589
+git status
+#1455058593
+git clean -fxd
+#1455058597
+git pull origin master 
+#1455058655
+git status
+#1455058657
+git submodule update --init --recursive
+#1455058679
+git status
+#1455058750
+./configure CFLAGS='-O0 -g' CXXFLAGS='-O0 -g' --enable-thrift     --enable-coverage
+#1455058786
+git status
+#1455058791
+git submodule update --init --recursive
+#1455058795
+git submodule foreach --recursive 'git clean -fxd'
+#1455058798
+git status
+#1455058802
+sudo git clean -fxd
+#1455058803
+./configure CFLAGS='-O0 -g' CXXFLAGS='-O0 -g' --enable-thrift --enable-coverage
+#1455058810
+git clean -fxd
+#1455058811
+git status
+#1455058815
+git submodule foreach --recursive 'git clean -fxd'
+#1455058838
+./autogen.sh
+#1455058934
+./configure CFLAGS='-O0 -g' CXXFLAGS='-O0 -g' --enable-thrift --enable-coverage
+#1455058995
+./tools/submodules-configure.sh --enable-coverage
+#1455059021
+cd $WORKSPACE/bf-syslibs
+#1455059021
+COVERAGE=1 DEBUG=1 make
+#1455059021
+COVERAGE=1 DEBUG=1 make install
+#1455059022
+cd $WORKSPACE/build/bf-drivers
+#1455059586
+git submodule foreach --recursive 'git clean -fxd'
+#1455059590
+sudo git clean -fxd
+#1455059592
+./autog
+#1455059597
+cd ../..
+#1455059600
+./autogen.sh 
+#1455059621
+./configure CFLAGS='-O0 -g' CXXFLAGS='-O0 -g' --enable-thrift --enable-coverage
+#1455059686
+./tools/submodules-configure.sh --enable-coverage
+#1455059719
+cd $WORKSPACE/bf-syslibs
+#1455059720
+COVERAGE=1 DEBUG=1 make
+#1455061396
+git status
+#1455061403
+git submodule foreach --recursive 'git clean -fxd'
+#1455061413
+sudo git clean -fxd
+#1455061416
+./autogen.sh 
+#1455061437
+./configure CFLAGS='-O0 -g' CXXFLAGS='-O0 -g' --enable-thrift
+#1455061544
+cd build/bf-syslibs
+#1455061545
+make
+#1455061960
+make clean
+#1455061977
+make | grep action_spec
+#1455063657
+cd ../..
+#1455063661
+sudo git clean -fxd
+#1455063665
+git submodule foreach --recursive 'git clean -fxd'
+#1455063667
+git status
+#1455063681
+./autogen.sh
+#1455063689
+./configure CFLAGS='-O0 -g' CXXFLAGS='-O0 -g' --enable-thrift --enable-coverage
+#1455063750
+./tools/submodules-configure.sh --enable-coverage
+#1455063781
+cd $WORKSPACE/build/bf-syslibs
+#1455063789
+COVERAGE=1 DEBUG=1 make
+#1455063812
+COVERAGE=1 DEBUG=1 make install
+#1455063821
+cd $WORKSPACE/build/bf-drivers
+#1455063834
+COVERAGE=1 DEBUG=1 make check CFLAGS='-DUTEST -O0 -g' -j4 TESTS=
+#1456988846
+git status
+#1456988849
+git pull origin master 
+#1456989098
+git submodule foreach --recursive 'git clean -fxd'
+#1456989100
+git status
+#1456989104
+git submodule update --init --recursive
+#1456989111
+sudo git clean -fxd
+#1456989113
+git status
+#1456989117
+cd ../..
+#1456989121
+sudo git clean -fxd
+#1456989123
+git status
+#1456990074
+cd submodules/bf-drivers/
+#1456990076
+git diff
+#1456990078
+git status
+#1456990086
+git diff
+#1456990108
+git branch vk_unused
+#1456990113
+git checkout vk_unused 
+#1456990114
+git status
+#1456990122
+git commit -am "Removing unused code"
+#1456990126
+git push -u origin vk_unused 
+#1457413746
+git status
+#1457413749
+git checkout master 
+#1457413751
+git pull origin master 
+#1457413769
+git status
+#1457414978
+history | grep configure
+#1458161094
+git status
+#1458161097
+git pull origin master 
+#1458161836
+git status
+#1458161840
+git checkout vk_unused 
+#1458161843
+git stash
+#1458161847
+git checkout vk_unused 
+#1458161851
+git pull origin vk_unused 
+#1458161853
+git pull origin master 
+#1458161858
+git stash pop
+#1458161859
+git diff
+#1458161865
+git commit -am "Fixing a trace"
+#1458161869
+git push origin vk_unused 
+#1458321071
+cd 
+#1458321073
+cd code/rough/
+#1458321074
+ls
+#1458321080
+vim intv.c 
+#1458321088
+vim intv2.c 
+#1458321102
+vim intv3.c 
+#1458321502
+vim intv2.c 
+#1458598791
+vim intv4.c
+#1458598937
+clear
+#1458598945
+gcc intv4.c
+#1458598956
+vim intv4.c 
+#1458599006
+gcc intv4.c
+#1458599008
+./a.out 
+#1458599019
+vim intv4.c 
+#1458599034
+gcc intv4.c
+#1458599042
+vim intv4.c 
+#1458599056
+gcc intv4.c
+#1458599065
+./a.out 
+#1458599095
+fg
+#1458599313
+vim intv3.c 
+#1458599317
+vim intv2.c 
+#1458599474
+gcc intv2.c 
+#1458599476
+./a.out 
+#1458599483
+vim intv2.c 
+#1458599493
+gcc intv2.c 
+#1458599496
+./a.out 
+#1458599502
+fg
+#1458843703
+vim intv2.c 
+#1458843864
+vim intv3.c 
+#1458844001
+vim intv.c
+#1458844004
+vim intv2.c 
+#1458844010
+vim intv4.c 
+#1458844689
+vim intv3.c 
+#1458844696
+gcc intv3.c 
+#1458844699
+./a.out 
+#1458844708
+vim intv3.c 
+#1458844721
+gcc intv3.c 
+#1458844722
+./a.out 
+#1458844727
+vim intv3.c 
+#1458844729
+fg
+#1458844768
+gcc intv3.c -Wall
+#1458844771
+fg
+#1458844797
+gcc intv3.c -Wall
+#1458844803
+./a.out 
+#1458844806
+fg
+#1458844810
+vim intv.c 
+#1458844821
+vim intv3.c 
+#1458844837
+gcc intv3.c -Wall
+#1458844839
+fg
+#1458844926
+gcc intv3.c -Wall
+#1458844932
+fg
+#1458844938
+gcc intv3.c -Wall
+#1458844940
+fg
+#1458844983
+gcc intv3.c -Wall
+#1458844986
+fg
+#1458844992
+gcc intv3.c 
+#1458844994
+./a.out 
+#1458844996
+fg
+#1458845042
+gcc intv3.c -Wall
+#1458845044
+clear
+#1458845046
+./a.out 
+#1458845047
+fg
+#1458928874
+clear
+#1458928876
+fg
+#1458928879
+clear
+#1458928883
+vim intv2.c 
+#1458928888
+vim intv4.c 
+#1458928893
+vim intv3.c 
+#1458930790
+vim intv2.c 
+#1458930883
+gcc intv2.c 
+#1458930884
+./a.out 
+#1458930896
+vim intv2.c 
+#1458939246
+vim intv3.c 
+#1459206516
+vim intv2.c 
+#1459206633
+clear
+#1459206639
+gcc intv2.c 
+#1459206641
+./a.out 
+#1459206647
+vim intv2.c 
+#1459206903
+clear
+#1459206910
+vim intv3.c 
+#1459207050
+gcc intv3.c 
+#1459207052
+./a.out 
+#1459207055
+fg
+#1459207196
+gcc intv3.c 
+#1459207199
+./a.out 
+#1459207204
+fg
+#1459207553
+gcc intv3.c 
+#1459207555
+./a.out 
+#1459207559
+fg
+#1459207625
+gcc intv3.c 
+#1459207626
+./a.out 
+#1459207635
+fg
+#1459207689
+gcc intv3.c -Wall 
+#1459207705
+fg
+#1459207735
+gcc intv3.c -Wall 
+#1459207738
+fg
+#1459207775
+gcc intv3.c -Wall 
+#1459207778
+./a.out 
+#1459207780
+fg
+#1459207935
+gcc intv3.c -Wall 
+#1459207942
+fg
+#1475535430
+cd -
+#1475535438
+cd ../bf-drivers/
+#1475535439
+git status
+#1475535443
+git pull origin master 
+#1475535477
+git status
+#1475535479
+git submodule update --init --recursive
+#1475535484
+git status
+#1475535487
+cd submodules/bf-drivers/
+#1475535489
+git checkout ha
+#1475535492
+git pull origin ha
+#1475535495
+git pull origin master 
+#1475535499
+git status
+#1475535503
+cd ../..
+#1475535504
+git status
+#1475535507
+git submodule foreach --recursive 'git clean -fxd'
+#1475535509
+git status
+#1475535513
+git clean -fxd
+#1475535515
+git status
+#1475535648
+vim tools/submodules-configure.sh 
+#1475535798
+vim bf_driver_utest_build.sh 
+#1475535846
+mv bf_driver_utest_build.sh ../
+#1475536013
+git submodule foreach --recursive 'git clean -fxd'
+#1475536015
+git status 
+#1475536020
+git submodule foreach --recursive 'git clean -fxd' && git clean -fxd
+#1475536216
+cd submodules/bf-drivers/
+#1475536218
+git checkout master 
+#1475536221
+git pull origin master 
+#1475536224
+cd -
+#1475536323
+git submodule foreach --recursive 'git clean -fxd' && git clean -fxd
+#1475536326
+git status
+#1475536653
+cd submodules/bf-drivers/
+#1475536656
+git checkout ha
+#1475536658
+git status
+#1475536706
+cd -
+#1475536710
+git checkout master 
+#1475536713
+git pull origin master 
+#1475536715
+cd -
+#1475536722
+git submodule foreach --recursive 'git clean -fxd' && git clean -fxd
+#1475781214
+cd submodules/bf-drivers/
+#1475781216
+git status
+#1475781219
+git fetch -p
+#1475781225
+git checkout rel_3_0
+#1476828585
+wget http://bigfoot.barefoot-int.lan:8080/job/harlyn-drivers-comb-test/240/consoleText
+#1476828595
+grep "Combination" consoleText 
+#1476828600
+grep "Combination" consoleText  | grep atcam
+#1476903377
+wget http://bigfoot.barefoot-int.lan:8080/view/SW%20Tests/job/harlyn-drivers-comb-min-sku/173/consoleText
+#1476903382
+vim consoleText.1 
+#1476909737
+git fetch -p
+#1476909773
+git status
+#1476909782
+git checkout rel_3_0_ml_fix
+#1476909783
+git status
+#1476910037
+git diff
+#1476910063
+git commit -am "Refresh mat_data in case of cross-stage move"
+#1476910065
+git status
+#1476910072
+git push origin rel_3_0_ml_fix 
+#1476916758
+git pull 
+#1476916909
+git status
+#1476916911
+git diff
+#1476916925
+git status
+#1476916929
+git commit -am "Tcam fix"
+#1476916935
+git push origin rel_3_0_ml_fix 
+#1476920430
+wget http://bigfoot.barefoot-int.lan:8080/job/harlyn-drivers-comb-test/241/consoleText
+#1476920446
+vim consoleText.2 
+#1476997462
+cd ~/code/rough/
+#1476997463
+ls
+#1476997464
+cd google/
+#1476997465
+ls
+#1476997468
+vim fuel_injection_perfection.py 
+#1476997483
+vim please_pass_the_coded_messages.py 
+#1476997494
+vim dont_get_volunteered.py 
+#1477002910
+cd ..
+#1477002911
+ls
+#1477002915
+vim intv.c 
+#1477002925
+vim intv2.c 
+#1477002940
+vim intv3.c 
+#1477002998
+gcc intv3.c 
+#1477002999
+./a.out 
+#1477003005
+vim intv3.c 
+#1477003055
+clear
+#1477005577
+vim intv2.c 
+#1477946291
+cd ../bf-drivers/
+#1477946293
+git status
+#1477946298
+git submodule foreach --recursive 'git clean -fxd' && git clean -fxd
+#1477946300
+git status
+#1477946302
+git pull origin master 
+#1477946379
+git stash
+#1477946380
+git pull origin master 
+#1477946383
+git stash pop
+#1477946385
+git status
+#1477946390
+git reset HEAD
+#1477946392
+git status
+#1477946394
+git submodule update --init --recursive
+#1477946402
+git status
+#1477946404
+git diff tools/
+#1477946412
+git checkout tools/
+#1477946414
+git status
+#1477946416
+cd submodules/bf-drivers/
+#1477946418
+git checkout master 
+#1477946422
+git pull origin master 
+#1477946524
+cd ../..
+#1477946526
+git status
+#1477947025
+cd submodules/bf-drivers/
+#1477947030
+git status
+#1477947032
+git pull origin master 
+#1477947106
+cd ../bf-drivers/
+#1477947109
+cd ../bf-utils/
+#1477947111
+git status
+#1477947130
+git checkout -b DRV-348
+#1477947132
+git status
+#1477947133
+git diff
+#1477947213
+git commit -am "DRV-348 Changing the way mask is applied to arrive at the allocated index in power2 allocator"
+#1477947215
+git status
+#1477947219
+git push -u origin DRV-348 
+#1477949712
+cd ~/code/rough/
+#1477949712
+ls
+#1477949717
+vim intv3.c 
+#1477949723
+clear
+#1477949726
+vim intv2.c 
+#1478295123
+cd -
+#1478295129
+cd ../bf-drivers/
+#1478295132
+git status
+#1478295135
+git pull origin master 
+#1478299035
+git status
+#1478299049
+git diff
+#1478299132
+git status
+#1478299148
+git checkout -b tcam_default_trans_cleanup
+#1478299149
+git status
+#1478299170
+git commit -am "Cleaning up the default entry backup/restore code"
+#1478299171
+git status
+#1478299176
+git push -u origin tcam_default_trans_cleanup 
+#1478299751
+git status
+#1478299753
+git diff
+#1478299759
+git commit -am "Clang"
+#1478299766
+git push origin tcam_default_trans_cleanup 
+#1478299771
+git pull origin tcam_default_trans_cleanup 
+#1478299779
+git push origin tcam_default_trans_cleanup 
+#1479850787
+git status
+#1479850789
+git checkout master 
+#1479850792
+git pull origin master 
+#1479850803
+git status
+#1479850814
+find . -name "mau.context.json"
+#1479850821
+find . -name "*.json"
+#1479850827
+vim ./tests/pipe_mgr_utest_mau_ctx.json
+#1479850837
+vim ./tests/exm/p4c_output/exm_utest_context_llir.json
+#1479850848
+cd ../p4c-tofino/
+#1479850851
+git checkout master 
+#1479850854
+git pull origin master 
+#1479850859
+git status
+#1479850863
+git submodule update 
+#1479850865
+git status
+#1479850866
+cd -
+#1479850876
+find . -name "*.p4"
+#1479850891
+vim tests/pipe_mgr/pipe_mgr_utest.p4 
+#1479850914
+vim tests/exm/p4c_output/
+#1479851071
+find . -name "*.p4"
+#1479851079
+vim ./tests/pipe_mgr/pipe_mgr_utest.p4
+#1479851105
+cp ./tests/pipe_mgr/pipe_mgr_utest.p4 ~/code/p4factory/programs/drivers_test/drivers_test.p4 
+#1479851246
+find . -name "mau.context.json"
+#1479851253
+find . -name "*.json"
+#1479851271
+git status
+#1479851274
+git diff
+#1479851290
+git status
+#1479851295
+vim tests/pipe_mgr_utest_mau_ctx.json 
+#1479851324
+git diff
+#1479851344
+git status
+#1479851351
+find . -name "*.json"
+#1479851366
+find . -name "*.p4"
+#1479851385
+cp ./tests/exm/p4src/exm_utest.p4 ~/code/p4factory/programs/drivers_test/drivers_test.p4 
+#1479851432
+cp ./tests/exm/p4src/tofino.p4 ~/code/p4factory/programs/drivers_test/
+#1479851497
+git status
+#1479851502
+git diff tests/exm/
+#1479851558
+git status
+#1479851710
+git stash
+#1479851712
+git status
+#1479851729
+git stash pop
+#1479851732
+git status
+#1479851740
+git checkout -b utest_json_update
+#1479851746
+git add tests/pipe_mgr_utest_mau_ctx.json 
+#1479851755
+git commit -m "Updating pipe-mgr utest json"
+#1479851757
+git status
+#1479851763
+git push -u origin utest_json_update 
+#1479852218
+vim tests/pipe_mgr_utest_mau_ctx.json 
+#1479852399
+git status
+#1479852409
+git add tests/pipe_mgr_utest_mau_ctx.json 
+#1479852424
+git commit --amend
+#1479852428
+git status
+#1479852436
+git push origin utest_json_update 
+#1479852445
+git pull origin utest_json_update 
+#1479852454
+vim tests/pipe_mgr_utest_mau_ctx.json 
+#1479852464
+git status
+#1479852469
+git add tests/pipe_mgr_utest_mau_ctx.json 
+#1479852471
+git status
+#1479852473
+git commit
+#1479852475
+git status
+#1479852479
+git push origin utest_json_update 
+#1479852549
+vim tests/pipe_mgr_utest_mau_ctx.json 
+#1479852659
+git add tests/pipe_mgr_utest_mau_ctx.json 
+#1479852678
+git commit -am "Removing some incorrect allocations for stful tbl"
+#1479852680
+git status
+#1479852768
+git push origin utest_json_update 
+#1479852808
+git status
+#1479852823
+git checkout origin/master tests/exm/p4c_output/exm_utest_context_llir.json
+#1479852825
+git status
+#1479852837
+git commit -am "Reverting changes to exm_utest json"
+#1479852841
+git push origin utest_json_update 
+#1480659947
+git status
+#1480659950
+git checkout master 
+#1480659953
+git pull origin master 
+#1480980853
+git status
+#1480980857
+git checkout rel_3_0
+#1480980862
+git pull origin rel_3_0
+#1481222850
+fg

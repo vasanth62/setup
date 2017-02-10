@@ -1,0 +1,24 @@
+pane	pipe-mgr	1	:bash	0	: 	1	:/home/vkumar/code/bf-drivers	0	bash	:
+pane	pipe-mgr	1	:bash	0	: 	2	:/home/vkumar/code/bf-drivers	1	bash	:
+pane	pipe-mgr	1	:bash	0	: 	3	:/home/vkumar/code/bf-drivers	0	bash	:
+pane	pipe-mgr	2	:bash	0	: 	1	:/home/vkumar/code/cJSON	0	bash	:
+pane	pipe-mgr	2	:bash	0	: 	2	:/home/vkumar/code/p4factory	1	bash	:
+pane	pipe-mgr	3	:bash	0	:-	1	:/home/vkumar/code/p4factory/targets/single_device/arch_model	0	bash	:
+pane	pipe-mgr	3	:bash	0	:-	2	:/home/vkumar/code/p4factory/targets/single_device	1	bash	:
+pane	pipe-mgr	3	:bash	0	:-	3	:/home/vkumar/code/p4factory/submodules/p4c-tofino	0	bash	:
+pane	pipe-mgr	3	:bash	0	:-	4	:/home/vkumar/code/p4factory/submodules/bf-drivers	0	bash	:
+pane	pipe-mgr	3	:bash	0	:-	5	:/home/vkumar/code/p4factory/targets/single_device	0	bash	:
+pane	pipe-mgr	3	:bash	0	:-	6	:/home/vkumar/code/p4factory/targets/single_device	0	bash	:
+pane	pipe-mgr	4	:bash	1	:*	1	:/home/vkumar	1	bash	:
+pane	pipe-mgr	4	:bash	1	:*	2	:/home/vkumar/code/switch/targets/single_device	0	bash	:
+pane	pipe-mgr	4	:bash	1	:*	3	:/home/vkumar/code/switch/targets/single_device	0	bash	:
+pane	pipe-mgr	4	:bash	1	:*	4	:/home/vkumar/code/switch/submodules/bf-drivers	0	bash	:
+pane	pipe-mgr	4	:bash	1	:*	5	:/home/vkumar/code/switch/targets/single_device	0	bash	:
+pane	pipe-mgr	4	:bash	1	:*	6	:/home/vkumar/code/switch/targets/single_device	0	bash	:
+pane	pipe-mgr	5	:bash	0	: 	1	:/home/vkumar/code/bf-drivers	1	bash	:
+window	pipe-mgr	1	0	: 	b951,238x56,0,0{106x56,0,0[106x37,0,0,1,106x18,0,38,2],131x56,107,0,3}
+window	pipe-mgr	2	0	: 	5c8d,238x56,0,0{103x56,0,0,4,134x56,104,0,5}
+window	pipe-mgr	3	0	:-	a985,238x56,0,0{113x56,0,0[113x17,0,0,6,113x19,0,18,7,113x18,0,38,8],124x56,114,0[124x17,114,0,9,124x19,114,18,10,124x18,114,38,11]}
+window	pipe-mgr	4	1	:*	e1ea,238x56,0,0{126x56,0,0[126x23,0,0,12,126x18,0,24,13,126x13,0,43,14],111x56,127,0[111x28,127,0,15,111x13,127,29,16,111x13,127,43,17]}
+window	pipe-mgr	5	0	: 	64e7,238x56,0,0,18
+state	pipe-mgr	

@@ -1,0 +1,2000 @@
+#1449788916
+git checkout thrift-exceptions 
+#1449788920
+git pull origin thrift-exceptions 
+#1449788923
+cd ../..
+#1449788925
+git status
+#1449788931
+git commit -am "Updating p4c-tofino"
+#1449788934
+git push origin thrift-exceptions 
+#1449855520
+git status
+#1449855524
+git pull origin thrift-exceptions 
+#1449855531
+tools/submodule-clean.sh 
+#1449855533
+git status
+#1449855541
+vim tools/submodule-clean.sh 
+#1449855548
+sudo git clean -fxd
+#1449855550
+git status
+#1449874976
+wget http://bigfoot.barefoot-int.lan:8080/view/HR/job/bf_u1404_harlyn_combined_regression/371/consoleText
+#1449875025
+grep -i "failed" consoleText 
+#1449875042
+grep -i -b10 -a 5 "failed" consoleText 
+#1449875085
+reset
+#1449875092
+grep -i -b10 -a5 "failed" consoleText 
+#1449875142
+grep -i -b20  "failed" consoleText 
+#1449875163
+ls
+#1449879429
+wget http://bigfoot.barefoot-int.lan:8080/view/HR/job/bf_u1404_harlyn_combined_regression/371/consoleText
+#1449879469
+rm consoleText
+#1449879472
+vim consoleText.1 
+#1449888019
+git status
+#1449888022
+git diff
+#1449888027
+git status
+#1449888039
+git commit -a -m "Removing status code checks"
+#1449888044
+git push origin thrift-exceptions 
+#1449903171
+rm consoleText.1 
+#1449903179
+wget http://bigfoot.barefoot-int.lan:8080/job/bf_u1404_harlyn_combined_regression/372/consoleText
+#1449903203
+vim consoleText 
+#1449903777
+git diff
+#1449903783
+git status
+#1449903786
+git diff ptf-tests/
+#1449903793
+git status
+#1449903800
+git commit -a -m "Removing status code checks"
+#1449903803
+git push origin thrift-exceptions 
+#1449903963
+vim consoleText 
+#1450031761
+rm consoleText 
+#1450031763
+wget http://bigfoot.barefoot-int.lan:8080/job/bf_u1404_harlyn_combined_regression/374/consoleText
+#1450031846
+vim consoleText 
+#1450031914
+grep Invalid consoleText 
+#1450201964
+git fetch -p
+#1450201978
+git status
+#1450201984
+git pull origin thrift-exceptions 
+#1450201987
+git status
+#1450201998
+git checkout test_stful 
+#1450202001
+git status
+#1450202005
+git submodule update --init --recursive
+#1450202429
+git status
+#1450202432
+git diff ptf-tests/
+#1450202447
+git status
+#1450202458
+git commit -a -m "Adding stful spec in mat-ent-add'
+#1450202597
+git commit -a -m "Adding stful spec to action table and mat table"
+#1450202599
+git status
+#1450202604
+git push origin test_stful 
+#1450291638
+git status
+#1450291640
+git diff
+#1450291644
+git status
+#1450291663
+git commit -am "Adding a compile only option for drivers combination test script"
+#1450291669
+git push origin test_stful 
+#1450291675
+git pull origin test_stful 
+#1450291681
+git push origin test_stful 
+#1450291688
+git log
+#1450455083
+git status
+#1450455088
+git checkout thrift-exceptions 
+#1450455089
+git status
+#1450455092
+git pull origin thrift-exceptions 
+#1450455099
+git submodule update --init --recursive
+#1450455101
+git status
+#1450455111
+rm consoleText 
+#1450455113
+git status
+#1450455120
+git pull origin master 
+#1450455163
+git status
+#1450455166
+cd submodules/bf-drivers/
+#1450455168
+git status
+#1450455170
+git checkout thrift-exceptions 
+#1450455174
+git pull origin thrift-exceptions 
+#1450455177
+git log
+#1450455182
+git status
+#1450455184
+git pull origin master 
+#1450455191
+vim src/dvm/dvm.c 
+#1450455229
+git add src/dvm/dvm.c 
+#1450455232
+git commit
+#1450455235
+git status
+#1450455239
+git push origin thrift-exceptions 
+#1450455244
+cd ../p4c-tofino/
+#1450455247
+git checkout thrift-exceptions 
+#1450455249
+git pull origin thrift-exceptions 
+#1450455253
+git pull origin master 
+#1450455258
+git push origin thrift-exceptions 
+#1450455263
+cd ../..
+#1450455265
+git add submodules/bf-drivers/
+#1450455269
+git add submodules/p4c-tofino/
+#1450455271
+git status
+#1450455275
+git commit
+#1450455279
+git status
+#1450455285
+git submodule update --init --recursive
+#1450455294
+git status
+#1450455303
+cd submodules/switch/
+#1450455305
+git status
+#1450455308
+git log
+#1450455322
+git branch thrift-exceptions
+#1450455324
+git checkout thrift-exceptions 
+#1450455346
+git cherry-pick 7b0bea49dceaa4a627c293950d998d373a8b7e78
+#1450455349
+git status
+#1450455353
+git push -u origin thrift-exceptions 
+#1450455358
+cd ../..
+#1450455359
+git status
+#1450455369
+git commit -a -m "Updating switch with Krishna's fix"
+#1450455372
+git push origin thrift-exceptions 
+#1450455510
+git submodule status 
+#1450480102
+git status
+#1450480109
+git pull origin thrift-exceptions 
+#1450480112
+git status
+#1450480415
+git pull origin master 
+#1450480431
+git status
+#1450480435
+cd submodules/bf-drivers/
+#1450480436
+git status
+#1450480439
+git checkout master 
+#1450480442
+git pull origin master 
+#1450480446
+git status
+#1450480448
+cd ../..
+#1450480449
+git status
+#1450480453
+cd submodules/switch/
+#1450480455
+git checkout master 
+#1450480458
+git pull origin master 
+#1450480492
+cd ../bf-drivers/
+#1450480494
+git checkout 6cfc378
+#1450480503
+cd ../p4c-tofino/
+#1450480514
+git checkout 3278744
+#1450480517
+cd ../switch/
+#1450480527
+git checkout 81924ee
+#1450480529
+cd ../..
+#1450480530
+git status
+#1450480534
+git add submodules/bf-drivers/
+#1450480539
+git add submodules/switch/
+#1450480548
+git add submodules/p4c-tofino/
+#1450480550
+git status
+#1450480553
+git commit
+#1450480557
+git status
+#1450480561
+git push origin thrift-exceptions 
+#1450481657
+git status
+#1450481660
+git checkout master 
+#1450481662
+git pull origin master 
+#1450481666
+git status
+#1450481668
+git submodule update --init --recursive
+#1450481672
+cd submodules/bf-drivers/
+#1450481679
+git fetch -p
+#1450481685
+git checkout vk_idle_sym 
+#1450481687
+cd ../..
+#1450481688
+git status
+#1450481691
+touch submodules/switch/p4src/switch.p4 
+#1450484679
+vim tools/submodule-clean.sh 
+#1450485478
+git status
+#1450485481
+cd submodules/bf-drivers/
+#1450485482
+git log
+#1447711406
+git pull
+#1446752347
+git pull origin master 
+#1448487325
+cd ../..
+#1448487327
+git status
+#1448487329
+git pull origin master 
+#1448487438
+git status
+#1448487442
+git submodule update --init --recursive
+#1448487781
+git status
+#1448487788
+rm -rf submodules/switchapi/
+#1448487792
+rm -rf submodules/switchlink/
+#1448487796
+rm -rf submodules/switchsai/
+#1448487801
+./autogen.sh 
+#1448487812
+./configure 
+#1448487857
+git status
+#1448487860
+git clean -fxd
+#1448487862
+git status
+#1448487865
+tools/submodule-clean.sh 
+#1448487867
+git status
+#1448487872
+vim tools/submodule-clean.sh 
+#1448487882
+tools/submodule-clean.sh 
+#1448487884
+git status
+#1448487890
+git assume tools/submodule-clean.sh
+#1448487890
+./autogen.sh
+#1448487898
+./configure CFLAGS='-O0 -g' CXXFLAGS='-O0 -g' --enable-thrift
+#1448487960
+cd build/bf-syslibs
+#1448487960
+make
+#1448487969
+make install
+#1448487993
+cd ../..
+#1448488424
+cd submodules/bf-drivers/
+#1448488426
+git status
+#1448488427
+git diff
+#1448488437
+git branch
+#1448488449
+git branch -d vk_learn_utest_fixup
+#1448488450
+git status
+#1448488465
+git branch vk_learn_utest_fixup
+#1448488471
+git checkout vk_learn_utest_fixup 
+#1448488472
+git status
+#1448488831
+git diff
+#1448488849
+git commit -a -m "Fixing learn utest due to byte order fix"
+#1448488857
+git push -u origin vk_learn_utest_fixup 
+#1448748920
+cd 
+#1448748922
+cd code/rough/
+#1448748922
+ls
+#1448748924
+vim comb.py 
+#1448748980
+python comb.py 
+#1448748982
+python comb.py  | wc
+#1448748985
+fg
+#1448748987
+vim comb.py 
+#1448748998
+python comb.py  | wc
+#1448749004
+vim comb.py 
+#1448749029
+python comb.py  | wc
+#1448749031
+fg
+#1448749043
+python comb.py  | wc
+#1448749046
+fg
+#1448749068
+python comb.py  
+#1448749081
+fg
+#1448749092
+python comb.py  
+#1448749094
+fg
+#1448749105
+python comb.py  
+#1448749113
+fg
+#1448749129
+python comb.py  
+#1448749145
+fg
+#1448749161
+python comb.py  
+#1448749190
+f
+#1448749192
+fg
+#1448749198
+python comb.py  
+#1448749221
+fg
+#1448749244
+python comb.py  
+#1448749256
+fg
+#1448749278
+python comb.py  
+#1448749279
+fg
+#1448749292
+python comb.py  
+#1449167822
+ps -aef | grep vm
+#1449167824
+ps -aef | grep vim
+#1449167835
+fg
+#1449167840
+ps -aef | grep vim
+#1449167878
+ps -aef | grep cscope
+#1450138726
+cd ../bf-drivers/
+#1450138729
+git status
+#1450138736
+git pull origin master 
+#1450138766
+git status
+#1450138768
+git submodule update --init --recursive
+#1450138772
+git status
+#1450138776
+rm test-driver 
+#1450138778
+git status
+#1450138785
+vim ptf-tests/basic_ipv4/test.py 
+#1450138821
+git status
+#1450138825
+git diff ptf-tests/
+#1450138863
+git commit -m "Doubling learn timeout to accomodate slower machines in jenkins"
+#1450138865
+git status
+#1450138877
+git commit -am "Doubling learn timeout to accomodate slower machines in jenkins"
+#1450138880
+git status
+#1450138883
+git push origin master 
+#1450138892
+git status
+#1450138901
+git log
+#1450138912
+git status
+#1450138924
+git reset HEAD 
+#1450138926
+git status
+#1450138928
+git log
+#1450138935
+git reset HEAD 3e80a719f5ed01e84451a8ab8da8def723da5333
+#1450138937
+git status
+#1450138940
+git log
+#1450138945
+git status
+#1450138954
+git revert 3d34efa625777332a1943f798c87d5dafee20e3b
+#1450138956
+git status
+#1450138963
+git pull origin master 
+#1450138966
+git status
+#1450138969
+cd ..
+#1450138971
+cd bf-drivers/
+#1450138973
+git status
+#1450138985
+git show 3d34efa625777332a1943f798c87d5dafee20e3b
+#1450138990
+git show 3d34efa625777332a1943f798c87d5dafee20e3b > ../diff
+#1450138994
+git show 3d34efa625777332a1943f798c87d5dafee20e3b > ../diff_1
+#1450138996
+cd ..
+#1450138999
+rm -rf bf-drivers/
+#1450139004
+git clone git@github.com:barefootnetworks/bf-drivers.git
+#1450139015
+cd bf-drivers/
+#1450139023
+patch -p1 < ../diff_1 
+#1450139041
+ls
+#1450139047
+git submodule update --init --recursive
+#1450139050
+git status
+#1450139053
+ls
+#1450139060
+cd ..
+#1450139063
+rm -rf bf-drivers/
+#1450139083
+git clone git@github.com:barefootnetworks/p4factory.git bf-drivers
+#1450139188
+cd bf-drivers/
+#1450139202
+patch -p1 < ../diff_1 
+#1450139205
+git status
+#1450139214
+git branch vk_learn
+#1450139218
+git checkout vk_learn 
+#1450139222
+git commit -am "Doubling learn timeout to accomodate slower machines in jenkins"
+#1450139223
+git status
+#1450139228
+git push -u origin vk_learn 
+#1450139247
+git submodule update --init --recursive
+#1450482236
+git status
+#1450482239
+cd submodules/bf-drivers/
+#1450482241
+git checkout master 
+#1450482243
+git pull origin master 
+#1442352222
+./compile.sh switch -j4
+#1447859427
+cd ../../tools/
+#1447859429
+./compile.sh switch -j4
+#1447862950
+telnet localhost 8000
+#1447863633
+vim ../model_0.log 
+#1447863832
+mkdir /media/psf/vm/model_log
+#1447863846
+cp ../model_0.log ../typescript /media/psf/vm/model_log/
+#1447863848
+cd ..
+#1447863881
+find . -name "context.json"
+#1447863885
+find . -name "*context.json"
+#1447863912
+ls install/share/p4/switch/
+#1447863937
+cp build/switch-tofino/p4src/context/ /media/psf/vm/model_log/ -r
+#1447863954
+cp build/switch-tofino/p4src/visualization/ /media/psf/vm/model_log/ -r
+#1447863974
+cp build/switch-tofino/p4src/logs/ /media/psf/vm/model_log/ -r
+#1447874531
+./tools/compile.sh switch -j4
+#1448050862
+find bf_drivers.log *
+#1448050873
+find . -name bf_drivers.log 
+#1448052531
+./tools/compile.sh switch -j4
+#1448390107
+vim ~/.bashrc 
+#1448390124
+vim ~/.bash_profile 
+#1448995390
+./autogen.sh && ./configure && ./tools/compile.sh -j4 switch
+#1448998319
+./tools/compile.sh -j4 switch
+#1449167795
+fg
+#1449855558
+./autogen.sh && ./configure && ./tools/compile.sh -j4 switch
+#1449859929
+find . -name libdriver.so
+#1449859942
+nm -B install/lib/libdriver.so | more
+#1449859972
+nm -B install/lib/libdriver.so | grep " b "
+#1449860054
+man nm
+#1449860236
+nm -B libdriver.so | more | grep -i " b " 
+#1449860245
+nm -B install/lib/libdriver.so | grep -i " b "
+#1449860288
+man nm
+#1449860333
+nm -B install/lib/libdriver.so | grep -i " b "
+#1449860336
+man nm
+#1449860385
+nm -B -n install/lib/libdriver.so | grep -i " b "
+#1449860481
+cd install/lib/
+#1449860494
+nm -B -n libdru_sim.so | grep -i " b "
+#1449860517
+nm -B  libdru_sim.so | grep -i " b "
+#1449860522
+nm -B -n libdru_sim.so | grep -i " b "
+#1449860607
+nm -B -n libdriver.so | grep -i " b "
+#1449861386
+man nm
+#1449861430
+nm -B -S --size-sort libdriver.so | grep -i " b "
+#1449861478
+man nm
+#1449861504
+nm -B -S --size-sort --line-numbers -r libdriver.so | grep -i " b "
+#1449861633
+nm -B -S --size-sort --line-numbers -r libdru_sim.so | more
+#1450481700
+cd ../../
+#1450484745
+echo $?
+#1446680899
+make check CFLAGS='-DUTEST -O0 -g' -j4 TESTS=
+#1448487998
+pwd
+#1448487999
+ls
+#1448488000
+cd
+#1448488001
+cd -
+#1448488003
+ls
+#1448488009
+make check CFLAGS='-DUTEST -O0 -g' -j4 TESTS=
+#1448488124
+libtool --mode=execute gdb  tests/pipe_mgr_utest 
+#1448488137
+sudo libtool --mode=execute gdb  tests/pipe_mgr_utest 
+#1448488336
+make check CFLAGS='-DUTEST -O0 -g' -j4 TESTS=
+#1448488340
+sudo libtool --mode=execute gdb  tests/pipe_mgr_utest 
+#1448488645
+make check CFLAGS='-DUTEST -O0 -g' -j4 TESTS=
+#1448488654
+sudo libtool --mode=execute gdb  tests/pipe_mgr_utest 
+#1447804223
+vim ~/.tmux.conf 
+#1447813250
+mycscope
+#1447813965
+cd ../model/
+#1447813967
+mycscope
+#1447813990
+cscope -d
+#1447955594
+cd ../bf-drivers/
+#1447973596
+mycscope
+#1447975474
+cd ../model/
+#1447975476
+mycscope
+#1447975546
+cd ../bf-drivers/
+#1447975547
+mycscope
+#1448330654
+cd ../p4c-tofino/
+#1448330655
+mycscope
+#1448330769
+cd ../bf-drivers/
+#1448330771
+mycscope
+#1448330792
+cd ../p4c-tofino/
+#1448330793
+mycscope
+#1448407835
+top
+#1448407857
+vim ~/.tmux.conf
+#1448416098
+cd ../bf-drivers/
+#1448416099
+mycscope
+#1448491988
+vim ../../build/programs/bfd_test/context/mau.context.json 
+#1448492093
+mycscope
+#1448493017
+vim ../../build/programs/bfd_test/api/src/pd.c 
+#1448493225
+vim ../../build/programs/bfd_test/api/inc/pd.h 
+#1448493236
+vim ../../build/programs/bfd_test/api/src/pd.c 
+#1448565640
+mycscope
+#1449010826
+cd ../model/
+#1449010828
+mycscope
+#1449015098
+cd ../p4c-tofino/
+#1449015099
+git status
+#1449015101
+mycscope
+#1449085333
+cd ../ptf/
+#1449085337
+mycscope
+#1449090386
+cd ../bf-drivers/
+#1449090387
+mycscope
+#1449100523
+vim ../../build/programs/drivers_test/context/mau.context.json 
+#1449106986
+mycscope
+#1449167860
+fg
+#1449170960
+mycscope
+#1449189487
+cd ../bf-syslibs/
+#1449189489
+mycscope
+#1449189560
+cd ../bf-drivers/
+#1449189561
+mycscope
+#1449189579
+cd ../bf-syslibs/
+#1449189580
+mycscope
+#1449513741
+cd ../bf-drivers/
+#1449513742
+mycscope
+#1449514820
+top
+#1449516804
+cd ../bf-syslibs/
+#1449516813
+vim third-party/zlog/zlog-cfg 
+#1449535537
+top
+#1449612176
+ls -l ../../pcap_output/
+#1449612362
+top
+#1449614110
+vim ../../build/programs/bfd_test/api/src/pd.c 
+#1449614118
+vim ../../build/programs/drivers_test/api/src/pd.c 
+#1449614147
+cd ../p4c-tofino/
+#1449614149
+mycscope
+#1449614412
+cd ../bf-drivers/
+#1449614413
+mycscope
+#1449614568
+cd ../p4c-tofino/
+#1449614575
+mycscope
+#1449679250
+cd ../bf-drivers/
+#1449679252
+mycscope
+#1449686562
+vim ../../build/programs/drivers_test/api/src/pd.c 
+#1449689265
+ls -l ../../pcap_output/
+#1449693134
+mycscope
+#1446847612
+vim targets/single_device/ptf-tests/tofino_diag/test.py 
+#1447712808
+sudo gdb --args install/bin/tofino-model -l install/share/p4/switch/p4_name_lookup.json 
+#1447862740
+script
+#1447862996
+ls
+#1447863000
+vim model_0.log 
+#1447863011
+vim typescript 
+#1447863021
+ls -l model_0.log 
+#1447863024
+ls -l typescript 
+#1447863032
+wc model_0.log 
+#1447863036
+wc typescript 
+#1447863044
+vim model_0.log 
+#1447863134
+vim typescript 
+#1447874712
+sudo gdb --args install/bin/tofino-model -l install/share/p4/switch/p4_name_lookup.json
+#1447875388
+sudo -E install/bin/p4-tofino-test -c install/share/p4/targets/switch.conf -t targets/single_device/ptf-tests/switch/api-tests
+#1447875502
+sudo -E ./install/bin/p4-tofino-test -c ./install/share/p4/targets/switch.conf -t submodules/switch/ptf-tests/base/api-tests
+#1448390082
+history
+#1448390101
+sudo -E ./install/bin/p4-tofino-test -c ./install/share/p4/targets/switch.conf -t submodules/switch/ptf-tests/base/api-tests
+#1448998062
+vim install/bin/p4-tofino-test 
+#1448998351
+find . -name "run_ptf*"
+#1448998356
+vim ./build/testutils/run_ptf_tests.py
+#1448998361
+sudo -E ./install/bin/p4-tofino-test -c ./install/share/p4/targets/switch.conf -t submodules/switch/ptf-tests/base/api-tests
+#1448998403
+vim ./build/testutils/run_ptf_tests.py
+#1448998437
+sudo -E ./install/bin/p4-tofino-test -c ./install/share/p4/targets/switch.conf -t submodules/switch/ptf-tests/base/api-tests
+#1448998479
+vim ./build/testutils/run_ptf_tests.py
+#1448998635
+sudo -E ./install/bin/p4-tofino-test -c ./install/share/p4/targets/switch.conf -t submodules/switch/ptf-tests/base/api-tests
+#1449000303
+sudo gdb --args install/bin/tofino-model -l install/share/p4/switch/p4_name_lookup.json
+#1449000837
+sudo -E ./install/bin/p4-tofino-test -c ./install/share/p4/targets/switch.conf -t submodules/switch/ptf-tests/base/api-tests
+#1449167868
+fg
+#1449856938
+sudo gdb --args install/bin/tofino-model -l install/share/p4/switch/p4_name_lookup.json
+#1450484760
+sudo -E ./install/bin/p4-tofino-test -c ./install/share/p4/targets/switch.conf -t submodules/switch/ptf-tests/base/api-tests
+#1446661869
+tmux attach
+#1449776823
+ps aux
+#1449776834
+ssh sulley3
+#1447806707
+ps -aef | grep vim
+#1447813088
+tmux kill-ses -t 0
+#1447813453
+top
+#1447813901
+./compile.sh -j4 bfd_test
+#1447864485
+fg
+#1447864489
+vim bfd_test_comb.py 
+#1447864555
+python bfd_test_comb.py -p
+#1447864561
+python bfd_test_comb.py -n 2
+#1447864643
+telnet localhost 8000
+#1447954859
+./compile.sh -j4 bfd_test
+#1447955057
+python bfd_test_comb.py 
+#1447955264
+fg
+#1447955267
+vim bfd_test_comb.py 
+#1447955277
+python bfd_test_comb.py 
+#1447955726
+./compile.sh -j4 bfd_test
+#1447955856
+python bfd_test_comb.py 
+#1447992450
+fg
+#1447992458
+python bfd_test_comb.py 
+#1448044391
+./compile.sh -j4 bfd_test
+#1448044595
+python bfd_test_comb.py 
+#1448046017
+python bfd_test_comb.py -n 0
+#1448047240
+python bfd_test_comb.py -p
+#1448047245
+python bfd_test_comb.py -n 6
+#1448047414
+fg
+#1448047422
+python bfd_test_comb.py -n 0
+#1448047764
+telnet localhost 8000
+#1448048737
+cd ..
+#1448048743
+find . -name "entry_format.c"
+#1448054024
+vim ../../build/programs/bfd_test/context/mau.context.json 
+#1448054031
+vim build/programs/bfd_test/context/mau.context.json 
+#1448054210
+./compile.sh -j4 bfd_test
+#1448054214
+cd tools/
+#1448054215
+./compile.sh -j4 bfd_test
+#1448054306
+python bfd_test_comb.py -n 0
+#1448054581
+python bfd_test_comb.py -n 6
+#1448054993
+python bfd_test_comb.py -n 3
+#1448055596
+find ../ -name "pd.c"
+#1448055608
+vim ../build/programs/bfd_test/api/src/pd.c
+#1448328798
+./compile.sh -j4 bfd_test
+#1448328817
+python bfd_test_comb.py -n 3
+#1448328887
+fg
+#1448328977
+python bfd_test_comb.py -n 3
+#1448395683
+python bfd_test_comb.py 
+#1448412555
+python bfd_test_comb.py
+#1448416409
+python bfd_test_comb.py -n 2 1000
+#1448416931
+./compile.sh -j4 bfd_test
+#1448416955
+python bfd_test_comb.py -n 1 1000
+#1448417112
+./compile.sh -j4 bfd_test
+#1448417689
+python bfd_test_comb.py -n 1 1000
+#1448423212
+./compile.sh -j4 bfd_test
+#1448423312
+python bfd_test_comb.py -n 2
+#1448427953
+python bfd_test_comb.py -n 1
+#1448428086
+./compile.sh -j4 bfd_test
+#1448481704
+fg
+#1448485231
+python bfd_test_comb.py 
+#1448485235
+fg
+#1448485259
+python bfd_test_comb.py 
+#1448485263
+fg
+#1448485288
+python bfd_test_comb.py 
+#1448485293
+fg
+#1448485307
+python bfd_test_comb.py 
+#1448485312
+reset
+#1448485316
+python bfd_test_comb.py 
+#1448485325
+fg
+#1448485418
+python bfd_test_comb.py 
+#1448485423
+fg
+#1448485443
+python bfd_test_comb.py 
+#1448485449
+fg
+#1448485503
+python bfd_test_comb.py 
+#1448485511
+fg
+#1448485569
+python bfd_test_comb.py 
+#1448485577
+fg
+#1448485586
+touch /home/vkumar/code/p4factory/programs/bfd_test/bfd_test.p4
+#1448485588
+echo $?
+#1448485592
+fg
+#1448485666
+echo $?
+#1448485669
+touch /home/vkumar/code/p4factory/programs/bfd_test/bfd_test.p4
+#1448485673
+python bfd_test_comb.py 
+#1448485678
+echo $?
+#1448485689
+python
+#1448485735
+fg
+#1448485761
+python bfd_test_comb.py 
+#1448485771
+fg
+#1448485784
+python bfd_test_comb.py 
+#1448485787
+fg
+#1448485791
+python bfd_test_comb.py 
+#1448485840
+./compile.sh -j4 bfd_test
+#1448485861
+fg
+#1448486014
+sudo python bfd_test_comb.py 
+#1448487502
+ps -aef | grep tofino
+#1448487507
+ps -aef
+#1448488064
+./compile.sh -j4 bfd_test
+#1448488951
+sudo python bfd_test_comb.py -n 2 1000
+#1448492630
+sudo python bfd_test_comb.py -h
+#1448492635
+sudo python bfd_test_comb.py -n 2 -d
+#1448492880
+sudo python bfd_test_comb.py -n 6 1000
+#1448493165
+sudo python bfd_test_comb.py -n 5 -d
+#1448493556
+sudo python bfd_test_comb.py -n 6 1000
+#1448515871
+./compile.sh -j4 bfd_test
+#1448515955
+touch ../programs/bfd_test/bfd_test.p4 
+#1448515957
+./compile.sh -j4 bfd_test
+#1448516950
+touch ../programs/bfd_test/bfd_test.p4 
+#1448516951
+./compile.sh -j4 bfd_test
+#1448748515
+fg
+#1448910385
+cd ..
+#1448910393
+sudo python tools/bfd_test_comb.py -h
+#1448910396
+sudo python tools/bfd_test_comb.py 
+#1448910399
+sudo python tools/bfd_test_comb.py  .
+#1448910403
+fg
+#1448910413
+sudo python tools/bfd_test_comb.py  .
+#1448910447
+fg
+#1448910463
+sudo python tools/bfd_test_comb.py  . -n 0
+#1448910676
+ps -aef | grep tofino
+#1448910681
+ps -aef | grep harlyn
+#1448910685
+ps -aef | grep model
+#1448910689
+fg
+#1448911030
+sudo python tools/bfd_test_comb.py  . -p
+#1448932794
+fg
+#1448996048
+sudo python tools/bfd_test_comb.py  . -n 1 
+#1448996056
+sudo python tools/bfd_test_comb.py  . -n 1  -d
+#1449007225
+sudo python tools/bfd_test_comb.py  . -n 0 -d
+#1449007343
+sudo python tools/bfd_test_comb.py  . -n 0
+#1449007553
+reset
+#1449007557
+ps -aef | grep tofino
+#1449009885
+fg
+#1449009894
+vim tools/bfd_test_comb.py 
+#1449009917
+sudo python tools/bfd_test_comb.py  . -n 0
+#1449010184
+vim tools/bfd_test_comb.py 
+#1449010196
+vim tools/bfd_test_comb.py -n 0 -d
+#1449010203
+sudo python tools/bfd_test_comb.py  . -n 0 -d
+#1449010281
+telnet localhost 8000
+#1449011222
+./compile.sh -j4 bfd_test 
+#1449011231
+tools/compile.sh -j4 bfd_test
+#1449011533
+sudo python tools/bfd_test_comb.py  . -n 0 -d
+#1449011606
+telnet localhost 8000
+#1449012273
+wireshark pcap_output/bfns.harlyn-port01.pcap &
+#1449012384
+sudo python tools/bfd_test_comb.py  . -n 0 
+#1449014764
+sudo python tools/bfd_test_comb.py  . -n 4 -d
+#1449015210
+sudo python tools/bfd_test_comb.py  . 
+#1449015659
+sudo -E python tools/bfd_test_comb.py  . 
+#1449018970
+tools/compile.sh -j4 --p4 bfd_test
+#1449018979
+tools/compile.sh -j4  bfd_test --p4
+#1449018987
+touch programs/bfd_test/bfd_test.p4 
+#1449018988
+tools/compile.sh -j4  bfd_test --p4
+#1449019032
+sudo tools/compile.sh -j4  bfd_test --p4
+#1449019176
+tools/compile.sh -j4  bfd_test --p4
+#1449019179
+touch programs/bfd_test/bfd_test.p4 
+#1449019183
+sudo tools/compile.sh -j4  bfd_test --p4
+#1449019395
+touch programs/bfd_test/bfd_test.p4 
+#1449019398
+sudo tools/compile.sh -j4  bfd_test --p4
+#1449083141
+python
+#1449085599
+fg
+#1449085611
+vim tools/bfd_test_comb.py 
+#1449085635
+sudo -E python tools/bfd_test_comb.py  . -n 0
+#1449085982
+fg
+#1449085984
+vim tools/bfd_test_comb.py 
+#1449086099
+sudo -E python tools/bfd_test_comb.py  . 
+#1449086597
+sudo -E python tools/bfd_test_comb.py  . -n 2 1000
+#1449090101
+sudo -E python tools/bfd_test_comb.py  . -n 8 -d
+#1449094609
+fg
+#1449094611
+vim tools/bfd_test_comb.py 
+#1449095614
+./autogen.sh && ./configure && ./compile.sh -j4 drivers_test
+#1449095765
+tools/compile.sh -j4 drivers_test
+#1449096143
+sudo -E python tools/drivers_test_comb.py  . 
+#1449096306
+fg
+#1449096315
+vim tools/drivers_test_comb.py 
+#1449096331
+sudo -E python tools/drivers_test_comb.py  . -n 4
+#1449097937
+fg
+#1449097938
+vim tools/drivers_test_comb.py 
+#1449097958
+fg
+#1449097962
+vim tools/drivers_test_comb.py 
+#1449097974
+sudo -E python tools/drivers_test_comb.py  . -p
+#1449097976
+sudo -E python tools/drivers_test_comb.py  . 
+#1449099170
+sudo -E python tools/drivers_test_comb.py  . -n 5 10000
+#1449099933
+reset
+#1449100188
+telnet localhost 8000
+#1449100646
+tail -f bf_drivers.log
+#1449100753
+rm -rf bf_drivers.log*
+#1449100754
+ls
+#1449101781
+sudo -E python tools/drivers_test_comb.py  . -n 9 10000
+#1449102089
+fg
+#1449105494
+sudo -E python tools/drivers_test_comb.py  . -d
+#1449105715
+fg
+#1449105717
+vim tools/drivers_test_comb.py 
+#1449105728
+sudo -E python tools/drivers_test_comb.py  . -d
+#1449106145
+sudo -E python tools/drivers_test_comb.py . -n 1 1000
+#1449106592
+top
+#1449106599
+ps -aef | grep tofino
+#1449106722
+sudo -E python tools/drivers_test_comb.py . 
+#1449107128
+tools/compile.sh -j4 drivers_test
+#1449167809
+fg
+#1449172463
+cd ptf-tests/drivers_test/
+#1449172465
+ls
+#1449172466
+python
+#1449189960
+ls -l /var/log/syslog
+#1449189998
+cd /var/
+#1449189999
+ncdu
+#1449190005
+cd /
+#1449190007
+ncdu
+#1449190068
+cd ~/code/p4factory/ptf-tests/drivers_test/
+#1449190149
+python
+#1449273341
+cd ../..
+#1449273352
+sudo -E python tools/drivers_test_comb.py .  -n 0 -d
+#1449514734
+top
+#1449514801
+fg
+#1449514804
+vim tools/drivers_test_comb.py 
+#1449514814
+sudo -E python tools/drivers_test_comb.py .  -n 0 -d
+#1449516532
+vim zlog-cfg-cur 
+#1449516775
+tail -f /var/log/syslog
+#1449516827
+tools/compile.sh -j4 drivers_test
+#1449516858
+tail -f /var/log/syslog
+#1449516881
+vim zlog-cfg-cur 
+#1449516901
+sudo vim zlog-cfg-cur 
+#1449516911
+tail -f /var/log/syslog
+#1449535047
+sudo -E python tools/drivers_test_comb.py .  -n 0 -d
+#1449535100
+fg
+#1449535104
+sudo -E python tools/drivers_test_comb.py .  -n 0 -d
+#1449535575
+telnet localhost 8000
+#1449535978
+ls -l pcap_output/
+#1449536310
+python
+#1449536389
+ls -l pcap_output/
+#1449538294
+telnet localhost 8000
+#1449539006
+python
+#1449539205
+wireshark pcap_output/bfns.harlyn-port131.pcap &
+#1449539422
+python
+#1449557910
+fg
+#1449557916
+vim tools/drivers_test_comb.py 
+#1449557928
+sudo -E python tools/drivers_test_comb.py .  -n 0 -d
+#1449601364
+sudo -E python tools/drivers_test_comb.py .  -n 2 -d
+#1449602864
+sudo -E python tools/drivers_test_comb.py .  -n 1 2 -d
+#1449603015
+fg
+#1449603026
+sudo -E python tools/drivers_test_comb.py .  -n 1 2 -d
+#1449614428
+sudo -E python tools/drivers_test_comb.py .  -n  2 -d
+#1449623541
+sudo -E python tools/drivers_test_comb.py .  -n  4 5
+#1449635184
+sudo -E python tools/drivers_test_comb.py .  -n  3
+#1449635230
+tools/compile.sh -j4 drivers_test
+#1449635555
+sudo -E python tools/drivers_test_comb.py .  -n  3
+#1449682398
+ls -l pcap_output/
+#1449682491
+telnet localhost 8000
+#1449684354
+sudo -E python tools/drivers_test_comb.py . -n 0 -d
+#1449684810
+tools/compile.sh -j4 drivers_test --clean
+#1449684826
+tools/compile.sh -j4 drivers_test 
+#1449686358
+sudo tools/compile.sh -j4 drivers_test 
+#1449686438
+sudo -E python tools/drivers_test_comb.py . -p
+#1449686450
+sudo -E python tools/drivers_test_comb.py . -n 4 -d
+#1449687071
+sudo -E python tools/drivers_test_comb.py . -n 0 -d
+#1449688647
+sudo -E python tools/drivers_test_comb.py . -n 1 1000 -d
+#1449688881
+sudo -E python tools/drivers_test_comb.py . -n 1 1000 -p
+#1449688901
+sudo -E python tools/drivers_test_comb.py . -n 3 -d
+#1449689101
+sudo -E python tools/drivers_test_comb.py . -n 6 -d
+#1449689322
+sudo -E python tools/drivers_test_comb.py . -n 9 -d
+#1449785459
+ping github.com
+#1449790552
+fg
+#1449790556
+vim tools/drivers_test_comb.py 
+#1450469561
+sudo tools/compile.sh -j4 drivers_test 
+#1450484723
+./autogen.sh && ./configure && tools/compile.sh -j4 drivers_test
+#1450485172
+fg
+#1450485179
+vim tools/drivers_test_comb.py 
+#1450485352
+sudo -E python tools/drivers_test_comb.py . -n 0 -d
+#1450485732
+top
+#1450485843
+fg
+#1450485846
+ps -aef | grep vim
+#1450485849
+ps -aef | grep cscope
+#1450485857
+sudo reboot now
+#1442335720
+sudo arch_model/tofino-model -l arch_model/exm_direct.p4_name_lookup.json 
+#1448061128
+cd ../..
+#1448061131
+cd ../tofino_diag/
+#1448061199
+sudo -E ./install/bin/p4-tofino-test -c ./install/share/p4/targets/basic_ipv4.conf -t ptf-tests/basic_ipv4/
+#1448061562
+sudo gdb --args ./install/bin/tofino-model -l ~/code/p4factory/build/programs/bfd_test/basic_ipv4/p4_name_lookup.json  --logs-disable
+#1448062481
+sudo -E ./install/bin/p4-tofino-test -c ./install/share/p4/targets/basic_ipv4.conf -t ptf-tests/basic_ipv4/
+#1447802396
+sudo gdb --args ${P4FACTORY}/install/bin/tofino-model -l ~/code/p4factory/build/programs/bfd_test/context/bfd_test.p4_name_lookup.json  --logs-disable
+#1447813158
+sudo gdb --args ./install/bin/tofino-model -l ~/code/p4factory/build/programs/bfd_test/context/bfd_test.p4_name_lookup.json  --logs-disable
+#1447813465
+sudo ./install/bin/tofino-model -l ~/code/p4factory/build/programs/bfd_test/context/bfd_test.p4_name_lookup.json  --logs-disable
+#1447813626
+sudo gdb --args ./install/bin/tofino-model -l ~/code/p4factory/build/programs/bfd_test/context/bfd_test.p4_name_lookup.json  --logs-disable
+#1447814603
+ls
+#1447814611
+rm core 
+#1447814620
+sudo  ./install/bin/tofino-model -l ~/code/p4factory/build/programs/bfd_test/context/bfd_test.p4_name_lookup.json  --logs-disable
+#1447864606
+script 
+#1447864701
+mkdir /media/psf/vm/model_run_bfd_test/
+#1447864717
+cp model_0.log typescript /media/psf/vm/model_run_bfd_test/
+#1447864779
+cp build/programs/bfd_test/visualization/ /media/psf/vm/model_run_bfd_test/ -r
+#1447864794
+cp -r build/programs/bfd_test/context/ /media/psf/vm/model_run_bfd_test/
+#1447864804
+cp -r build/programs/bfd_test/logs/ /media/psf/vm/model_run_bfd_test/
+#1447864843
+vim typescript 
+#1447955192
+sudo gdb --args ./install/bin/tofino-model -l ~/code/p4factory/build/programs/bfd_test/context/p4_name_lookup.json  --logs-disable
+#1447975178
+ls -l pcap_output/
+#1447975254
+sudo gdb --args ./install/bin/tofino-model -l ~/code/p4factory/build/programs/bfd_test/context/p4_name_lookup.json  --logs-disable
+#1448417715
+sudo  ./install/bin/tofino-model -l ~/code/p4factory/build/programs/bfd_test/context/p4_name_lookup.json  --logs-disable
+#1448481523
+sudo -E install/bin/p4-tofino-test -c install/share/p4/targets/bfd_test.conf -t ptf-tests/bfd_test/ --bfd-test-json tools/bfd-test-info.json 
+#1448481676
+echo $?
+#1448487540
+sudo -E install/bin/p4-tofino-test -c install/share/p4/targets/bfd_test.conf -t ptf-tests/bfd_test/ --bfd-test-json tools/bfd-test-info.json 
+#1448487576
+sudo  ./install/bin/tofino-model -l ~/code/p4factory/build/programs/bfd_test/context/p4_name_lookup.json  --logs-disable
+#1448997437
+r
+#1448997438
+sudo  ./install/bin/tofino-model -l ~/code/p4factory/build/programs/bfd_test/context/p4_name_lookup.json  --logs-disable
+#1449007307
+sudo -E install/bin/p4-tofino-test -c install/share/p4/targets/bfd_test.conf -t ptf-tests/bfd_test/ --bfd-test-json bfd-test-info.json 
+#1449010230
+sudo  ./install/bin/tofino-model -l ~/code/p4factory/build/programs/bfd_test/context/p4_name_lookup.json  --logs-disable
+#1449010771
+sudo  .gdb --args /install/bin/tofino-model -l ~/code/p4factory/build/programs/bfd_test/context/p4_name_lookup.json  --logs-disable
+#1449010784
+sudo  gdb --args ./install/bin/tofino-model -l ~/code/p4factory/build/programs/bfd_test/context/p4_name_lookup.json  --logs-disable
+#1449014817
+sudo ./install/bin/tofino-model -l ~/code/p4factory/build/programs/bfd_test/context/p4_name_lookup.json  --logs-disable
+#1449085929
+sudo ./install/bin/tofino-model -l ~/code/p4factory/build/programs/bfd_test/context/p4_name_lookup.json  --logs-disable -f ptf-tests/bfd_test/ports.json 
+#1449098745
+top
+#1449098879
+sudo ./install/bin/tofino-model -l ~/code/p4factory/build/programs/drivers_test/context/p4_name_lookup.json  --logs-disable -f ptf-tests/drivers_test/ports.json 
+#1449100898
+ncdu
+#1449100905
+cd ../..
+#1449100907
+ncdu
+#1449100923
+top
+#1449101036
+sudo ./install/bin/tofino-model -l ~/code/p4factory/build/programs/drivers_test/context/p4_name_lookup.json  --logs-disable -f ptf-tests/drivers_test/ports.json 
+#1449101041
+cd code/p4factory/
+#1449101043
+sudo ./install/bin/tofino-model -l ~/code/p4factory/build/programs/drivers_test/context/p4_name_lookup.json  --logs-disable -f ptf-tests/drivers_test/ports.json 
+#1449105992
+r
+#1449105994
+sudo ./install/bin/tofino-model -l ~/code/p4factory/build/programs/drivers_test/context/p4_name_lookup.json  --logs-disable -f ptf-tests/drivers_test/ports.json 
+#1449167858
+fg
+#1449247597
+vim /var/log/syslog
+#1449273391
+sudo ./install/bin/tofino-model -l ~/code/p4factory/build/programs/drivers_test/context/p4_name_lookup.json  --logs-disable -f ptf-tests/drivers_test/ports.json 
+#1449557310
+r
+#1449557311
+sudo ./install/bin/tofino-model -l ~/code/p4factory/build/programs/drivers_test/context/p4_name_lookup.json  --logs-disable -f ptf-tests/drivers_test/ports.json 
+#1442335736
+gdb ./harlyn-bfd 
+#1448061569
+cd ~/code/tofino_diag/
+#1448061612
+sudo LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib:./install/lib gdb --args ./install/bin/switchd ./install/share/switchd/bf-switchd.json ./install/share/p4/targets/bfd_test.conf
+#1448061632
+sudo LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib:./install/lib gdb --args ./install/bin/switchd ./install/share/switchd/bf-switchd.json ./install/share/p4/targets/basic_ipv4.conf 
+#1447723360
+mycscope
+#1447863167
+mycsope
+#1447863170
+mycscope
+#1447867819
+cd ../model/
+#1447867822
+mycscope
+#1447873623
+cd ../bf-drivers/
+#1447873625
+mycscope
+#1447978101
+cd ../model/
+#1447978102
+mycscope
+#1448050139
+cd ../p4c-tofino
+#1448050141
+mycscope
+#1448050184
+cd ../bf-drivers/
+#1448050186
+mycscope
+#1448050435
+cd ../p4c-tofino/
+#1448050437
+mycscope
+#1448315849
+cd ../bf-drivers/
+#1448315850
+mycscope
+#1449000323
+cd ../ptf/
+#1449000325
+vim ptf 
+#1449000493
+mycscope
+#1449000551
+ls
+#1449000554
+vim ptf
+#1449000689
+cd src/
+#1449000690
+ls
+#1449000691
+vim ptf/
+#1449000703
+cd ptf/
+#1449000704
+ls
+#1449000710
+grep "test_params" *
+#1449000717
+grep "test-params" *
+#1449012863
+cd ../../../bf-drivers/
+#1449012865
+mycscope
+#1449879532
+cd ../..
+#1449879536
+cd ptf-tests/
+#1449879539
+mycscope
+#1450202011
+cd drivers_test/
+#1450202012
+ls
+#1450202018
+vim bf_tables.py 
+#1450291506
+cd ../..
+#1450291511
+vim tools/drivers_test_comb.py 
+#1450484761
+top
+#1448061803
+cd ~/code/tofino_diag/
+#1448061808
+cd submodules/bf-drivers/
+#1448061809
+mycscope
+#1446837605
+git submodule update --init --recursive
+#1448059721
+cd ../
+#1448059722
+sls
+#1448059723
+ls
+#1448059728
+cd tofino_diag/
+#1448059730
+git status
+#1448059736
+git checkout master 
+#1448059738
+git pull origin master 
+#1448059800
+git status
+#1448059802
+git submodule update --init --recursive
+#1448059804
+git status
+#1448059809
+cd submodules/bf-drivers/
+#1448059815
+git checkout vk_learn_fixup 
+#1448059818
+git pull origin vk_learn
+#1448059821
+git pull origin vk_learn_fixup 
+#1448059825
+git log
+#1448059830
+cd ../p4c-tofino/
+#1448059832
+git checkout vk_learn_fixup 
+#1448059836
+git pull origin vk_learn_fixup 
+#1448059839
+cd ../model/
+#1448059852
+git checkout fix_lq_order 
+#1448059857
+git pull origin fix_lq_order 
+#1448059866
+cd ../p4c-tofino/
+#1448059867
+git status
+#1448059870
+git pull origin master 
+#1448059875
+cd ../bf-drivers/
+#1448059879
+git pull origin master 
+#1448059885
+cd ../model/
+#1448059887
+git pull origin master 
+#1448059892
+cd ../..
+#1448059893
+git status
+#1448060390
+sudo git clean -fxd
+#1448060393
+git status
+#1448060397
+rm -rf submodules/switchapi/
+#1448060401
+rm -rf submodules/switchlink/
+#1448060408
+rm -rf submodules/switchsai/
+#1448060413
+vim tools/submodule-clean.sh 
+#1448060430
+git assume tools/submodule-clean.sh
+#1448060435
+tools/submodule-clean.sh 
+#1448060436
+git status
+#1448060440
+cd submodules/bf-drivers/
+#1448060441
+git status
+#1448060445
+rm -rf py-compile 
+#1448060449
+git clean -fxd
+#1448060451
+git status
+#1448060453
+cd ../..
+#1448060454
+git status
+#1448060464
+vim tools/submodule-clean.sh 
+#1448060480
+git submodule | cut -d' ' -f3
+#1448060486
+git status
+#1448060489
+git submodule 
+#1448060494
+git submodule  status
+#1448060507
+vim tools/submodule-clean.sh 
+#1448060524
+vim tools/pull_new_top_p4f_ws 
+#1448060534
+vim tools/submodule-clean.sh 
+#1448060557
+tools/submodule-clean.sh 
+#1448060560
+git status
+#1448060568
+./autogen.sh && ./configure
+#1448061218
+find . -name "entry_format.c"
+#1448061225
+vim ./build/programs/basic_ipv4/api/tbl_packing/entry_format.c
+#1448061356
+cd submodules/model/
+#1448061358
+git diff origin/master 
+#1448061962
+git log
+#1448062243
+git status
+#1448062248
+git pull origin fix_lq_order 
+#1448062484
+git status
+#1448586379
+cd ../..
+#1448586381
+ls
+#1448586388
+git status
+#1448586394
+git submodule update --init --recursive
+#1448586399
+git pull origin master 
+#1448586410
+git status
+#1448586412
+git submodule update --init --recursive
+#1448586439
+ls programs/action_spec_format/
+#1448588915
+find . -name "pd.c"
+#1448588934
+vimdiff ./submodules/p4c-tofino/p4c_tofino/target/tofino/pd/templates/src/pd.c ../p4factory/./submodules/p4c-tofino/p4c_tofino/target/tofino/pd/templates/src/pd.c
+#1448589039
+vim ./build/programs/action_spec_format/api/src/pd.c
+#1448995221
+vim tools/submodule-clean.sh 
+#1449100983
+cd
+#1449100986
+pwd
+#1449100987
+ls
+#1449100997
+cd code/p4factory/
+#1449100998
+ls
+#1449101009
+ls -lrt
+#1449101022
+typescript
+#1449101025
+script
+#1449101153
+vim typescript 
+#1449101331
+grep "'Stats', 4026" typescript 
+#1449101494
+vim typescript 
+#1449101517
+sudo PATH=${P4FACTORY}/install/bin:$PATH python ${P4FACTORY}/install/lib/pythoon2.7/site-packages/p4testutils/run_ptf_tests.py --test-dir /home/vkumar/code/p4factory/ptf-tests/drivers_test/ --device--type asic --drivers-test-info drivers-test-info.json --port-info ptf-tests/drivers_test/ports.json
+#1449101534
+sudo PATH=./install/bin:$PATH python ./install/lib/pythoon2.7/site-packages/p4testutils/run_ptf_tests.py --test-dir /home/vkumar/code/p4factory/ptf-tests/drivers_test/ --device--type asic --drivers-test-info drivers-test-info.json --port-info ptf-tests/drivers_test/ports.json
+#1449101570
+sudo PATH=./install/bin:$PATH python ./install/lib/python2.7/site-packages/p4/testutils/run_ptf_tests.py --test-dir ./ptf-tests/drivers_test/ --device--type asic --drivers-test-info drivers-test-info.json --port-info ptf-tests/drivers_test/ports.json
+#1449101616
+sudo PATH=./install/bin:$PATH python ./install/lib/python2.7/site-packages/p4testutils/run_ptf_tests.py --test-dir ./ptf-tests/drivers_test/ --device--type asic --drivers-test-info drivers-test-info.json --port-info ptf-tests/drivers_test/ports.json
+#1449101632
+sudo PATH=./install/bin:$PATH python ./install/lib/python2.7/site-packages/p4testutils/run_ptf_tests.py --test-dir ./ptf-tests/drivers_test/ --device-type asic --drivers-test-info drivers-test-info.json --port-info ptf-tests/drivers_test/ports.json
+#1449167852
+fg
+#1449273409
+sudo PATH=./install/bin:$PATH python ./install/lib/python2.7/site-packages/p4testutils/run_ptf_tests.py --test-dir ./ptf-tests/drivers_test/ --device-type asic --drivers-test-info drivers-test-info.json --port-info ptf-tests/drivers_test/ports.json
+#1449514452
+reset
+#1449514472
+sudo PATH=./install/bin:$PATH python ./install/lib/python2.7/site-packages/p4testutils/run_ptf_tests.py --test-dir ./ptf-tests/drivers_test/ --device-type asic --drivers-test-info drivers-test-info.json --port-info ptf-tests/drivers_test/ports.json
+#1449514718
+reset
+#1449514726
+sudo PATH=./install/bin:$PATH python ./install/lib/python2.7/site-packages/p4testutils/run_ptf_tests.py --test-dir ./ptf-tests/drivers_test/ --device-type asic --drivers-test-info drivers-test-info.json --port-info ptf-tests/drivers_test/ports.json
+#1449535740
+reset
+#1449535779
+sudo PATH=./install/bin:$PATH python ./install/lib/python2.7/site-packages/p4testutils/run_ptf_tests.py --test-dir ./ptf-tests/drivers_test/ --device-type asic --drivers-test-info drivers-test-info.json --port-info ptf-tests/drivers_test/ports.json
+#1449535945
+rest
+#1449535947
+reset
+#1449535968
+sudo PATH=./install/bin:$PATH python ./install/lib/python2.7/site-packages/p4testutils/run_ptf_tests.py --test-dir ./ptf-tests/drivers_test/ --device-type asic --drivers-test-info drivers-test-info.json --port-info ptf-tests/drivers_test/ports.json
+#1449536095
+reset
+#1449536130
+sudo PATH=./install/bin:$PATH python ./install/lib/python2.7/site-packages/p4testutils/run_ptf_tests.py --test-dir ./ptf-tests/drivers_test/ --device-type asic --drivers-test-info drivers-test-info.json --port-info ptf-tests/drivers_test/ports.json
+#1449537199
+reset
+#1449537218
+sudo PATH=./install/bin:$PATH python ./install/lib/python2.7/site-packages/p4testutils/run_ptf_tests.py --test-dir ./ptf-tests/drivers_test/ --device-type asic --drivers-test-info drivers-test-info.json --port-info ptf-tests/drivers_test/ports.json
+#1449538426
+reset
+#1449538458
+sudo PATH=./install/bin:$PATH python ./install/lib/python2.7/site-packages/p4testutils/run_ptf_tests.py --test-dir ./ptf-tests/drivers_test/ --device-type asic --drivers-test-info drivers-test-info.json --port-info ptf-tests/drivers_test/ports.json
+#1449539360
+reset
+#1449539391
+sudo PATH=./install/bin:$PATH python ./install/lib/python2.7/site-packages/p4testutils/run_ptf_tests.py --test-dir ./ptf-tests/drivers_test/ --device-type asic --drivers-test-info drivers-test-info.json --port-info ptf-tests/drivers_test/ports.json
+#1449557230
+ls
+#1449557238
+sudo PATH=./install/bin:$PATH python ./install/lib/python2.7/site-packages/p4testutils/run_ptf_tests.py --test-dir ./ptf-tests/drivers_test/ --device-type asic --drivers-test-info drivers-test-info.json --port-info ptf-tests/drivers_test/ports.json
+#1449619307
+ls
+#1449619328
+sudo PATH=./install/bin:$PATH python ./install/lib/python2.7/site-packages/p4testutils/run_ptf_tests.py --test-dir ./ptf-tests/drivers_test/ --device-type asic --drivers-test-info drivers-test-info.json --port-info ptf-tests/drivers_test/ports.json
+#1449620274
+reset
+#1449620283
+sudo PATH=./install/bin:$PATH python ./install/lib/python2.7/site-packages/p4testutils/run_ptf_tests.py --test-dir ./ptf-tests/drivers_test/ --device-type asic --drivers-test-info drivers-test-info.json --port-info ptf-tests/drivers_test/ports.json
+#1449635133
+tmux detach -a
+#1449635135
+reset
+#1449682318
+ls
+#1449682359
+sudo PATH=./install/bin:$PATH python ./install/lib/python2.7/site-packages/p4testutils/run_ptf_tests.py --test-dir ./ptf-tests/drivers_test/ --device-type asic --drivers-test-info drivers-test-info.json --port-info ptf-tests/drivers_test/ports.json
+#1449682768
+reset
+#1449682782
+sudo PATH=./install/bin:$PATH python ./install/lib/python2.7/site-packages/p4testutils/run_ptf_tests.py --test-dir ./ptf-tests/drivers_test/ --device-type asic --drivers-test-info drivers-test-info.json --port-info ptf-tests/drivers_test/ports.json
+#1449684520
+history
+#1449684525
+sudo PATH=./install/bin:$PATH python ./install/lib/python2.7/site-packages/p4testutils/run_ptf_tests.py --test-dir ./ptf-tests/drivers_test/ --device-type asic --drivers-test-info drivers-test-info.json --port-info ptf-tests/drivers_test/ports.json
+#1447710928
+vim ptf-tests/bfd_test/test.py
+#1448933978
+fg
+#1448933980
+vim ptf-tests/bfd_test/test.py
+#1448996351
+fg
+#1448996353
+vim ptf-tests/bfd_test/test.py
+#1448997789
+fg
+#1448997791
+vim ptf-tests/bfd_test/test.py
+#1449008196
+fg
+#1449008198
+vim ptf-tests/bfd_test/test.py
+#1449009293
+vim ptf-tests/bfd_test/bf_log.py
+#1449014654
+vim ptf-tests/bfd_test/test.py
+#1449014779
+fg
+#1449014781
+vim ptf-tests/bfd_test/test.py
+#1449081816
+fg
+#1449081817
+vim ptf-tests/bfd_test/test.py
+#1449098141
+fg
+#1449098157
+rm -rf ptf-tests/bfd_test/
+#1449098169
+vim ptf-tests/drivers_test/test.py
+#1449098897
+fg
+#1449098899
+vim ptf-tests/drivers_test/test.py
+#1449106706
+fg
+#1449164049
+vim ptf-tests/drivers_test/test.py
+#1449168314
+cd ptf-tests/drivers_test/
+#1449168315
+vim test.py
+#1449602878
+fg
+#1449602879
+vim test.py
+#1442430025
+fg
+#1448061638
+cd ~/code/tofino_diag/
+#1448061685
+sudo PATH=./install/bin:$PATH python ./install/lib/python2.7/site-packages/p4testutils/run_ptf_tests.py --test-dir ptf-tests/basic_ipv4/ --device-type asic
+#1448061711
+sudo PATH=./install/bin:$PATH python ./install/lib/python2.7/site-packages/p4testutils/run_ptf_tests.py --test-dir ptf-tests/basic_ipv4/ --device-type asic test.TestLearning
+#1448586794
+vim install/lib/python2.7/site-packages/action_spec_format_p4_pd_rpc/action_spec_format.py
+#1450485884
+tmux
+#1450735963
+tmux attach
+#1450758681
+tmux kill-ses -t 0
+#1450758683
+tmux attach
+#1450482243
+git pull origin master 
+#1450901112
+tmux attach
+#1450905266
+tmux attach
+#1452021525
+tmux 
+#1450482243
+git pull origin master 
+#1452040635
+mycscope
+#1477946436
+cd ../bf-utils/
+#1477946437
+mycscope
+#1477946463
+cd ../bf-drivers/
+#1477946464
+git status
+#1477946467
+mycscope
+#1477946478
+cd ../bf-utils/
+#1477946479
+mycscope
+#1477947065
+cd ../bf-drivers/
+#1477947068
+git status
+#1477947070
+mycscope
+#1478562779
+fg
+#1478647272
+mycscope
+#1478717023
+git status
+#1478722034
+mycscope
+#1481222852
+fg

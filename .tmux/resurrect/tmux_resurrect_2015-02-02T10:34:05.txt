@@ -1,0 +1,22 @@
+pane	pipe-mgr	1	:bash	1	:*	1	:/home/vkumar/code/bf-drivers/targets/utests/pipe_mgr	0	bash	:
+pane	pipe-mgr	1	:bash	1	:*	2	:/home/vkumar/code/bf-drivers	0	bash	:
+pane	pipe-mgr	1	:bash	1	:*	3	:/home/vkumar/code/bf-drivers	1	bash	:
+pane	pipe-mgr	2	:bash	0	: 	1	:/home/vkumar/code/glass-hlir	0	bash	:
+pane	pipe-mgr	2	:bash	0	: 	2	:/home/vkumar/code/p4factory	1	bash	:
+pane	pipe-mgr	3	:bash	0	: 	1	:/home/vkumar/code/p4factory/targets/basic_ipv4	0	bash	:
+pane	pipe-mgr	3	:bash	0	: 	2	:/home/vkumar/code/p4factory/targets/basic_ipv4	0	bash	:
+pane	pipe-mgr	3	:bash	0	: 	3	:/home/vkumar/code/p4factory/submodules/p4c-tofino	1	bash	:
+pane	pipe-mgr	3	:bash	0	: 	4	:/home/vkumar/code/p4factory/submodules/bf-drivers	0	bash	:
+pane	pipe-mgr	3	:bash	0	: 	5	:/home/vkumar/code/p4factory/targets/basic_ipv4	0	bash	:
+pane	pipe-mgr	3	:bash	0	: 	6	:/home/vkumar/code/p4factory/targets/basic_ipv4	0	bash	:
+pane	pipe-mgr	4	:bash	0	:-	1	:/home/vkumar/code/test2/p4factory	0	bash	:
+pane	pipe-mgr	4	:bash	0	:-	2	:/home/vkumar/code/test2/p4factory/targets/basic_ipv4	0	bash	:
+pane	pipe-mgr	4	:bash	0	:-	3	:/home/vkumar/code/test2/p4factory/targets/basic_ipv4	0	bash	:
+pane	pipe-mgr	4	:bash	0	:-	4	:/home/vkumar/code/test2/p4factory/submodules/model	1	bash	:
+pane	pipe-mgr	4	:bash	0	:-	5	:/home/vkumar/code/test2/p4factory/targets/basic_ipv4	0	bash	:
+pane	pipe-mgr	4	:bash	0	:-	6	:/home/vkumar/code/test2/p4factory/targets/basic_ipv4/arch_model	0	bash	:
+window	pipe-mgr	1	1	:*	5166,364x77,0,0{163x77,0,0[163x44,0,0,1,163x32,0,45,2],200x77,164,0,3}
+window	pipe-mgr	2	0	: 	3dba,364x77,0,0{159x77,0,0,4,204x77,160,0,5}
+window	pipe-mgr	3	0	: 	efdd,364x77,0,0{174x77,0,0[174x27,0,0,6,174x17,0,28,7,174x31,0,46,8],189x77,175,0[189x24,175,0,10,189x17,175,25,19,189x34,175,43,11]}
+window	pipe-mgr	4	0	:-	d314,364x77,0,0{201x77,0,0[201x33,0,0,12,201x20,0,34,13,201x22,0,55,14],162x77,202,0[162x30,202,0,15,162x12,202,31,16,162x33,202,44,17]}
+state	pipe-mgr	

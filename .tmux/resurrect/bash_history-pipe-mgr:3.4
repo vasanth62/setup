@@ -1,0 +1,2000 @@
+#1436309211
+rm cscope.files 
+#1436309211
+rm cscope.out 
+#1436309211
+cd ../..
+#1436309211
+git status
+#1436309211
+cd submodules/switchapi/
+#1436309211
+git status
+#1436309211
+git diff
+#1436309211
+git commit -a -m "Changing ttl query interval to a aging time value"
+#1436309211
+git status
+#1436309211
+git push origin antonin-idle 
+#1436309211
+cd ../..
+#1436309211
+git status
+#1436309211
+git commit -a -m "Updating switchapi"
+#1436309211
+git push origin vk_idle 
+#1436309211
+git status
+#1436309211
+cd submodules/bf-drivers/
+#1436309211
+git status
+#1436309211
+git checkout master 
+#1436309211
+git pull origin master 
+#1436309211
+git status
+#1436309211
+cd ../p4c-tofino/
+#1436309211
+git status
+#1436309211
+git checkout master 
+#1436309211
+git pull origin master 
+#1436309211
+git status
+#1436309211
+git log
+#1436309211
+cd ../switchapi/
+#1436309211
+git checkout master 
+#1436309211
+git pull origin master 
+#1436309211
+git status
+#1436309211
+cd ../..
+#1436309211
+git status
+#1436309211
+git commit -a -m "Updating submodules to master"
+#1436309211
+git pull origin master 
+#1436309211
+git status
+#1436309211
+git submodule update 
+#1436309211
+git status
+#1436309211
+git push origin vk_idle 
+#1436309211
+git status
+#1436309211
+git checkout master 
+#1436309211
+git pull origin master 
+#1436309211
+git status
+#1436309211
+git submodule update 
+#1436309211
+cd submodules/bf-drivers/
+#1436309211
+git log
+#1436309211
+git fetch -p
+#1436309211
+git checkout vk_stats 
+#1436309211
+git pull origin vk_stats 
+#1436309211
+cd ../switchapi/
+#1436309211
+mycscope
+#1436309211
+cd ../p4c-behavioral/
+#1436309211
+mycscope
+#1436309211
+cd ../..
+#1436309211
+git status
+#1436309211
+cd submodules/bf-drivers/
+#1436309211
+git log
+#1436309211
+git diff
+#1436309211
+git status
+#1436309211
+cd ../..
+#1436309211
+git status
+#1436309211
+git submodule update 
+#1436309211
+git status
+#1436309211
+git pull origin master 
+#1436309211
+git unassume tools/run_p4factory_switch.sh
+#1436309211
+git stash
+#1436309211
+git unassume tools/run_p4factory_switch.sh
+#1436309211
+git pull origin master 
+#1436309211
+git status
+#1436309211
+git submodule update 
+#1436309211
+git stash pop
+#1436309211
+git assume tools/run_p4factory_switch.sh
+#1436309211
+tools/submodule-clean.sh 
+#1436309211
+git status
+#1436309211
+git clean -fx
+#1436309211
+git statu
+#1436309211
+git status
+#1436309211
+cd submodules/bf-drivers/
+#1436309211
+git checkout idle_exm_integ 
+#1436309211
+git pull origin idle_exm_integ 
+#1436309211
+cd ../switchapi/
+#1436309211
+git checkout idletime_integ 
+#1436309211
+git pull origin idletime_integ 
+#1436309211
+cd ../bf-drivers/
+#1436309211
+cd ../..
+#1436309211
+vim tools/run_p4factory_switch.sh 
+#1436309211
+sudo tools/run_p4factory_switch.sh ~/code/switch/ switch
+#1436309211
+vim tools/run_p4factory_switch.sh 
+#1436309211
+sudo tools/run_p4factory_switch.sh ~/code/switch/ switch
+#1436309211
+cd submodules/bf-drivers/
+#1436309211
+git diff
+#1436309211
+cd ../..
+#1436309211
+git status
+#1436309211
+git submodule update 
+#1436309211
+git pull origin master 
+#1436309211
+git unassume tools/run_p4factory_switch.sh
+#1436309211
+git status
+#1436309211
+git diff
+#1436309211
+git checkout tools/run_p4factory_switch.sh
+#1436309211
+git status
+#1436309211
+git pull origin master 
+#1436309211
+git status
+#1436309211
+git submodule update 
+#1436309211
+cd submodules/bf-drivers/
+#1436309211
+git status
+#1436309211
+git diff
+#1436309211
+git checkout modules/pipe_mgr/module/src/pipe_mgr_idle.c
+#1436309211
+git status
+#1436309211
+git fetch 
+#1436309211
+git checkout vk_idle 
+#1436309211
+git pull origin vk_idle 
+#1436309211
+git status
+#1436309211
+git pull origin master 
+#1436309211
+cd ../..
+#1436309211
+git status
+#1436309211
+vim tools/run_p4factory_switch.sh 
+#1436309211
+git status
+#1436309211
+vim tools/run_p4factory_switch.sh 
+#1436309211
+mycscope
+#1436309211
+rm ../../submodules/bf-drivers/targets/lib_bf_drivers/build/gcc-local/bin/lib_bf_drivers.so
+#1436309211
+top
+#1436309211
+mycscope
+#1436309211
+tmux detach -a
+#1436309211
+cd ..
+#1436309211
+git clone https://github.com/Linutronix/libuio
+#1436309211
+cd libuio/
+#1436309211
+./autogen.sh 
+#1436309211
+sudo apt-get install autotools-dev libltdl-dev libtool autoconf autopoint texinfo
+#1436309211
+./autogen.sh 
+#1436309211
+./config
+#1436309211
+./configi
+#1436309211
+./configure 
+#1436309211
+make
+#1436309211
+sudo make install
+#1436309211
+sudo ldconfig
+#1436309211
+[47, 64, 55, 80, 89, 165]
+#1436309211
+sudo ./run_tests.py --test-dir of-tests/tests/api-tests/ switch.L3IPv6HostTest
+#1436309211
+sudo ./run_tests.py --test-dir of-tests/tests/api-tests/ switch.L2TrunkToAccessVlanTest
+#1436309211
+touch p4src/switch.p4 
+#1436309211
+sudo ./run_tests.py --test-dir of-tests/tests/api-tests/ switch.L2DynamicLearnAgeTest
+#1436309211
+sudo ./run_tests.py --test-dir of-tests/tests/api-tests/ switch.L2MplsPushTest
+#1436309211
+sudo ../../tools/run_p4factory_test.sh ~/code/switch/ switch
+#1436309211
+cd arch_model/
+#1436309211
+rm core 
+#1436309211
+cd ..
+#1436309211
+sudo ../../tools/run_p4factory_switch.sh ~/code/switch/ switch
+#1436309211
+cd code/switch/targets/switch/
+#1436309211
+cd arch_model/
+#1436309211
+sudo gdb ./harlyn-bfd 
+#1436309211
+cd ../
+#1436309211
+vim tofino_products/
+#1436309211
+cd arch_model/
+#1436309211
+sudo gdb ./harlyn
+#1436309211
+sudo gdb ./harlyn-bfd 
+#1436309211
+top
+#1436309211
+sudo gdb ./harlyn-bfd 
+#1436309211
+vim bfn/default_profile/switch/tbl-cfg 
+#1436309211
+grep stage_idletime_table bfn/default_profile/switch/tbl-cfg 
+#1436309211
+vim bfn/default_profile/switch/tbl-cfg 
+#1436309211
+sudo gdb ./harlyn-bfd 
+#1436309211
+vim bfn/default_profile/switch/tbl-cfg 
+#1436309211
+cd ../
+#1436309211
+vim arch_model/bfn/default_profile/switch/tbl-cfg 
+#1436309211
+make run-bfd
+#1436309211
+cd arch_model/
+#1436309211
+sudo gdb ./harlyn-bfd 
+#1436309211
+vim bfn/default_profile/switch/tbl-cfg 
+#1436309211
+sudo gdb ./harlyn-bfd 
+#1436309211
+touch ../p4src/switch.p4 
+#1436309211
+sudo gdb ./harlyn-bfd 
+#1436309211
+make run-bfd
+#1436309211
+cd ..
+#1436309211
+make run-bfd
+#1436309211
+cd arch_model/
+#1436309211
+sudo gdb ./harlyn-bfd 
+#1436309211
+cd ../arch_model/
+#1436309211
+sudo gdb ./harlyn-bfd 
+#1436309211
+cd ..
+#1436309211
+make run-bfd
+#1436309211
+cd arch_model/
+#1436309211
+sudo gdb ./harlyn-bfd 
+#1436309211
+sudo gdb ./harlyn-bfd core
+#1436309211
+sudo gdb ./harlyn-bfd 
+#1436309211
+script
+#1436309211
+grep VK typescript 
+#1436309211
+cp typescript /media/psf/vm/
+#1436309211
+vim typescript 
+#1436309211
+sudo gdb ./harlyn-bfd 
+#1436309211
+cd -
+#1436309211
+cd ../model/
+#1436309211
+mycscope
+#1436309211
+cd ../p4c-tofino/
+#1436309211
+mycscope
+#1436309211
+quit
+#1436309211
+cd ../model/
+#1436309211
+mycscope
+#1436309211
+make run-arch
+#1436309211
+make harlyn-install
+#1436309211
+vim /media/psf/vm/selector.log
+#1436309211
+ssh bigfoot
+#1436309211
+vim of-tests/tests/test.py 
+#1436309211
+git log
+#1436309211
+cd -
+#1436309211
+cd ../exm_direct
+#1436309211
+vim p4src/exm_direct.p4 
+#1436309211
+vim of-tests/tests/test.py
+#1436309211
+sudo ./run_tests.py --test-dir of-tests/tests/ test.TestIdleTimeNotify
+#1436309211
+fg
+#1436309211
+sudo ./run_tests.py --test-dir of-tests/tests/ test.TestIdleTimeNotify
+#1436309211
+fg
+#1436309211
+sudo ./run_tests.py --test-dir of-tests/tests/ test.TestIdleTimeNotify
+#1436309211
+fg
+#1436309211
+sudo ./run_tests.py --test-dir of-tests/tests/ test.TestIdleTimeNotify
+#1436309211
+fg
+#1436309211
+sudo ./run_tests.py --test-dir of-tests/tests/ test.TestIdleTimeNotify
+#1436309211
+fg
+#1436309211
+vim of-tests/tests/test.py
+#1436309211
+sudo ./run_tests.py --test-dir of-tests/tests/ test.TestIdleTimeNotify
+#1436309211
+fg
+#1436309211
+vim of-tests/tests/test.py
+#1436309211
+sudo ./run_tests.py --test-dir of-tests/tests/ test.TestIdleTimeNotify
+#1436309211
+fg
+#1436309211
+sudo ./run_tests.py --test-dir of-tests/tests/ test.TestIdleTimeNotify
+#1436309211
+fg
+#1436309211
+sudo ./run_tests.py --test-dir of-tests/tests/ test.TestIdleTimeNotify
+#1436309211
+vim 1
+#1436309211
+fg
+#1436309211
+vim of-tests/tests/test.py
+#1436309211
+sudo ./run_tests.py --test-dir of-tests/tests/ test.TestIdleTimeNotify
+#1436309211
+tmux detach -a
+#1436309211
+sudo ./run_tests.py --test-dir of-tests/tests/ test.TestIdleTimeNotify
+#1436309211
+fg
+#1436309211
+sudo ./run_tests.py --test-dir of-tests/tests/ test.TestIdleTimeNotify
+#1436309211
+fg
+#1436309211
+sudo ./run_tests.py --test-dir of-tests/tests/ test.TestIdleTimeNotify
+#1436309211
+fg
+#1436309211
+vim of-tests/tests/test.py
+#1436309211
+sudo ./run_tests.py --test-dir of-tests/tests/ test.TestIdleTimeNotify
+#1436309211
+fg
+#1436309211
+sudo ./run_tests.py --test-dir of-tests/tests/ test.TestIdleTimeNotify
+#1436309211
+fg
+#1436309211
+sudo ./run_tests.py --test-dir of-tests/tests/ test.TestIdleTimeNotify
+#1436309211
+fg
+#1436309211
+sudo ./run_tests.py --test-dir of-tests/tests/ test.TestIdleTimeNotify
+#1436309211
+fg
+#1436309211
+sudo ./run_tests.py --test-dir of-tests/tests/ test.TestIdleTimeNotify
+#1436309211
+fg
+#1436309211
+sudo ./run_tests.py --test-dir of-tests/tests/ test.TestIdleTimeNotify
+#1436309211
+fg
+#1436309211
+sudo ./run_tests.py --test-dir of-tests/tests/ test.TestIdleTimeNotify
+#1436309211
+fg
+#1436309211
+vim of-tests/tests/test.py
+#1436309211
+fg
+#1436309211
+jk
+#1436309211
+vim 1
+#1436309211
+rm 1
+#1436309211
+vim 1
+#1436309211
+ls
+#1436309211
+rm 1
+#1436309211
+script
+#1436309211
+cp typescript run1
+#1436309211
+script
+#1436309211
+vimdiff typescript run1
+#1436309211
+0;176;39M0;176;39m
+#1436309211
+reset
+#1436309211
+vim run1
+#1436309211
+fg
+#1436309211
+vim of-tests/tests/test.py
+#1436309211
+sudo ./run_tests.py --test-dir of-tests/tests/ test.TestIdleTimeNotify
+#1436309211
+f
+#1436309211
+fg
+#1436309211
+sudo ./run_tests.py --test-dir of-tests/tests/ test.TestIdleTimeNotify
+#1436309211
+fg
+#1436309211
+vim of-tests/tests/test.py
+#1436309211
+sudo ./run_tests.py --test-dir of-tests/tests/ test.TestIdleTimeNotify
+#1436309211
+fg
+#1436309211
+vim of-tests/tests/test.py
+#1436309211
+sudo ./run_tests.py --test-dir of-tests/tests/ test.TestIdleTimeNotify
+#1436309211
+fg
+#1436309211
+sudo ./run_tests.py --test-dir of-tests/tests/ test.TestIdleTimeNotify
+#1436309211
+fg
+#1436309211
+sudo ./run_tests.py --test-dir of-tests/tests/ test.TestIdleTimeNotify
+#1436309211
+fg
+#1436309211
+sudo ./run_tests.py --test-dir of-tests/tests/ test.TestIdleTimeNotify
+#1436309211
+make run-arch-tests
+#1436309211
+vim p4src/exm_direct.p4 
+#1436309211
+vim of-tests/tests/test.py
+#1436309211
+sudo ./run_tests.py --test-dir of-tests/tests/ test.TestIdleTimeTCAM
+#1436309211
+fg
+#1436309211
+sudo ./run_tests.py --test-dir of-tests/tests/ test.TestIdleTimeTCAM
+#1436309211
+fg
+#1436309211
+sudo ./run_tests.py --test-dir of-tests/tests/ test.TestIdleTimeTCAM
+#1436309211
+fg
+#1436309211
+sudo ./run_tests.py --test-dir of-tests/tests/ test.TestIdleTimeTCAM
+#1436309211
+fg
+#1436309211
+sudo ./run_tests.py --test-dir of-tests/tests/ test.TestIdleTimeTCAM
+#1436309211
+fg
+#1436309211
+sudo ./run_tests.py --test-dir of-tests/tests/ test.TestIdleTimeTCAM
+#1436309211
+vim p4src/exm_direct.p4 
+#1436309211
+fg
+#1436309211
+git status
+#1436309211
+fg
+#1436309211
+vim p4src/exm_direct.p4 
+#1436309211
+vim of-tests/tests/test.py
+#1436309211
+sudo ./run_tests.py --test-dir of-tests/tests/ test.TestIdleTimeTCAM
+#1436309211
+fg
+#1436309211
+vim of-tests/tests/test.py
+#1436309211
+fg
+#1436309211
+vim of-tests/tests/test.py
+#1436309211
+sudo ./run_tests.py --test-dir of-tests/tests/ test.TestIdleTimeTCAM
+#1436309211
+fg
+#1436309211
+vim of-tests/tests/test.py
+#1436309211
+fg
+#1436309211
+sudo ./run_tests.py --test-dir of-tests/tests/ test.TestSelectorDetailedTCAM
+#1436309211
+fg
+#1436309211
+sudo ./run_tests.py --test-dir of-tests/tests/ test.TestSelectorDetailedTCAM
+#1436309211
+fg
+#1436309211
+sudo ./run_tests.py --test-dir of-tests/tests/ test.TestSelectorDetailedTCAM
+#1436309211
+fg
+#1436309211
+vim of-tests/tests/test.py
+#1436309211
+fg
+#1436309211
+vim of-tests/tests/test.py
+#1436309211
+sudo ./run_tests.py --test-dir of-tests/tests/ test.TestSelectorDetailedTCAM
+#1436309211
+vim of-tests/tests/test.py
+#1436309211
+sudo ./run_tests.py --test-dir of-tests/tests/ test.TestSelectorDetailedTCAM
+#1436309211
+fg
+#1436309211
+vim of-tests/tests/test.py
+#1436309211
+sudo ./run_tests.py --test-dir of-tests/tests/ test.TestSelectorDetailedTCAM
+#1436309211
+vim of-tests/tests/test.py
+#1436309211
+fg
+#1436309211
+sudo ./run_tests.py --test-dir of-tests/tests/ test.TestIdleDetailedTCAM
+#1436309211
+sudo ./run_tests.py --test-dir of-tests/tests/ test.TestIdleTimeTCAM
+#1436309211
+fg
+#1436309211
+sudo ./run_tests.py --test-dir of-tests/tests/ test.TestIdleTimeTCAM
+#1433961940
+echo $TIMEOUT
+#1433961943
+tmux
+#1433985840
+tmux attach
+#1433986872
+tmux attach
+#1433961945
+cd -
+#1433962549
+cd ../exm_direct
+#1433962553
+vim of-tests/tests/test.py
+#1434004083
+fg
+#1434004086
+vim of-tests/tests/test.py
+#1434004140
+sudo ./run_tests.py --test-dir of-tests/tests/ test.TestSelectorDetailedTCAM
+#1434004889
+fg
+#1434004917
+sudo ./run_tests.py --test-dir of-tests/tests/ test.TestSelectorDetailedEXM
+#1434035620
+fg
+#1434035626
+vim of-tests/tests/test.py
+#1434035778
+sudo ./run_tests.py --test-dir of-tests/tests/ test.TestSelectorDetailedEXM
+#1434041717
+sudo ./run_tests.py --test-dir of-tests/tests/ test.TestSelectorDetailedTCAM
+#1434042445
+fg
+#1434042469
+sudo ./run_tests.py --test-dir of-tests/tests/ test.TestSelectorDetailedTCAM
+#1434044357
+fg
+#1434044367
+sudo ./run_tests.py --test-dir of-tests/tests/ test.TestSelectorDetailedEXM
+#1434123148
+sudo ./run_tests.py --test-dir of-tests/tests/ test.TestSelectorDetailedTCAM
+#1434395974
+touch p4src/exm_direct.p4 
+#1434396207
+sudo ./run_tests.py --test-dir of-tests/tests/ test.TestSelectorDetailedEXM
+#1434396292
+fg
+#1434396329
+sudo ./run_tests.py --test-dir of-tests/tests/ test.TestSelectorDetailedTCAM test.TestSelectorDetailedEXM
+#1434396762
+touch p4src/exm_direct.p4 
+#1434397055
+sudo ./run_tests.py --test-dir of-tests/tests/ test.TestSelectorDetailedTCAM test.TestSelectorDetailedEXM
+#1434650417
+fg
+#1433961945
+cd -
+#1434036862
+cd ../model/
+#1434036863
+mycscope
+#1434123543
+cd ../p4c-tofino/
+#1434123545
+mycscope
+#1433961945
+make harlyn-install
+#1433961945
+ssh bigfoot
+#1433961945
+vim /media/psf/vm/selector.log
+#1433961945
+[47, 64, 55, 80, 89, 165]
+#1433961945
+vim of-tests/tests/test.py 
+#1433961945
+make run-arch
+#1433961945
+mycscope
+#1433961945
+mycscope
+#1433985855
+cd ../rough/
+#1433985856
+vim
+#1433985861
+ls
+#1433985863
+vim main.c 
+#1434491287
+vim range.c 
+#1434570421
+cd ../bf-drivers/
+#1434570429
+mycscope 
+#1433961945
+sudo ../..//tools/run_p4factory_switch.sh ~/code/switch/ switch
+#1434400417
+ps -aef | grep harlyn
+#1434400426
+ps -aef | grep bfd
+#1434400703
+sudo ../..//tools/run_p4factory_switch.sh ~/code/switch/ switch
+#1434571258
+echo $TIMEOUT
+#1434571265
+export TIMEOUT=30
+#1434571298
+sudo -E ../..//tools/run_p4factory_switch.sh ~/code/switch/ switch
+#1434571345
+export TIMEOUT=25
+#1433961945
+git log
+#1433961945
+git log
+#1433961976
+vim tools/run_p4factory_switch.sh 
+#1433961993
+git assume tools/run_p4factory_switch.sh
+#1433962009
+git status
+#1433962017
+vim ~/.bash_profile 
+#1433962028
+vim ~/.bashrc 
+#1433962152
+git status
+#1433962158
+cd submodules/bf-drivers/
+#1433962159
+git status
+#1433962164
+cd ../..
+#1433962166
+git status
+#1433963063
+git submodule update 
+#1434397365
+git status
+#1434397369
+git pull origin master 
+#1434399051
+git status
+#1434399054
+git submodule update 
+#1434400304
+vim tools/run_p4factory_switch.sh 
+#1434400322
+vim tools/veth_setup.sh 
+#1434400382
+git status
+#1434400385
+cd submodules/p4c-tofino/
+#1434400389
+git checkout vk_selector 
+#1434400391
+git log
+#1434400394
+git status
+#1434571271
+cd ../..
+#1434571278
+vim tools/run_p4factory_switch.sh 
+#1434571353
+git unassume tools/run_p4factory_switch.sh
+#1434571355
+git status
+#1434571357
+git diff
+#1434571360
+git status
+#1434571365
+git checkout tools/run_p4factory_switch.sh
+#1434571370
+git assumed
+#1434571372
+git status
+#1434571377
+cd submodules/p4c-tofino/
+#1434571379
+git status
+#1434571381
+cd ../..
+#1434571382
+git submodule update 
+#1433961945
+make harlyn-install
+#1434399060
+make clean
+#1434399208
+make harlyn-install
+#1433961945
+git status
+#1434570392
+git fetch -p
+#1434570398
+git status
+#1434570405
+git checkout vk_tcam 
+#1434570409
+git pull origin vk_tcam 
+#1434570411
+git status
+#1434570413
+git submodule update 
+#1433961945
+cd code/switch/targets/switch/
+#1434400401
+touch p4src/switch.p4 
+#1433961945
+make harlyn-install
+#1433962506
+cd ../exm_direct
+#1433962510
+make harlyn-bfd
+#1434003493
+make harlyn-install
+#1434395099
+make clean
+#1434395139
+make harlyn-install
+#1434396627
+mycscope
+#1434396765
+make harlyn-install
+#1434397059
+mycscope
+#1433961945
+sudo ../../tools/run_p4factory_test.sh ~/code/p4factory/ basic_ipv4
+#1433962523
+cd ../exm_direct
+#1433962531
+make run-arch
+#1434035469
+cd arch_model/
+#1434035478
+sudo gdb ./harlyn
+#1434396179
+cd ..
+#1434396185
+make run-arch
+#1434396883
+mycscope
+#1434397045
+make run-arch
+#1433961945
+cd -
+#1433962442
+mycscope
+#1433961945
+tmux detach -a
+#1433961945
+./build/gcc-local/bin/utest_pipe_mgr 
+#1433961951
+tmux kill-ses -t 0
+#1434063382
+cd
+#1434063384
+cd code/rough/
+#1434063392
+gcc range.c 
+#1434063481
+ls -lrt
+#1434063484
+./a.out 
+#1434063486
+./a.out 3 4
+#1434063519
+./a.out 18885 44440
+#1434063553
+gcc -g range.c 
+#1434063555
+ls
+#1434063557
+rm core 
+#1434063562
+gdb a.out 
+#1434063692
+gcc -g range.c 
+#1434063695
+gdb a.out 
+#1434063742
+gcc -g range.c 
+#1434063744
+gdb a.out 
+#1434063882
+gcc -g range.c 
+#1434063885
+gdb a.out 
+#1434064205
+gcc -g range.c 
+#1434064207
+gdb a.out 
+#1434478832
+gcc -g range.c 
+#1434478867
+gdb a.out 
+#1434479241
+gcc -g range.c 
+#1434479242
+gdb a.out 
+#1434479395
+gcc -g range.c 
+#1434479397
+gdb a.out 
+#1434481334
+gcc -g range.c 
+#1434481336
+gdb a.out 
+#1434481399
+gcc -g range.c 
+#1434481400
+gdb a.out 
+#1434481590
+gcc -g range.c 
+#1434481600
+gdb a.out 
+#1434481694
+gcc -g range.c 
+#1434481695
+gdb a.out 
+#1434481728
+gcc -g range.c 
+#1434481729
+gdb a.out 
+#1434481837
+gcc -g range.c 
+#1434482308
+gdb a.out 
+#1434482547
+gcc -g range.c 
+#1434482548
+gdb a.out 
+#1434482572
+gcc -g range.c 
+#1434482573
+gdb a.out 
+#1434483728
+gcc -g range.c 
+#1434483729
+gdb a.out 
+#1434483965
+gcc -g range.c 
+#1434483966
+gdb a.out 
+#1434484851
+gcc -g range.c 
+#1434484852
+gdb a.out 
+#1434484973
+gcc -g range.c 
+#1434484974
+gdb a.out 
+#1434485222
+gcc -g range.c 
+#1434485234
+gdb a.out 
+#1434485341
+gcc -g range.c 
+#1434485342
+gdb a.out 
+#1434485523
+gcc -g range.c 
+#1434485525
+gdb a.out 
+#1434485960
+gcc -g range.c 
+#1434486002
+make
+#1434486005
+gcc -g range.c 
+#1434486046
+gdb a.out 
+#1434486181
+gcc -g range.c 
+#1434486182
+gdb a.out 
+#1434486251
+gcc -g range.c 
+#1434486253
+gdb a.out 
+#1434486352
+gcc -g range.c 
+#1434486356
+gdb a.out 
+#1434486381
+make
+#1434486383
+gcc -g range.c 
+#1434486385
+gdb a.out 
+#1434486472
+gcc -g range.c 
+#1434486474
+gdb a.out 
+#1434486589
+gcc -g range.c 
+#1434486590
+gdb a.out 
+#1434486642
+gcc -g range.c 
+#1434486643
+gdb a.out 
+#1434486695
+gcc -g range.c 
+#1434486696
+gdb a.out 
+#1434486707
+gcc -g range.c 
+#1434486708
+gdb a.out 
+#1434486942
+gcc -g range.c 
+#1434486944
+gdb a.out 
+#1434486972
+gcc -g range.c 
+#1434487025
+gdb a.out 
+#1434487152
+gcc -g range.c 
+#1434487153
+gdb a.out 
+#1434487172
+gcc -g range.c 
+#1434487347
+gdb a.out 
+#1434487376
+gcc -g range.c 
+#1434487377
+gdb a.out 
+#1434487597
+gcc -g range.c 
+#1434487598
+gdb a.out 
+#1434487702
+gcc -g range.c 
+#1434487703
+gdb a.out 
+#1434487759
+gcc -g range.c 
+#1434487759
+gdb a.out 
+#1434491264
+gcc -g range.c 
+#1434491270
+./a.out 
+#1434491372
+gcc -g range.c 
+#1434491373
+./a.out 
+#1434491499
+./a.out 0 65535
+#1434491538
+gcc -g range.c 
+#1434491542
+gdb a.out 
+#1434491773
+gcc -g range.c 
+#1434491776
+gdb a.out 
+#1434491815
+gcc -g range.c 
+#1434491823
+./a.out 
+#1434491957
+gcc -g range.c 
+#1434491959
+./a.out 
+#1434492179
+gcc -g range.c 
+#1434492184
+gdb a.out 
+#1434492448
+gcc -g range.c 
+#1434492450
+gdb a.out 
+#1434492653
+gcc -g range.c 
+#1434492654
+gdb a.out 
+#1434492676
+gcc -g range.c 
+#1434492677
+gdb a.out 
+#1434492834
+./a.out 16 31
+#1434492839
+./a.out 15 31
+#1434492850
+./a.out 16 31
+#1434492854
+./a.out 17 31
+#1434493044
+gcc -g range.c 
+#1434493046
+./a.out 17 31
+#1434493052
+./a.out 0 4
+#1434493056
+./a.out 0 65535
+#1434493062
+./a.out 0 3090
+#1434493075
+./a.out 
+#1434557587
+gcc -g range.c 
+#1434557610
+./a.out 17 31
+#1434557614
+./a.out 0 4
+#1434557619
+./a.out 0 65535
+#1434557623
+./a.out 0 3090
+#1434557905
+gcc -g range.c 
+#1434557908
+./a.out 17 31
+#1434557975
+gcc -g range.c 
+#1434557976
+./a.out 17 31
+#1434558029
+gcc -g range.c 
+#1434558030
+./a.out 17 31
+#1434558051
+gcc -g range.c 
+#1434558052
+./a.out 17 31
+#1434558063
+./a.out 0 4
+#1434558068
+./a.out 0 65535
+#1434558076
+./a.out 0 3090
+#1434558108
+./a.out 18885 44440
+#1434558140
+./a.out 
+#1434558289
+gcc -g range.c 
+#1434558290
+./a.out 
+#1434558508
+gcc -g range.c 
+#1434558511
+gdb a.out 
+#1434558575
+gcc -g range.c 
+#1434558576
+gdb a.out 
+#1434564840
+gcc -g range.c 
+#1434564844
+gdb a.out 
+#1434565229
+gcc -g range.c 
+#1434565237
+./a.out 17 31
+#1434565322
+gcc -g range.c 
+#1434565323
+./a.out 17 31
+#1434565360
+./a.out 0 4
+#1434565382
+./a.out 0 65535
+#1434565395
+./a.out 0 255
+#1434565404
+./a.out 0 256
+#1434565412
+./a.out 0 254
+#1434565434
+./a.out 1 254
+#1434565602
+./a.out
+#1434566062
+gcc -g range.c 
+#1434566066
+gcc -g -Wall range.c 
+#1434566092
+./a.out 0 0
+#1434566096
+./a.out 0 4
+#1434566099
+./a.out 0 1
+#1434566101
+./a.out 0 2
+#1434566104
+./a.out 0 3
+#1434566106
+./a.out 0 4
+#1434566109
+./a.out 0 5
+#1434566111
+./a.out 0 6
+#1434566114
+./a.out 1 6
+#1434566117
+./a.out 2 6
+#1434566120
+./a.out 3 6
+#1434566122
+./a.out 4 6
+#1434566131
+./a.out 0 255
+#1434566136
+./a.out 0 65536
+#1434566145
+rm core 
+#1434566153
+./a.out 0 65535
+#1434566157
+./a.out
+#1434650622
+sudo poweroff
+#1434650651
+tmux
+#1434736059
+tmux attach
+#1434650653
+cd -
+#1435090329
+mycscope
+#1436244537
+cd ../../targets/basic_ipv4/
+#1436244547
+vim tofino_products/context/mau.context.json 
+#1436309223
+cd ../../
+#1436309224
+cd 
+#1436309227
+cd code/p4factory/submodules/model/
+#1436309229
+mycscope
+#1436309341
+cd ../bf-drivers/
+#1436309343
+mycscope
+#1436309349
+cd ../model/
+#1436309350
+mycscope
+#1436318737
+cd ../bf-drivers/
+#1436318739
+mycscope
+#1438118189
+cd 
+#1438118190
+cd -
+#1438118192
+mycscope
+#1438218457
+ls
+#1438218460
+cd 
+#1438218461
+cd -
+#1438218463
+mycscope
+#1438902792
+ls
+#1438902793
+cd
+#1438902794
+cd -
+#1438902797
+cd ../switchapi/
+#1438902800
+mycscope
+#1438906125
+cd ../p4c-tofino/
+#1438906127
+mycscope
+#1439230677
+ls
+#1439230678
+cd
+#1439230679
+cd -
+#1439230683
+cd ../bf-drivers/
+#1439230690
+mycscope
+#1439233730
+telnet localhost 8000
+#1439234614
+mycscope
+#1439234661
+pwd
+#1439234668
+cd ../p4c-tofino/
+#1439234669
+mycscope
+#1439337358
+cd ../..
+#1439337361
+mycscope
+#1439493784
+cd submodules/bf-drivers/
+#1439493785
+mycscope
+#1439505264
+cd ../p4c-tofino/
+#1439505266
+mycscope
+#1439506871
+cd ../bf-drivers/
+#1439506872
+mycscope
+#1439508514
+cd ../p4c-tofino/
+#1439508516
+cscope -d
+#1439512667
+cd ../bf-drivers/
+#1439512669
+mycscope
+#1439838318
+cd ../../submodules/bf-drivers/
+#1439838319
+mycscope
+#1446593817
+top
+#1446594059
+cd ../../build/programs/bfd_test/visualization/
+#1446594066
+cp mau.html /media/psf/vm/
+#1446594248
+top
+#1446594629
+cp mau.html /media/psf/vm/
+#1446594656
+top
+#1446595643
+vim ~/.tmux.conf 
+#1446595658
+cp mau.html /media/psf/vm/
+#1446596481
+top
+#1446601921
+cd ../../../../submodules/bf-drivers/
+#1446601922
+mycscope
+#1446663904
+vim ../../build/programs/bfd_test/context/mau.context.json 
+#1446665728
+telnet localhost 8000
+#1446665883
+vim ../../build/programs/bfd_test/context/mau.context.json 
+#1446666818
+telnet localhost 8000
+#1446675005
+mycscope
+#1446676505
+telnet localhost 8000
+#1446676802
+fg
+#1446677041
+mycscope
+#1446677077
+vim ../../build/programs/bfd_test/context/mau.context.json 
+#1446677162
+telnet localhost 8000
+#1446677232
+mycscope
+#1446678855
+telnet localhost 8000
+#1446678922
+mycscope
+#1446679266
+telnet localhost 8000
+#1446679722
+top
+#1446679913
+telnet localhost 8000
+#1446684037
+cd ../model/
+#1446684042
+mycscope
+#1446684337
+cd ../../
+#1446684341
+mycscope
+#1446685417
+cd targets/single_device/ptf-tests/multicast_test/
+#1446685417
+ls
+#1446685419
+vim test.py 
+#1446685813
+cd -
+#1446685815
+cscope -d
+#1446769252
+cp build/programs/bfd_test/visualization/mau.html /media/psf/vm/
+#1446837747
+top
+#1447107467
+vim build/programs/bfd_test/api/src/pd.c 
+#1447107589
+cd submodules/bf-drivers/
+#1447107591
+mycscope
+#1447107617
+cd ../p4c-tofino/
+#1447107618
+mycscope
+#1447107822
+cd -
+#1447107828
+cd ../../..
+#1447107831
+vim build/programs/bfd_test/api/src/pd.c 
+#1447107835
+cd p4factory/
+#1447107838
+vim build/programs/bfd_test/api/src/pd.c 
+#1447185054
+cd -
+#1447185063
+cd p4factory/
+#1447185066
+cd submodules/bf-drivers/
+#1447185067
+fg
+#1447185069
+mycscope
+#1447194079
+fg
+#1447194687
+vim ../../build/programs/bfd_test/api/src/pd.c 
+#1447196196
+pwd
+#1447196199
+cd ../model/
+#1447196201
+mycscope
+#1447209712
+cd ../bf-drivers/
+#1447209714
+mycscope
+#1447264681
+vim ../../build/programs/bfd_test/context/mau.context.json 
+#1447268817
+mycscope
+#1447268841
+vim ../../build/programs/bfd_test/context/mau.context.json 
+#1447269039
+cp ../../build/programs/bfd_test/context/mau.context.json /media/psf/vm/
+#1447270982
+mycscope
+#1447272255
+vim ../../build/programs/bfd_test/context/mau.context.json 
+#1447281438
+cd ../p4c-tofino/
+#1447281440
+mycscope
+#1447281467
+vim ../../build/programs/bfd_test/api/src/pd.c 
+#1447281488
+mycscope
+#1447281733
+top
+#1447438036
+cd ../../ptf-tests/bfd_test/
+#1447438038
+python
+#1447439876
+top
+#1447441425
+cp ../../build/programs/bfd_test/visualization/mau.html /media/psf/vm/
+#1447441821
+cd ../../submodules/bf-drivers/
+#1447441823
+mycscope
+#1447444984
+cp ../../build/programs/bfd_test/visualization/mau.html /media/psf/vm/
+#1447445012
+vim ../../build/programs/bfd_test/context/mau.context.json 
+#1447445810
+cp ../../build/programs/bfd_test/visualization/mau.html /media/psf/vm/
+#1447445847
+top
+#1447446036
+cp ../../build/programs/bfd_test/visualization/mau.html /media/psf/vm/
+#1447447817
+top
+#1447453254
+ls -lrt ../..
+#1447453820
+top
+#1447454402
+cp ../../build/programs/bfd_test/visualization/mau.html /media/psf/vm/
+#1447455749
+cd ../ptf/
+#1447455751
+mycscope
+#1447455930
+cd ../bf-drivers/
+#1447455994
+cp ../../build/programs/bfd_test/visualization/mau.html /media/psf/vm/
+#1447800022
+cd ../p4c-tofino/
+#1447800023
+mycscope
+#1447802535
+cd ../bf-drivers/
+#1447802537
+mycscope
+#1447803839
+top
+#1447804223
+vim ~/.tmux.conf 
+#1447813250
+mycscope
+#1447813965
+cd ../model/
+#1447813967
+mycscope
+#1447813990
+cscope -d
+#1447955594
+cd ../bf-drivers/
+#1447973596
+mycscope
+#1447975474
+cd ../model/
+#1447975476
+mycscope
+#1447975546
+cd ../bf-drivers/
+#1447975547
+mycscope
+#1448330654
+cd ../p4c-tofino/
+#1448330655
+mycscope
+#1448330769
+cd ../bf-drivers/
+#1448330771
+mycscope
+#1448330792
+cd ../p4c-tofino/
+#1448330793
+mycscope
+#1448407835
+top
+#1448407857
+vim ~/.tmux.conf
+#1448416098
+cd ../bf-drivers/
+#1448416099
+mycscope
+#1448491988
+vim ../../build/programs/bfd_test/context/mau.context.json 
+#1448492093
+mycscope
+#1448493017
+vim ../../build/programs/bfd_test/api/src/pd.c 
+#1448493225
+vim ../../build/programs/bfd_test/api/inc/pd.h 
+#1448493236
+vim ../../build/programs/bfd_test/api/src/pd.c 
+#1448565640
+mycscope
+#1449010826
+cd ../model/
+#1449010828
+mycscope
+#1449015098
+cd ../p4c-tofino/
+#1449015099
+git status
+#1449015101
+mycscope
+#1449085333
+cd ../ptf/
+#1449085337
+mycscope
+#1449090386
+cd ../bf-drivers/
+#1449090387
+mycscope
+#1449100523
+vim ../../build/programs/drivers_test/context/mau.context.json 
+#1449106986
+mycscope
+#1449167860
+fg
+#1449170960
+mycscope
+#1449189487
+cd ../bf-syslibs/
+#1449189489
+mycscope
+#1449189560
+cd ../bf-drivers/
+#1449189561
+mycscope
+#1449189579
+cd ../bf-syslibs/
+#1449189580
+mycscope
+#1449513741
+cd ../bf-drivers/
+#1449513742
+mycscope
+#1449514820
+top
+#1449516804
+cd ../bf-syslibs/
+#1449516813
+vim third-party/zlog/zlog-cfg 
+#1449535537
+top
+#1449612176
+ls -l ../../pcap_output/
+#1449612362
+top
+#1449614110
+vim ../../build/programs/bfd_test/api/src/pd.c 
+#1449614118
+vim ../../build/programs/drivers_test/api/src/pd.c 
+#1449614147
+cd ../p4c-tofino/
+#1449614149
+mycscope
+#1449614412
+cd ../bf-drivers/
+#1449614413
+mycscope
+#1449614568
+cd ../p4c-tofino/
+#1449614575
+mycscope
+#1449679250
+cd ../bf-drivers/
+#1449679252
+mycscope
+#1449686562
+vim ../../build/programs/drivers_test/api/src/pd.c 
+#1449689265
+ls -l ../../pcap_output/
+#1449693134
+mycscope
+#1452023352
+cd ../p4c-tofino/
+#1452023353
+mycscope
+#1452024100
+cd ../bf-drivers/
+#1452024101
+mycscope
+#1452208769
+top
+#1452529036
+fg
+#1452532615
+mycscope
+#1452612992
+cd ../model/
+#1452613010
+mycscope
+#1452816950
+vim ../../build/programs/drivers_test/api/src/pd.c 
+#1453146521
+mycscope
+#1453159984
+cd ../bf-drivers/
+#1453159985
+mycscope
+#1453230242
+cd ../p4c-tofino/
+#1453230245
+mycscop
+#1453230247
+mycscope 
+#1453234085
+cd ../bf-drivers/
+#1453234086
+mycscope
+#1453330118
+cd ../p4c-tofino/
+#1453330120
+mycscope
+#1453330241
+cd ../bf-drivers/
+#1453335340
+top
+#1453336669
+mycscope
+#1453510813
+cd ../model/
+#1453510814
+mycscope
+#1453512381
+cd ../bf-drivers/
+#1453512382
+mycscope
+#1454091128
+vim ../../build/programs/drivers_test/api/src/pd.c 
+#1454091162
+mycscope
+#1454104228
+cd ../p4c-tofino/
+#1454104229
+mycscope
+#1454300219
+cd ../bf-drivers/
+#1454300221
+mycscope
+#1454365463
+vim ../../build/programs/drivers_test/context/mau.context.json 
+#1454367016
+mycscope
+#1454367356
+cd ../model/
+#1454367357
+mycscope
+#1454367409
+fg
+#1454367411
+mycscope
+#1454368614
+cd ../bf-drivers/
+#1454368615
+mycscope
+#1454711731
+cd ../model/
+#1454711734
+mycscope
+#1454713906
+cd ../bf-drivers/
+#1454713908
+mycscope
+#1454714167
+cd ../model/
+#1454714169
+mycscope
+#1454714428
+cd ../p4c-tofino/
+#1454714429
+mycscope
+#1454714506
+cd ../bf-drivers/
+#1454714507
+mycscope
+#1455057417
+cd ../ptf/
+#1455057418
+ls
+#1455057421
+vim ptf 
+#1455057431
+mycscope
+#1455062418
+vim ptf 
+#1455062464
+mycscope
+#1455064750
+cd ../bf-drivers/
+#1455064752
+mycscope
+#1455067698
+cd ../..
+#1455067703
+find . -name "*.html"
+#1455067713
+cp ./build/programs/drivers_test/visualization/mau.html /media/psf/vm/
+#1455245363
+cd submodules/bf-drivers/
+#1455245365
+mycscope
+#1455603803
+vim ../../build/programs/drivers_test/api/src/pd.c 
+#1455603813
+mycscope
+#1455604257
+vim ../../build/programs/drivers_test/api/src/pd.c 
+#1455609550
+cd ../..
+#1455609552
+vim 1
+#1455617350
+cd submodules/model/
+#1455617351
+mycscope
+#1455622665
+vim ../../build/programs/drivers_test/api/tbl_packing/entry_format.c 
+#1455672956
+vim ../../build/programs/drivers_test/context/mau.context.json 
+#1455673013
+vim ../../build/programs/drivers_test/api/tbl_packing/entry_format.c 
+#1455673562
+cd ../bf-drivers/
+#1455673563
+mycscope
+#1455779597
+vim ../../build/programs/drivers_test/context/mau.context.json 
+#1455780566
+cd ../model/
+#1455780568
+mycscope
+#1455790318
+cd ../..
+#1455790328
+grep get_phy_data 1 -i | grep METER
+#1455790645
+cd submodules/model/
+#1455790648
+cscsope -d
+#1455790652
+cscope -d
+#1455790860
+cd ../p4c-tofino/
+#1455790861
+mycscope
+#1455791323
+cd ../bf-drivers/
+#1455804879
+vim ../../build/programs/drivers_test/api/src/pd.c 
+#1455805133
+cscope -d
+#1455805137
+mycscope
+#1456126416
+vim ../../build/programs/drivers_test/api/src/pd.c 
+#1456126508
+cd ../
+#1456126510
+cd p4c-tofino/
+#1456126511
+mycscope
+#1456480659
+cd ../bf-drivers/
+#1456480660
+mycscope
+#1458672608
+cd ../p4c-tofino/
+#1458672609
+mycscope
+#1458684056
+vim ../../build/programs/drivers_test/context/mau.context.json 
+#1458684069
+vim ../../build/programs/smoke_large_tbls/context/mau.context.json 
+#1458756344
+cd ../bf-drivers/
+#1458756345
+mycscope
+#1458777053
+cd -
+#1458777056
+mycscope
+#1458939795
+top
+#1458940636
+cd ../bf-drivers/
+#1458940846
+mycscope
+#1459291287
+ps -aef | grep vim
+#1459291308
+ps -aef | grep cscope
+#1475517451
+tmux kill -t 0
+#1475517456
+tmux kill-ses -t 0
+#1475540924
+cd ../model/
+#1475540926
+mycscope
+#1475618813
+cd ../bf-drivers/
+#1475618815
+git status
+#1475618817
+git checkout ha
+#1475618819
+git status
+#1475618822
+mycscope
+#1478565809
+find . -name *.swp
+#1478565817
+vim src/dvm/dvm.c 
+#1478566026
+mycscope
+#1478826408
+grep PIPE_MGR_ASSERT src/pipe_mgr/pipe_mgr_idle* | wc
+#1478826410
+grep PIPE_MGR_ASSERT src/pipe_mgr/pipe_mgr_idle* 
+#1478826416
+grep PIPE_MGR_ASSERT src/pipe_mgr/pipe_mgr_tcam* 
+#1478826418
+grep PIPE_MGR_ASSERT src/pipe_mgr/pipe_mgr_tcam*  | wc
+#1478826422
+grep PIPE_MGR_ASSERT src/pipe_mgr/pipe_mgr_idle*  | wc
+#1478826426
+grep PIPE_MGR_ASSERT src/pipe_mgr/pipe_mgr_sel*  | wc
+#1478826431
+grep PIPE_MGR_ASSERT src/pipe_mgr/pipe_mgr_learn.*  | wc
+#1478826442
+grep PIPE_MGR_ASSERT src/pipe_mgr/pipe_mgr_sel*  | wc
+#1478826454
+fg
+#1479070791
+mycscope
+#1479846070
+vim src/pipe_mgr/pipe_mgr_ha.c
+#1479846104
+mycscope
+#1480621492
+cd ../ptf
+#1480621498
+mycscope
+#1480639444
+top
+#1480639465
+htop
+#1480640610
+cd ../bf-drivers/
+#1480640611
+mycscope
+#1481222819
+top
+#1481222841
+fg

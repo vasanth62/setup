@@ -1,0 +1,33 @@
+pane	pipe-mgr	1	:bash	0	: 	1	:/home/vkumar/code/bf-drivers/submodules/bf-drivers	0	bash	:
+pane	pipe-mgr	1	:bash	0	: 	2	:/home/vkumar/code/bf-drivers/submodules/bf-drivers	1	bash	:
+pane	pipe-mgr	1	:bash	0	: 	3	:/home/vkumar/code/bf-drivers/submodules/bf-drivers	0	bash	:
+pane	pipe-mgr	2	:bash	0	:-	1	:/home/vkumar/code/p4-hlir	0	bash	:
+pane	pipe-mgr	2	:bash	0	:-	2	:/home/vkumar/code/p4factory	1	bash	:
+pane	pipe-mgr	3	:bash	1	:*	1	:/home/vkumar/code/p4factory	0	bash	:
+pane	pipe-mgr	3	:bash	1	:*	2	:/home/vkumar/code/p4factory	0	bash	:
+pane	pipe-mgr	3	:bash	1	:*	3	:/home/vkumar/code/p4factory/ptf-tests/drivers_test	0	bash	:
+pane	pipe-mgr	3	:bash	1	:*	4	:/home/vkumar/code/p4factory/submodules/bf-drivers	0	bash	:
+pane	pipe-mgr	3	:bash	1	:*	5	:/home/vkumar/code/p4factory	0	bash	:
+pane	pipe-mgr	3	:bash	1	:*	6	:/home/vkumar/code/p4factory	1	bash	:
+pane	pipe-mgr	4	:bash	0	: 	1	:/home/vkumar/code/switch/submodules/bf-drivers	0	bash	:
+pane	pipe-mgr	4	:bash	0	: 	2	:/home/vkumar/code/switch	0	bash	:
+pane	pipe-mgr	4	:bash	0	: 	3	:/home/vkumar/code/switch	0	bash	:
+pane	pipe-mgr	4	:bash	0	: 	4	:/home/vkumar/code/switch	1	bash	:
+pane	pipe-mgr	4	:bash	0	: 	5	:/home/vkumar/code/switch	0	bash	:
+pane	pipe-mgr	4	:bash	0	: 	6	:/home/vkumar/code/switch	0	bash	:
+pane	pipe-mgr	5	:bash	0	: 	1	:/home/vkumar/code/tofino_diag	0	bash	:
+pane	pipe-mgr	5	:bash	0	: 	2	:/home/vkumar/code/tofino_diag	0	bash	:
+pane	pipe-mgr	5	:bash	0	: 	3	:/home/vkumar/code/tofino_diag	0	bash	:
+pane	pipe-mgr	5	:bash	0	: 	4	:/home/vkumar/code/tofino_diag/submodules/bf-drivers	1	bash	:
+pane	pipe-mgr	5	:bash	0	: 	5	:/home/vkumar/code/tofino_diag/tools	0	bash	:
+pane	pipe-mgr	5	:bash	0	: 	6	:/home/vkumar/code/tofino_diag	0	bash	:
+pane	pipe-mgr	6	:bash	0	: 	1	:/home/vkumar/code/tofino_diag	1	bash	:
+pane	pipe-mgr	6	:bash	0	: 	2	:/home/vkumar/code/tofino_diag	0	bash	:
+pane	pipe-mgr	6	:bash	0	: 	3	:/home/vkumar/code/tofino_diag/targets/single_device	0	bash	:
+window	pipe-mgr	1	0	: 	6eda,238x56,0,0{157x56,0,0[157x28,0,0,1,157x27,0,29,27],80x56,158,0,26}
+window	pipe-mgr	2	0	:-	dc8b,238x56,0,0{103x56,0,0,3,134x56,104,0,4}
+window	pipe-mgr	3	1	:*	967d,238x56,0,0{125x56,0,0[125x25,0,0,5,125x16,0,26,6,125x13,0,43,7],112x56,126,0[112x28,126,0,8,112x13,126,29,9,112x13,126,43,10]}
+window	pipe-mgr	4	0	: 	1f4d,238x56,0,0{118x56,0,0[118x28,0,0,11,118x13,0,29,12,118x13,0,43,13],119x56,119,0[119x28,119,0,14,119x13,119,29,15,119x13,119,43,16]}
+window	pipe-mgr	5	0	: 	ec4b,238x56,0,0{136x56,0,0[136x28,0,0,17,136x13,0,29,18,136x13,0,43,19],101x56,137,0[101x21,137,0,20,101x20,137,22,21,101x13,137,43,22]}
+window	pipe-mgr	6	0	: 	ea4b,238x56,0,0[238x28,0,0,23,238x13,0,29,24,238x13,0,43,25]
+state	pipe-mgr	

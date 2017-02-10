@@ -1,0 +1,22 @@
+pane	pipe-mgr	1	:bash	0	:#!	1	:/home/vkumar/code/bf-drivers/targets/utests/pipe_mgr	1	bash	:
+pane	pipe-mgr	1	:bash	0	:#!	2	:/home/vkumar/code/bf-drivers	0	bash	:
+pane	pipe-mgr	1	:bash	0	:#!	3	:/home/vkumar/code/bf-drivers	0	bash	:
+pane	pipe-mgr	2	:bash	0	:#!-	1	:/home/vkumar/code/dc_int	0	bash	:
+pane	pipe-mgr	2	:bash	0	:#!-	2	:/home/vkumar/code/p4factory	1	bash	:
+pane	pipe-mgr	3	:bash	1	:*	1	:/home/vkumar/code/p4factory/targets/basic_ipv4	0	bash	:
+pane	pipe-mgr	3	:bash	1	:*	2	:/home/vkumar/code/p4factory/targets/basic_ipv4	0	bash	:
+pane	pipe-mgr	3	:bash	1	:*	3	:/home/vkumar/code/p4factory/submodules/p4c-tofino	0	bash	:
+pane	pipe-mgr	3	:bash	1	:*	4	:/home/vkumar/code/p4factory/submodules/bf-drivers	1	bash	:
+pane	pipe-mgr	3	:bash	1	:*	5	:/home/vkumar/code/p4factory/targets/basic_ipv4	0	bash	:
+pane	pipe-mgr	3	:bash	1	:*	6	:/home/vkumar/code/p4factory/targets/basic_ipv4	0	bash	:
+pane	pipe-mgr	4	:bash	0	:#!	1	:/home/vkumar/code/dc_int/targets/dc_full	1	bash	:
+pane	pipe-mgr	4	:bash	0	:#!	2	:/home/vkumar/code/dc_int/targets/dc_full	0	bash	:
+pane	pipe-mgr	4	:bash	0	:#!	3	:/home/vkumar/code/dc_int/submodules/model	0	bash	:
+pane	pipe-mgr	4	:bash	0	:#!	4	:/home/vkumar/code/dc_int/submodules/bf-drivers	0	bash	:
+pane	pipe-mgr	4	:bash	0	:#!	5	:/home/vkumar/code/dc_int/targets/dc_full	0	bash	:
+pane	pipe-mgr	4	:bash	0	:#!	6	:/home/vkumar/code/dc_int/targets/dc_full	0	bash	:
+window	pipe-mgr	1	0	:#!	31fb,364x77,0,0{219x77,0,0[219x38,0,0,1,219x38,0,39,2],144x77,220,0,3}
+window	pipe-mgr	2	0	:#!-	3dba,364x77,0,0{159x77,0,0,4,204x77,160,0,5}
+window	pipe-mgr	3	1	:*	7c2d,364x77,0,0{164x77,0,0[164x24,0,0,6,164x34,0,25,7,164x17,0,60,8],199x77,165,0[199x37,165,0,9,199x19,165,38,10,199x19,165,58,17]}
+window	pipe-mgr	4	0	:#!	d272,364x77,0,0{200x77,0,0[200x34,0,0,11,200x20,0,35,12,200x21,0,56,13],163x77,201,0[163x34,201,0,14,163x20,201,35,15,163x21,201,56,16]}
+state	pipe-mgr	
