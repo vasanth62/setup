@@ -1,74 +1,4 @@
 #1436309211
-rm cscope.files 
-#1436309211
-rm cscope.out 
-#1436309211
-cd ../..
-#1436309211
-git status
-#1436309211
-cd submodules/switchapi/
-#1436309211
-git status
-#1436309211
-git diff
-#1436309211
-git commit -a -m "Changing ttl query interval to a aging time value"
-#1436309211
-git status
-#1436309211
-git push origin antonin-idle 
-#1436309211
-cd ../..
-#1436309211
-git status
-#1436309211
-git commit -a -m "Updating switchapi"
-#1436309211
-git push origin vk_idle 
-#1436309211
-git status
-#1436309211
-cd submodules/bf-drivers/
-#1436309211
-git status
-#1436309211
-git checkout master 
-#1436309211
-git pull origin master 
-#1436309211
-git status
-#1436309211
-cd ../p4c-tofino/
-#1436309211
-git status
-#1436309211
-git checkout master 
-#1436309211
-git pull origin master 
-#1436309211
-git status
-#1436309211
-git log
-#1436309211
-cd ../switchapi/
-#1436309211
-git checkout master 
-#1436309211
-git pull origin master 
-#1436309211
-git status
-#1436309211
-cd ../..
-#1436309211
-git status
-#1436309211
-git commit -a -m "Updating submodules to master"
-#1436309211
-git pull origin master 
-#1436309211
-git status
-#1436309211
 git submodule update 
 #1436309211
 git status
@@ -1998,3 +1928,73 @@ mycscope
 top
 #1481222841
 fg
+#1484850027
+mycscope
+#1485448329
+cd ../bf-syslibs/
+#1485448331
+mycscope
+#1485448393
+cd ../bf-drivers/
+#1485448394
+mycscope
+#1485803249
+cd ../bf-platforms/
+#1485803263
+mycscope
+#1485809169
+cd ../bf-drivers/
+#1485809170
+mycscope
+#1486517001
+cd src/lld/
+#1486517002
+ls
+#1486517004
+mycscope
+#1486683643
+cd -
+#1486683645
+mycscope
+#1486958440
+cd ../model/
+#1486958442
+mycscope
+#1486960342
+cd ../bf-drivers/
+#1486960343
+mycscope
+#1486962075
+cd ../model/
+#1486962077
+cscope -d
+#1486962355
+cd ../bf-drivers/
+#1486962357
+cscope -d
+#1486962360
+mycscope
+#1487719778
+cd ../p4c-tofino/
+#1487719779
+mycscope
+#1487723042
+cd ../bf-drivers/
+#1487723044
+mycscope
+#1489703778
+cd src/traffic_mgr/
+#1489703780
+mycscope
+#1489703797
+cd ../lld/
+#1489703799
+mycscope
+#1489703823
+cd ../traffic_mgr/
+#1489703825
+cscope -d
+#1489703839
+cd ../..
+#1489703841
+mycscope

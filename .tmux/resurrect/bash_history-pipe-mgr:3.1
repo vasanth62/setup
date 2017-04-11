@@ -1,45 +1,3 @@
-#1450480553
-git commit
-#1450480557
-git status
-#1450480561
-git push origin thrift-exceptions 
-#1450481657
-git status
-#1450481660
-git checkout master 
-#1450481662
-git pull origin master 
-#1450481666
-git status
-#1450481668
-git submodule update --init --recursive
-#1450481672
-cd submodules/bf-drivers/
-#1450481679
-git fetch -p
-#1450481685
-git checkout vk_idle_sym 
-#1450481687
-cd ../..
-#1450481688
-git status
-#1450481691
-touch submodules/switch/p4src/switch.p4 
-#1450484679
-vim tools/submodule-clean.sh 
-#1450485478
-git status
-#1450485481
-cd submodules/bf-drivers/
-#1450485482
-git log
-#1447711406
-git pull
-#1446752347
-git pull origin master 
-#1448487325
-cd ../..
 #1448487327
 git status
 #1448487329
@@ -1998,3 +1956,45 @@ sudo ldconfig
 vim programs/drivers_test/drivers_test.p4 
 #1480638099
 tools/run_switchd.sh -p drivers_test -g
+#1484951147
+tmux detach -a
+#1485384403
+tools/run_switchd.sh -p drivers_test -g
+#1485394329
+export LD_PRELOAD=/usr/lib/libefence.so.0.0 
+#1485394333
+sudo ldconfig
+#1485394336
+tools/run_switchd.sh -p drivers_test -g
+#1485413467
+sudo ldconfig
+#1485413476
+tools/run_switchd.sh -p drivers_test -g
+#1485447790
+vim tools/run_switchd.sh 
+#1485447874
+tools/run_switchd.sh -p drivers_test -g
+#1485449038
+vim tools/run_switchd.sh 
+#1485449096
+tools/run_switchd.sh -p drivers_test -g
+#1486581602
+tmux detach -a
+#1486581608
+git status
+#1486581616
+export LD_PRELOAD=
+#1486581619
+ls
+#1486581621
+git status
+#1486697913
+tools/run_switchd.sh -p drivers_test -g
+#1486768837
+tools/run_switchd.sh -p pcie_pkt_test -g
+#1487371264
+cd submodules/bf-utils/
+#1487371266
+mycscope
+#1488244358
+cd -

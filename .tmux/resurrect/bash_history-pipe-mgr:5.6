@@ -1,121 +1,3 @@
-#1449903963
-vim consoleText 
-#1450031761
-rm consoleText 
-#1450031763
-wget http://bigfoot.barefoot-int.lan:8080/job/bf_u1404_harlyn_combined_regression/374/consoleText
-#1450031846
-vim consoleText 
-#1450031914
-grep Invalid consoleText 
-#1450201964
-git fetch -p
-#1450201978
-git status
-#1450201984
-git pull origin thrift-exceptions 
-#1450201987
-git status
-#1450201998
-git checkout test_stful 
-#1450202001
-git status
-#1450202005
-git submodule update --init --recursive
-#1450202429
-git status
-#1450202432
-git diff ptf-tests/
-#1450202447
-git status
-#1450202458
-git commit -a -m "Adding stful spec in mat-ent-add'
-#1450202597
-git commit -a -m "Adding stful spec to action table and mat table"
-#1450202599
-git status
-#1450202604
-git push origin test_stful 
-#1450291638
-git status
-#1450291640
-git diff
-#1450291644
-git status
-#1450291663
-git commit -am "Adding a compile only option for drivers combination test script"
-#1450291669
-git push origin test_stful 
-#1450291675
-git pull origin test_stful 
-#1450291681
-git push origin test_stful 
-#1450291688
-git log
-#1450455083
-git status
-#1450455088
-git checkout thrift-exceptions 
-#1450455089
-git status
-#1450455092
-git pull origin thrift-exceptions 
-#1450455099
-git submodule update --init --recursive
-#1450455101
-git status
-#1450455111
-rm consoleText 
-#1450455113
-git status
-#1450455120
-git pull origin master 
-#1450455163
-git status
-#1450455166
-cd submodules/bf-drivers/
-#1450455168
-git status
-#1450455170
-git checkout thrift-exceptions 
-#1450455174
-git pull origin thrift-exceptions 
-#1450455177
-git log
-#1450455182
-git status
-#1450455184
-git pull origin master 
-#1450455191
-vim src/dvm/dvm.c 
-#1450455229
-git add src/dvm/dvm.c 
-#1450455232
-git commit
-#1450455235
-git status
-#1450455239
-git push origin thrift-exceptions 
-#1450455244
-cd ../p4c-tofino/
-#1450455247
-git checkout thrift-exceptions 
-#1450455249
-git pull origin thrift-exceptions 
-#1450455253
-git pull origin master 
-#1450455258
-git push origin thrift-exceptions 
-#1450455263
-cd ../..
-#1450455265
-git add submodules/bf-drivers/
-#1450455269
-git add submodules/p4c-tofino/
-#1450455271
-git status
-#1450455275
-git commit
 #1450455279
 git status
 #1450455285
@@ -1998,3 +1880,121 @@ tools/run_tofino_model.sh -p basic_ipv4 -gq
 tools/run_tofino_model.sh -p drivers_test -f ptf-tests/drivers_test/ports.json -gq
 #1480619117
 tools/run_tofino_model.sh -p basic_ipv4 -gq 
+#1484782366
+vim tools/run_tofino_model.sh 
+#1484782441
+tools/run_tofino_model.sh -p basic_ipv4 -gq
+#1484782455
+tools/run_tofino_model.sh -p basic_ipv4 -g --logs-disable
+#1484782463
+vim tools/run_tofino_model.sh 
+#1484782568
+tools/run_tofino_model.sh -p basic_ipv4 -g --logs-disable
+#1484782571
+vim tools/run_tofino_model.sh 
+#1484782691
+git checkout tools/
+#1484782693
+git status
+#1484782699
+vim test.sh
+#1484782717
+chdom +x test
+#1484782724
+chmod +x test.sh
+#1484782726
+./test.sh 
+#1484782743
+./test.sh -a par1 'another arg' --c-long 'wow!*\?' -cmore -b " very long "
+#1484782796
+vim tools/run_tofino_model.sh 
+#1484786554
+./test.sh -a par1 'another arg' --c-long 'wow!*\?' -cmore -b " very long "
+#1484786557
+fg
+#1484786572
+./test.sh -a par1 'another arg' --c-long 'wow!*\?' -cmore -b " very long "
+#1484786577
+fg
+#1484786810
+tools/run_tofino_model.sh -p basic_ipv4 -g --logs-disable
+#1484786815
+fg
+#1484786832
+tools/run_tofino_model.sh -p basic_ipv4 -g logs-disable
+#1484786844
+tools/run_tofino_model.sh -p basic_ipv4 -g "--logs-disable"
+#1484786848
+fg
+#1484787048
+tools/run_tofino_model.sh -p basic_ipv4 -g -- --logs-disable
+#1484787053
+fg
+#1484787078
+git diff tools/
+#1484787090
+git checkout tools/run_tofino_model.sh
+#1484787095
+fg
+#1484787353
+tools/run_tofino_model.sh -p basic_ipv4 -gq -- --cli-port 10000
+#1484787435
+tools/run_tofino_model.sh -p basic_ipv4 -gq -- -t 10000
+#1484787701
+tools/run_tofino_model.sh -p basic_ipv4 -g -- -t 10000
+#1485906794
+tools/run_tofino_model.sh -p smoke_large_tbls -gq 
+#1485907151
+s
+#1487027408
+tools/run_tofino_model.sh -p exm_direct -gq
+#1487187022
+vim /proc/sys/vm/max_map_count 
+#1487189640
+tools/run_tofino_model.sh -p exm_direct -gq
+#1487264163
+tools/run_tofino_model.sh -p basic_ipv4 -gq
+#1487275545
+tools/run_tofino_model.sh -p smoke_large_tbls -g
+#1488244332
+tools/run_tofino_model.sh -p drivers_test -f ptf-tests/drivers_test/ports.json -gq
+#1488417766
+tools/run_tofino_model.sh -p drivers_test -f ptf-tests/drivers_test/ports.json -g
+#1488418887
+tools/run_tofino_model.sh -p drivers_test -f ptf-tests/drivers_test/ports.json -gq
+#1488929868
+tools/run_tofino_model.sh -p mau_test -f ptf-tests/mau_test/sw_tests/ports.json 
+#1488934106
+q
+#1488934424
+tools/run_tofino_model.sh -p mau_test -f ptf-tests/mau_test/sw_tests/ports.json -q
+#1488936380
+ls
+#1488936382
+tools/run_tofino_model.sh -p mau_test -f ptf-tests/mau_test/sw_tests/ports.json -q
+#1488953792
+tools/run_tofino_model.sh -p smoke_large_tbls -g
+#1489002447
+tools/run_tofino_model.sh -p mau_test -f ptf-tests/mau_test/sw_tests/ports.json -q
+#1489022499
+tools/run_tofino_model.sh -p mau_test -f ptf-tests/mau_test/sw_tests/ports.json 
+#1489172892
+find . -name "mau.html"
+#1489172903
+cp ./build/programs/mau_test/p4-build-mau_test/tofino/mau_test/visualization/mau.html /media/psf/vm/
+#1489172970
+tools/run_tofino_model.sh -p mau_test -f ptf-tests/mau_test/sw_tests/ports.json 
+#1489527256
+tools/run_tofino_model.sh -p basic_ipv4 -gq
+#1490141079
+python
+#1491354719
+cp switch.p4/visualization/mau.html /media/psf/vm/
+#1491510988
+tools/run_tofino_model.sh -p mau_test -f ptf-tests/mau_test/sw_tests/ports.json 
+#1491515215
+q
+#1491525839
+tools/run_tofino_model.sh -p mau_test -f ptf-tests/mau_test/sw_tests/ports.json 
+#1491846745
+ls

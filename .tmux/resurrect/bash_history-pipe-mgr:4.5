@@ -1,161 +1,3 @@
-#1438729169
-git stash pop
-#1438729174
-vim programs/p4program.am 
-#1438734436
-git status
-#1438734440
-git checkout tools/compile.sh
-#1438734442
-git status
-#1438734445
-git diff programs/
-#1438734455
-vim programs/p4program.am 
-#1438734727
-./autogen.sh 
-#1438734757
-./configure 
-#1438734800
-fg
-#1438734803
-vim programs/p4program.am 
-#1438738164
-git diff
-#1438738171
-fg
-#1438738225
-./configure 
-#1438738267
-fg
-#1438738320
-git status
-#1438738327
-git clean -fxd
-#1438738329
-git status
-#1438738334
-vim programs/p4program.am 
-#1438738359
-./autogen.sh 
-#1438738390
-./configure 
-#1438738761
-fg
-#1438739498
-vim /etc/sysctl.conf 
-#1438739560
-fg
-#1438739565
-vim programs/p4program.am 
-#1438739770
-git clean -fxd
-#1438739772
-git status
-#1438739781
-cd submodules/bf-drivers/
-#1438739782
-git status
-#1438739783
-git diff
-#1438739790
-cd ../p4c-tofino/
-#1438739792
-git status
-#1438739796
-git diff
-#1438739798
-git stash
-#1438739801
-cd ../..
-#1438739802
-gits tatus
-#1438739804
-git status
-#1438739808
-vim tools/submodule-clean.sh 
-#1438739816
-git assume tools/submodule-clean.sh
-#1438739818
-tools/submodule-clean.sh 
-#1438739822
-cd submodules/p4c-tofino/
-#1438739826
-git stash pop
-#1438739828
-cd ../..
-#1438739829
-git status
-#1438739834
-git clean -fxd
-#1438739845
-sudo git clean -fxd
-#1438739847
-git status
-#1438739849
-./autogen.sh 
-#1438739879
-./configure 
-#1438743323
-fg
-#1438743327
-vim programs/p4program.am 
-#1438743418
-git status
-#1438743423
-git clean -fxd
-#1438743425
-git status
-#1438743431
-tools/submodule-clean.sh 
-#1438743433
-git status
-#1438743437
-./autogen.sh 
-#1438743472
-./configure 
-#1438744595
-fg
-#1438744600
-vim programs/p4program.am 
-#1438744871
-vim tools/compile.sh 
-#1438745267
-vim programs/p4program.am 
-#1438751947
-cd submodules/p4c-tofino/
-#1438751950
-git status
-#1438751954
-git diff
-#1438754180
-cd ../..
-#1438754181
-fg
-#1438754187
-vim programs/p4program.am 
-#1438754944
-git status
-#1438754949
-git clean -fxd
-#1438754951
-git status
-#1438754958
-git diff programs/
-#1438754975
-./autogen.sh 
-#1438755011
-./configure 
-#1438795511
-git status
-#1438795513
-git diff
-#1438795526
-git branch vk_exp
-#1438795529
-git status
-#1438795532
-git checkout vk_exp 
 #1438795533
 git status
 #1438795539
@@ -1998,3 +1840,161 @@ touch submodules/switch/p4src/switch.p4
 find . -name "mau.html" 
 #1481066010
 cp ./build/switch-tofino/p4-build/tofino/switch/visualization/mau.html /media/psf/vm/
+#1485300871
+./autogen.sh && ./configure && ./tools/compile.sh -j4 switch
+#1487111336
+./tools/compile.sh -j4 switch
+#1487276787
+./autogen.sh && ./configure && ./tools/compile.sh -j4 exm_direct
+#1487281832
+top
+#1487282620
+touch programs/exm_direct/exm_direct.p4 
+#1487282633
+./tools/compile.sh -j4 exm_direct
+#1489174042
+./autogen.sh && ./configure && ./tools/compile.sh -j4 switch
+#1490995780
+cd ..
+#1490995782
+cd switch/
+#1490997574
+./autogen.sh && ./configure && ./tools/compile.sh -j4 switch
+#1491000058
+echo $?
+#1491000338
+cd build/bf-drivers/
+#1491000344
+make CFLAGS="-g -O2 -fsanitize=address -fsanitize=undefined" CXXFLAGS="-fsanitize=address -fsanitize=undefined"
+#1491000350
+make clean
+#1491000352
+make CFLAGS="-g -O2 -fsanitize=address -fsanitize=undefined" CXXFLAGS="-fsanitize=address -fsanitize=undefined"
+#1491000392
+make
+#1491002158
+make clean
+#1491002177
+make CFLAGS="-g -O2 -fsanitize=address " CXXFLAGS="-fsanitize=address "
+#1491002350
+vim /home/vkumar/code/switch/submodules/bf-drivers/src/lld/lldlib_ucli.c
+#1491002367
+make CFLAGS="-g -O2 -fsanitize=address " CXXFLAGS="-fsanitize=address "
+#1491002372
+vim /home/vkumar/code/switch/submodules/bf-drivers/src/lld/lldlib_ucli.c
+#1491002384
+make CFLAGS="-g -O2 -fsanitize=address " CXXFLAGS="-fsanitize=address "
+#1491002940
+make clean
+#1491002942
+make
+#1491007813
+cd ../..
+#1491007814
+./autogen.sh && ./configure && ./tools/compile.sh -j4 switch
+#1491199788
+./tools/compile.sh -j4 exm_direct
+#1491199793
+./tools/compile.sh -j4 switch
+#1491237140
+USE_SWITCHSAI=1 ./compile.sh switch -j4
+#1491237151
+USE_SWITCHSAI=1 ./tools/compile.sh switch -j4
+#1491258062
+cd build/bf-drivers/
+#1491258066
+make clean
+#1491258074
+make CFLAGS="-g -O2 -fsanitize=address -fsanitize=undefined" CXXFLAGS="-fsanitize=address -fsanitize=undefined"
+#1491858055
+git status
+#1491858078
+make
+#1491858471
+./autogen.sh && ./configure && ./tools/compile.sh -j4 switch
+#1491858475
+cd ../..
+#1491858476
+./autogen.sh && ./configure && ./tools/compile.sh -j4 switch
+#1491859127
+sudo pip install crcmod
+#1491859136
+./tools/compile.sh -j4 switch
+#1491860020
+cd build/bf-drivers/
+#1491860021
+git status
+#1491860133
+cd ../..
+#1491860147
+cd build/bf-drivers/
+#1491860155
+make CFLAGS="-g -O2 -fsanitize=address -fsanitize=undefined" CXXFLAGS="-fsanitize=address -fsanitize=undefined"
+#1491860183
+cd ../../
+#1491860185
+cd install/
+#1491860186
+ls
+#1491860187
+cd lib/
+#1491860187
+ls
+#1491860216
+rm libdriver.*
+#1491860220
+cd ../../build/bf-drivers/
+#1491860224
+make CFLAGS="-g -O2 -fsanitize=address -fsanitize=undefined" CXXFLAGS="-fsanitize=address -fsanitize=undefined"
+#1491860264
+cd ../..
+#1491860274
+find . -name libpipe_mgr_la-pipe_mgr_tcam.lo
+#1491860279
+cd build/bf-drivers/
+#1491860280
+ls
+#1491860283
+cd src/
+#1491860284
+ls
+#1491860292
+cd pipe_mgr/
+#1491860292
+ls
+#1491860296
+rm *
+#1491860299
+cd ../../..
+#1491860301
+cd bf-drivers/
+#1491860306
+make CFLAGS="-g -O2 -fsanitize=address -fsanitize=undefined" CXXFLAGS="-fsanitize=address -fsanitize=undefined"
+#1491860591
+make install
+#1491860761
+rm src/pipe_mgr/*
+#1491860788
+make CFLAGS="-g -O2 -fsanitize=address -fsanitize=undefined" CXXFLAGS="-fsanitize=address -fsanitize=undefined" LDFLAGS+="-lasan"
+#1491861111
+sudo apt-get install libasan
+#1491861462
+ls -l /usr/lib/  | grep gcc
+#1491861465
+ls -l /usr/lib/  | grep thread
+#1491861522
+cd /usr/lib/
+#1491861522
+ls
+#1491861551
+find . -name ".*libpthread.*"
+#1491861557
+find . -name ".*pthread.*"
+#1491861561
+find . -name ".*thread.*"
+#1491861566
+cd ..
+#1491861631
+cd -
+#1491861637
+cd ~/code/switch/

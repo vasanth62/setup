@@ -1,63 +1,3 @@
-#1437429916
-git status
-#1437456546
-vim tools/veth_setup.sh 
-#1437524689
-git status
-#1437524691
-cd submodules/bf-drivers/
-#1437524693
-git status
-#1437524696
-git pull 
-#1437524701
-git status
-#1437602496
-git diff
-#1437602500
-git diff > diff
-#1437602502
-vim diff
-#1437602782
-git diff
-#1437602787
-git status
-#1437602791
-vim q
-#1437602793
-rm q
-#1437602795
-git diff
-#1437602799
-git status
-#1437602802
-git diff
-#1437602805
-git status
-#1437602810
-git assume targets/harlyn-bfd/local.mk
-#1437602819
-git assume targets/lib_bf_drivers/Makefile
-#1437602821
-git status
-#1437602827
-git commit -a -m "Bug fixes"
-#1437615320
-git status
-#1437615324
-git commit -a -m "Bug"
-#1437618037
-git status
-#1437618038
-git diff
-#1437618288
-git status
-#1437618312
-git commit -a -m "New way to perform tcam moves"
-#1437618313
-git status
-#1437618316
-git push origin vk_tcam 
 #1437671524
 git diff
 #1437671541
@@ -1998,3 +1938,63 @@ vim a.py
 python a.py 
 #1479667580
 ./tools/run_switchd.sh -p switch -g
+#1487028928
+cd submodules/bf-drivers/
+#1487028929
+ls
+#1487028933
+cd ../
+#1487028934
+ls
+#1487028939
+cd model/
+#1487028939
+ls
+#1487028968
+git submodule status 
+#1487028971
+cd ../bf-drivers/
+#1487028972
+git submodule status 
+#1487028976
+cd ../p4c-tofino/
+#1487028977
+git submodule status 
+#1487028980
+cd ..
+#1487028981
+ls
+#1487029080
+cd bf-utils/
+#1487029084
+git submodule status 
+#1487029086
+cd ../..
+#1487029101
+git submodule foreach --recursive 'git submodule status' | grep reg
+#1487029109
+git submodule foreach --recursive 'git submodule status' 
+#1487281717
+./tools/run_switchd.sh -p exm_direct -g
+#1489175372
+./tools/run_switchd.sh -p switch -g
+#1490994075
+vim 1
+#1490995592
+vim 3
+#1491003033
+vim 4
+#1491199510
+vim 5
+#1491257983
+
+#1491257988
+ls -l /usr/bin/g++
+#1491860552
+./tools/run_switchd.sh -p switch -g
+#1491861767
+find / -name ".*asan.*"
+#1491861778
+find /usr/local -name ".*asan.*"
+#1491861783
+find /usr/lib -name ".*asan.*"

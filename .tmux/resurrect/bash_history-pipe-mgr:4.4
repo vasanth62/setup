@@ -1,77 +1,3 @@
-#1436983228
-git checkout vk_range 
-#1436983230
-git status
-#1436983232
-cd ../..
-#1436983233
-git status
-#1436983883
-sudo tools/veth_setup.sh 
-#1436990871
-cd submodules/model/
-#1436990874
-git stash pop
-#1436995668
-cd ../p4c-tofino/
-#1436995670
-git status
-#1436995671
-git diff
-#1436995679
-git status
-#1436995685
-git commit -a -m "MRD"
-#1436995689
-git push origin vk_range 
-#1437066629
-git status
-#1437066631
-git diff
-#1437066640
-git status
-#1437066652
-git commit -a -m "Fixes to make 64 bit fields work right"
-#1437066655
-git push origin vk_range 
-#1437066659
-cd ../bf-drivers/
-#1437066660
-git status
-#1437066662
-git diff
-#1437066671
-git commit -a -m "MRD fixes"
-#1437066676
-git push origin vk_tcam 
-#1437094087
-cd ../model/
-#1437094090
-git stash list
-#1437094095
-git stash show
-#1437094101
-git status
-#1437094105
-git stash pop
-#1437094107
-git status
-#1437094108
-git diff
-#1437094113
-git status
-#1437094125
-git reset HEAD modules/tofino_rmt/module/src/mau-mapram.cpp
-#1437094126
-git diff
-#1437094222
-git diff ~/code/diff/diff_model_time
-#1437094385
-git diff > ~/code/diff/diff_model_time
-#1437094392
-vim ~/code/diff/diff_model_time 
-#1437094422
-git status
 #1437094431
 git reset HEAD targets/harlyn/main.c
 #1437094433
@@ -1998,3 +1924,77 @@ cd ../p4c-tofino/
 mycscope
 #1481222870
 fg
+#1485304741
+cd ../switch/
+#1485304743
+mycscope
+#1487111139
+cd ../bf-drivers/
+#1487111141
+mycscope
+#1487283224
+find . -name json
+#1487283227
+find . -name *.json
+#1487283233
+vim ./tests/pipe_mgr_utest_mau_ctx.json
+#1487283259
+mycscope
+#1487283293
+vim ./tests/pipe_mgr_utest_mau_ctx.json
+#1488489693
+fg
+#1488489698
+ps -aef | grep vim
+#1489447340
+cd ../model/
+#1489447342
+mycscope
+#1489449978
+cd ../switch/
+#1489449979
+mycscope
+#1489450250
+cd ../bf-drivers/
+#1489450251
+mycscope
+#1489716185
+cd ../switch/
+#1489716186
+mycscope
+#1490055728
+cscope -d
+#1490829457
+cd ../p4c-tofino/
+#1490829458
+mycscope
+#1490829800
+cd ../bf-drivers/
+#1490985971
+cd ../switch/
+#1490985974
+cd p4src/
+#1490985978
+grep tunnel_decap *
+#1490985985
+vim tunnel.p4 
+#1490986305
+grep "valid" *.p4
+#1490986310
+grep "valid;" *.p4
+#1490986339
+grep "valid" *.p4 | grep ternary
+#1490986344
+vim nat.p4 
+#1491256869
+cd ../../bf-drivers/
+#1491256872
+mycscope
+#1491859270
+cd ../p4c-tofino/
+#1491859271
+mycscope
+#1491860236
+cd ../bf-drivers/
+#1491860243
+touch src/pipe_mgr/pipe_mgr_tcam.c 

@@ -1,135 +1,3 @@
-#1441902328
-git add targets/single_device/of-tests/exm_direct/test.py 
-#1441902343
-git commit -m "Changing verification for idle time tests"
-#1441902346
-git pull origin master 
-#1441902581
-git status
-#1441902585
-git push origin master 
-#1441908757
-tmux detach -a
-#1441213525
-cd ../exm_direct/targets/single_device/
-#1441213545
-vim of-tests/exm_direct/test.py 
-#1441213660
-cd arch_model/
-#1441213668
-libtool --mode=execute gdb  tests/pipe_mgr_utest 
-#1441213683
-libtool --mode=execute gdb  harlyn-bfd 
-#1441750509
-./harlyn-bfd 
-#1441043567
-vim of-tests/basic_ipv4/test.py
-#1441325179
-cp basic_ipv4_profile.csv tofino_diag_profile.csv
-#1441325181
-vim tofino_diag_profile.csv 
-#1441325271
-mkdir of-tests/tofino_diag
-#1441325282
-cd of-tests/basic_ipv4/
-#1441325282
-ls
-#1441325290
-cp test.py ../tofino_diag/
-#1441325302
-cd ../tofino_diag/
-#1441325310
-vim test.py 
-#1441325429
-ls
-#1441325435
-cd ..
-#1441325436
-ls
-#1441325439
-cd pd_thrift/
-#1441325439
-ls
-#1441325443
-cd tofino_diag_p4_pd_rpc/
-#1441325443
-ls
-#1441325448
-vim tofino_diag.py 
-#1441325462
-cd ../..
-#1441325467
-cd ..
-#1441325470
-vim of-tests/tofino_diag/test.py 
-#1441325687
-sudo ./run_tests.py --test-dir of-tests/tofino_diag/
-#1441325704
-vim of-tests/tofino_diag/test.py 
-#1441325768
-sudo ./run_tests.py --test-dir of-tests/tofino_diag/
-#1441325939
-fg
-#1441325941
-vim of-tests/tofino_diag/test.py 
-#1441326300
-sudo ./run_tests.py --test-dir of-tests/tofino_diag/ test.TestStat
-#1441326320
-vim of-tests/tofino_diag/test.py 
-#1441326369
-sudo ./run_tests.py --test-dir of-tests/tofino_diag/ test.TestS
-#1441326371
-sudo ./run_tests.py --test-dir of-tests/tofino_diag/ test.Test
-#1441326375
-sudo ./run_tests.py --test-dir of-tests/tofino_diag/ test.TestStat
-#1441326378
-fg
-#1441326422
-sudo ./run_tests.py --test-dir of-tests/tofino_diag/ test.TestStat
-#1441393931
-fg
-#1441393999
-sudo ./run_tests.py --test-dir of-tests/tofino_diag/ 
-#1441821638
-mkdir of-tests/smoke_large_tbls
-#1441821650
-cp of-tests/tofino_diag/test.py of-tests/smoke_large_tbls/
-#1441821702
-fg
-#1441821707
-vim of-tests/smoke_large_tbls/test.py 
-#1441823873
-sudo ./run_tests.py --test-dir of-tests/smoke_large_tbls/ test.TestIdle
-#1441823884
-fg
-#1441823933
-sudo ./run_tests.py --test-dir of-tests/smoke_large_tbls/ test.TestIdle
-#1441825206
-fg
-#1441825282
-sudo ./run_tests.py --test-dir of-tests/smoke_large_tbls/ test.TestIdle
-#1441825305
-git status
-#1441825307
-fg
-#1441833489
-sudo ./run_tests.py --test-dir of-tests/smoke_large_tbls/ test.TestIdle
-#1441836708
-fg
-#1441838623
-sudo ./run_tests.py --test-dir of-tests/smoke_large_tbls/ 
-#1441838636
-fg
-#1441838660
-sudo ./run_tests.py --test-dir of-tests/smoke_large_tbls/ 
-#1441838805
-find . -name "__init.py*"
-#1441839691
-cd of-tests/smoke_large_tbls/
-#1441839760
-ln ../exm_direct/test.py idle_helper.py
-#1441839761
-ls
 #1441839763
 ls -l
 #1441839768
@@ -1998,3 +1866,135 @@ tools/run_p4_tests.sh -p basic_ipv4
 tools/run_p4_tests.sh -p drivers_test -f ptf-tests/drivers_test/ports.json --drv-test-info drivers-test-info.json --seed 7362
 #1481222882
 fg
+#1484787672
+tools/run_p4_tests.sh -p basic_ipv4 -- test.TestAddRoute
+#1485906649
+vim ptf-tests/smoke_large_tbls/test.py 
+#1485906909
+tools/run_p4_tests.sh -p smoke_large_tbls -- test.TestAtcam
+#1485906949
+fg
+#1485907050
+tools/run_p4_tests.sh -p smoke_large_tbls -s test.TestAtcam
+#1485907158
+l
+#1485907159
+ls
+#1487033966
+vim ptf-tests/exm_direct/test.py 
+#1487033989
+tools/run_p4_tests.sh -p exm_direct -s test.TestIdleTimeTCAM
+#1487122933
+vim ptf-tests/exm_direct/test.py 
+#1487123240
+tools/run_p4_tests.sh -p exm_direct -s test.TestSelectorDetailedEXM
+#1487124165
+vim ptf-tests/exm_direct/test.py 
+#1487124253
+tools/run_p4_tests.sh -p exm_direct -s test.TestSelectorDetailedEXM
+#1487124274
+vim ptf-tests/exm_direct/test.py 
+#1487124277
+reset
+#1487124279
+vim ptf-tests/exm_direct/test.py 
+#1487124644
+tools/run_p4_tests.sh -p exm_direct -s test.TestSelectorDetailedEXM
+#1487124663
+fg
+#1487124800
+tools/run_p4_tests.sh -p exm_direct -s test.TestSelectorDetailedEXM
+#1487264222
+tools/run_p4_tests.sh -p basic_ipv4
+#1487268683
+vim ptf-tests/basic_ipv4/test.py 
+#1487268729
+tools/run_p4_tests.sh -p basic_ipv4 -s test.TestDeepADT
+#1487275563
+vim ptf-tests/smoke_large_tbls/test.py 
+#1487275599
+tools/run_p4_tests.sh -p smoke_large_tbls 
+#1488244278
+vim ptf-tests/drivers_test/test.py 
+#1488244427
+tools/run_p4_tests.sh -p drivers_test -f ptf-tests/drivers_test/ports.json --drv-test-info drivers-test-info.json --seed 1234
+#1488406462
+vim ptf-tests/drivers_test/test.py 
+#1488406721
+tools/run_p4_tests.sh -p drivers_test -f ptf-tests/drivers_test/ports.json --drv-test-info drivers-test-info.json --seed 1234
+#1488409059
+ls
+#1488409111
+tools/run_p4_tests.sh -p drivers_test -f ptf-tests/drivers_test/ports.json --drv-test-info drivers-test-info.json --seed 1234
+#1488422864
+ls
+#1488422916
+tools/run_p4_tests.sh -p drivers_test -f ptf-tests/drivers_test/ports.json --drv-test-info drivers-test-info.json --seed 1234
+#1488423448
+ls
+#1488423588
+tools/run_p4_tests.sh -p drivers_test -f ptf-tests/drivers_test/ports.json --drv-test-info drivers-test-info.json --seed 1234
+#1488425675
+ls
+#1488425717
+tools/run_p4_tests.sh -p drivers_test -f ptf-tests/drivers_test/ports.json --drv-test-info drivers-test-info.json --seed 1234
+#1488427037
+vim ptf-tests/drivers_test/test.py
+#1488427090
+ls
+#1488427126
+tools/run_p4_tests.sh -p drivers_test -f ptf-tests/drivers_test/ports.json --drv-test-info drivers-test-info.json --seed 1234
+#1488427510
+vim drivers-test-info.json 
+#1488427543
+tools/run_p4_tests.sh -p drivers_test -f ptf-tests/drivers_test/ports.json --drv-test-info drivers-test-info.json --seed 1234
+#1488428064
+vim ptf-tests/drivers_test/test.py
+#1488428146
+tools/run_p4_tests.sh -p drivers_test -f ptf-tests/drivers_test/ports.json --drv-test-info drivers-test-info.json --seed 1234
+#1488428417
+q
+#1488479584
+fg
+#1488479604
+vim ptf-tests/drivers_test/test.py
+#1488929925
+tools/run_p4_tests.sh -p mau_test -f ptf-tests/mau_test/sw_tests/ports.json -s test.TestMoveRegT34
+#1488929992
+tools/run_p4_tests.sh -t ptf-tests/mau_test/sw_tests/ -f ptf-tests/mau_test/sw_tests/ports.json -s test.TestMoveRegT34
+#1488930425
+find . -name *.pyc
+#1488930444
+find . -name *.pyc | xargs rm 
+#1488930446
+find . -name *.pyc
+#1488930455
+tools/run_p4_tests.sh -t ptf-tests/mau_test/sw_tests/ -f ptf-tests/mau_test/sw_tests/ports.json -s test.TestMoveRegT34
+#1488953922
+tools/run_p4_tests.sh -p smoke_large_tbls -s test.TestAtcamTernaryValid
+#1489002516
+tools/run_p4_tests.sh -t ptf-tests/mau_test/sw_tests/ -f ptf-tests/mau_test/sw_tests/ports.json -s test.TestMoveRegT34
+#1489003516
+fg
+#1489003526
+vim ptf-tests/mau_test/sw_tests/test.py
+#1489003686
+tools/run_p4_tests.sh -t ptf-tests/mau_test/sw_tests/ -f ptf-tests/mau_test/sw_tests/ports.json -s test.TestMoveRegT34
+#1489003840
+fg
+#1489003841
+vim ptf-tests/mau_test/sw_tests/test.py
+#1489004202
+tools/run_p4_tests.sh -t ptf-tests/mau_test/sw_tests/ -f ptf-tests/mau_test/sw_tests/ports.json -s test.TestMoveRegT34
+#1489004431
+fg
+#1489004432
+vim ptf-tests/mau_test/sw_tests/test.py
+#1489022477
+tools/run_p4_tests.sh -t ptf-tests/mau_test/sw_tests/ -f ptf-tests/mau_test/sw_tests/ports.json -s test.TestMoveRegT34
+#1489527668
+sudo PATH=./install/bin:$PATH python ./install/lib/python2.7/site-packages/p4testutils/run_ptf_tests.py --test-dir ptf-tests/basic_ipv4/ --device-type asic test.TestLearning
+#1489776799
+vim ptf-tests/mau_test/sw_tests/test.py
+#1491511041
+tools/run_p4_tests.sh -t ptf-tests/mau_test/sw_tests/ -f ptf-tests/mau_test/sw_tests/ports.json -s test.TestMoveRegT1

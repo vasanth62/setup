@@ -1,36 +1,4 @@
 #1434650653
-make harlyn-install 
-#1434650653
-cd src/
-#1434650653
-ls
-#1434650653
-vim entry_format.c 
-#1434650653
-ls -l
-#1434650653
-cd ..
-#1434650653
-rm -rf src/
-#1434650653
-make harlyn-install
-#1434650653
-touch p4src/basic_ipv4.p4 
-#1434650653
-make harlyn-install
-#1434650653
-find ../../ -name "entry_format.c"
-#1434650653
-vim ../../submodules/p4c-tofino/p4c_tofino/target/tofino/entry_format/templates/src/entry_format.c
-#1434650653
-vim ../../targets/basic_ipv4/src/entry_format.c
-#1434650653
-touch p4src/basic_ipv4.p4 
-#1434650653
-make harlyn-install
-#1434650653
-touch p4src/basic_ipv4.p4 
-#1434650653
 make harlyn-install
 #1434650653
 make clean
@@ -1998,3 +1966,35 @@ make check CFLAGS='-DUTEST -DINCLUDE_SERDES_PKG -O2 -g' -j4 TESTS=
 sudo libtool --mode=execute gdb  tests/pipe_mgr_utest 
 #1481222848
 fg
+#1487706843
+ls
+#1487706847
+cd -
+#1487706849
+cd ../..
+#1487706850
+cd -
+#1487706851
+ls
+#1487706896
+make check CFLAGS='-DUTEST -DINCLUDE_SERDES_PKG -O2 -g' -j4 TESTS=
+#1487706921
+sudo libtool --mode=execute gdb  tests/pipe_mgr_utest 
+#1487707607
+fg
+#1487707743
+sudo libtool --mode=execute gdb  tests/pipe_mgr_utest 
+#1487710363
+y
+#1487713687
+sudo libtool --mode=execute gdb  tests/mc_mgr_utest
+#1487713821
+sudo libtool --mode=execute gdb  tests/pkt_mgr_utest
+#1487714460
+make check CFLAGS='-DUTEST -DINCLUDE_SERDES_PKG -O2 -g' -j4 TESTS=
+#1487714477
+sudo libtool --mode=execute gdb  tests/pkt_mgr_utest
+#1487714498
+sudo libtool --mode=execute gdb  tests/mc_mgr_utest
+#1487714541
+y

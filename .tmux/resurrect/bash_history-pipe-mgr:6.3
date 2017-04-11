@@ -1,3 +1,67 @@
+#1444522394
+git status
+#1444522400
+git checkout vk_act_spec 
+#1444522402
+git status
+#1444523584
+cd ../p4c-tofino/
+#1444523588
+git diff
+#1444523806
+cd ../../
+#1444523810
+touch programs/switch/switch.p4 
+#1444523889
+git diff
+#1444523898
+cd submodules/p4c-tofino/
+#1444523899
+git diff
+#1444524057
+cd ../bf-drivers/
+#1444524058
+git log
+#1444524078
+git checkout 53d4bf84449bf35481483be871dd4eae729be42b
+#1444524955
+git checkout vk_act_spec 
+#1444524957
+git status
+#1444524960
+git diff
+#1444524964
+git status
+#1444525042
+git diff
+#1444525071
+git commit -a -m "Some more sanity check in case PD calls remove resource without actually adding the resource earlier"
+#1444525073
+git status
+#1444850897
+git push origin vk_act_spec 
+#1444850905
+cd ../p4c-tofino/
+#1444850908
+git status
+#1444850910
+git diff
+#1444850912
+git status
+#1444850917
+git branch vk_act_spec
+#1444850921
+git checkout vk_act_spec 
+#1444850923
+git status
+#1444850924
+git diff
+#1444850967
+git commit -a -m "During entry-adds, removing TAG_REMOVE calls in pd and couple of potential seg-faults "
+#1444850969
+git status
+#1444850972
+git push origin vk_act_spec 
 #1445015727
 sudo bash
 #1445018359
@@ -394,7 +458,7 @@ git diff
 git status
 #1443551644
 git commit -a -m "Removing more calls to physical line get
-#1446837630
+#1446837629
 "
 #1443551648
 git push origin vk_atcam 
@@ -1872,129 +1936,65 @@ fg
 tmux
 #1446661869
 tmux attach
-#1446839676
-cd ../tofino_diag/targets/single_device/
-#1446839681
-vim ptf-tests/tofino_diag/test.py 
-#1446840769
-cd ../..
-#1446840782
-sudo PATH=./install/bin:$PATH /usr/bin/python install/lib/python2.7/site-packages/p4testutils/run_ptf_tests.py --test-dir targets/single_device/ptf-tests/tofino_diag/ test.SnakeTest
-#1446840840
-fg
-#1446841021
-sudo PATH=./install/bin:$PATH /usr/bin/python install/lib/python2.7/site-packages/p4testutils/run_ptf_tests.py --test-dir targets/single_device/ptf-tests/tofino_diag/ test.SnakeTest
-#1446841036
-fg
-#1446847612
-vim targets/single_device/ptf-tests/tofino_diag/test.py 
-#1452290326
-cd ../..
-#1452290333
-vim bf_drivers.log
-#1452290363
-vim bf_drivers.log.0 
-#1452290412
-grep 3024 bf_drivers.log*
-#1452290417
-grep 3024 bf_drivers.log.0 
-#1452290422
-grep -n 3024 bf_drivers.log.0 
-#1452290461
-grep -n 3024 bf_drivers.log
-#1452290505
-vim bf_drivers.log
-#1452290685
-grep "Updating entry idx" bf_drivers.log* | more
-#1452290700
-grep "Updating entry idx 453" bf_drivers.log* 
-#1452290706
-grep "Updating entry idx 453" bf_drivers.log*  -n
-#1452291735
-grep "deleted successfully" bf_drivers.log*
-#1452291744
-grep "deleted successfully" bf_drivers.log* | more
-#1452291751
-grep "deleted successfully" bf_drivers.log* -n | more
-#1452291771
-vim bf_drivers.log.2 
-#1452291857
-cat bf_drivers.log.1 >> final_run_log 
-#1452291861
-vim final_run_log 
-#1452291871
-cat bf_drivers.log.0 >> final_run_log 
-#1452291875
-cat bf_drivers.log >> final_run_log 
-#1452291878
-vim final_run_log 
-#1452291979
-grep allocated final_run_log 
-#1452291982
-grep allocated final_run_log  | wc
-#1452292032
-vim final_run_log 
-#1452292218
-history | grep grep
-#1452292386
-vim final_run_log 
-#1452293092
-grep "Updating entry idx 453" final_run_log  -n
-#1452293354
-grep "Updating entry idx 3024" final_run_log  -n
-#1452293631
-vim final_run_log 
-#1452294023
-grep "Updating entry idx 453" final_run_log  -n
-#1452294424
-vim final_run_log 
-#1452629993
-cd ../switch/
-#1452629995
+#1446839545
+cd ../tofino_diag/install/bin/
+#1446839559
+sudo ./tofino-driver -c ../share/p4/targets/switch.conf 
+#1446839577
+reset
+#1446839614
+sudo ./tofino-driver --switch-config ../share/p4/targets/tofino_diag.conf 
+#1452289689
+cd ../bf-drivers/submodules/bf-drivers/
+#1452289692
 git status
-#1452630000
+#1452289695
+git checkout master 
+#1452289697
 git pull origin master 
-#1452630143
-git submodule update --init --recursive
-#1452631785
-git status
-#1452631802
-vim submodules/switch/ptf-tests/base/api-tests/switch.py
-#1452861302
-ssh nd@ash11
-#1453404422
-git status
-#1453404430
-git pull origin master 
-#1453404454
-git status
-#1453404456
-git submodule update --init --recursive
-#1453404461
-cd submodules/bf-drivers/
-#1453404462
+#1452289701
 mycscope
-#1453404565
-cd ../bf-syslibs/
-#1453404566
+#1452616584
+vi /etc/security/limits.conf
+#1453404659
+cd 
+#1453404663
+cd code/switch/submodules/bf-drivers/
+#1453404664
 mycscope
-#1453677831
-ssh nd@katreen3
-#1453677835
-ssh nd@katreena3
-#1453677851
-ssh nd@kareena3
-#1454097107
+#1454097411
 ssh sulley3
-#1457413781
-cd ~/code/bf-drivers/submodules/bf-drivers/
-#1457413783
+#1454525593
+cd ~/code/p4factory/
+#1454525601
+cd submodules/model/
+#1454525603
 mycscope
-#1477355711
+#1457413915
+ssh sulley2
+#1457513111
+wget http://bigfoot.barefoot-int.lan:8080/view/SW%20Tests/job/ubu_x86_64_sde_pkger/89/consoleText
+#1457513220
+vim consoleText 
+#1476122055
+ssh sulley
+#1476903485
+cd ../bf-drivers/
+#1476903489
+mycscope
+#1477355703
 ssh nd@ash13
-#1477589193
+#1477588956
 ssh -p 12350 nd@shreya2
-#1479660199
+#1479660163
 ssh nd@kangana2
-#1480552582
+#1480552578
 ssh nd@shreya2
+#1487443765
+ssh root@10.201.201.215    
+#1487444744
+ssh admin12@10.201.201.1
+#1489181925
+ssh root@10.201.201.215    
+#1489182015
+ssh root@10.201.208.153

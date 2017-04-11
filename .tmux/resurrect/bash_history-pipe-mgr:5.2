@@ -1,55 +1,3 @@
-#1441824118
-ls
-#1441824123
-cd ../
-#1441824126
-vim swch-cfg 
-#1441824183
-ls
-#1441824186
-vim zlog-cfg 
-#1441824203
-cd ../..
-#1441824287
-cd single_device/arch_model/
-#1441824289
-sudo gdb ./harlyn-bfd 
-#1441825179
-cd ..
-#1441825180
-cd -
-#1441825182
-sudo gdb ./harlyn-bfd 
-#1439838181
-./compile.sh -j4 basic_ipv4
-#1441323609
-./compile.sh -j4 tofino_diag
-#1441324245
-./compile.sh -j4 tofino_diag --clean
-#1441324249
-./compile.sh -j4 tofino_diag 
-#1441325741
-ls
-#1441325804
-cd of-tests/pd_thrift/
-#1441325807
-cd ../..
-#1441325809
-./compile.sh -j4 tofino_diag 
-#1441326335
-vim of-tests/pd_thrift/tofino_diag_p4_pd_rpc/ttypes.py
-#1441326397
-vim of-tests/pd_thrift/tofino_diag_p4_pd_rpc/tofino_diag.py
-#1441326555
-./compile.sh -j4 tofino_diag 
-#1441819655
-./compile.sh -j4 smoke_large_tbls
-#1441820762
-cp ../../build/programs/smoke_large_tbls/visualization/mau.html /media/psf/vm/
-#1441820961
-./compile.sh -j4 smoke_large_tbls
-#1441820995
-cp ../../build/programs/smoke_large_tbls/visualization/mau.html /media/psf/vm/
 #1441821042
 vim ../../build/programs/smoke_large_tbls/context/mau.context.json 
 #1441821294
@@ -1998,3 +1946,55 @@ top
 tools/run_switchd.sh -p basic_ipv4 -g
 #1480379602
 tools/run_switchd.sh -p drivers_test -g
+#1484787480
+tools/run_switchd.sh -p drivers_test -g -- --tcp_port_base=10000
+#1484787495
+tools/run_switchd.sh -p drivers_test -g -- --tcp-port-base=10000
+#1484787505
+y
+#1484787516
+tools/run_switchd.sh -p basic_ipv4 -g -- --tcp-port-base=10000
+#1485906808
+tools/run_switchd.sh -p smoke_large_tbls -g 
+#1487027416
+tools/run_switchd.sh -p exm_direct -g
+#1487264170
+tools/run_switchd.sh -p basic_ipv4 -g
+#1487275550
+tools/run_switchd.sh -p smoke_large_tbls -g 
+#1487376879
+top
+#1488244372
+tools/run_switchd.sh -p drivers_test -g
+#1488406522
+q
+#1488406539
+tools/run_switchd.sh -p drivers_test -g
+#1488929877
+tools/run_switchd.sh -p mau_test -g
+#1488953797
+tools/run_switchd.sh -p smoke_large_tbls -g 
+#1489002453
+tools/run_switchd.sh -p mau_test -g
+#1489527628
+tools/run_switchd.sh -p basic_ipv4 -g
+#1491345029
+git status
+#1491345034
+git checkout master 
+#1491345037
+git pull origin master 
+#1491345090
+git submodule update --init --recursive
+#1491345093
+git status
+#1491351988
+cd submodules/p4c-tofino/
+#1491351989
+git status
+#1491351992
+git checkout p4c-4.0.0-32
+#1491510993
+cd ../..
+#1491510995
+tools/run_switchd.sh -p mau_test -g

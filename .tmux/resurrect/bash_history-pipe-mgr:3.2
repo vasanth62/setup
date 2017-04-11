@@ -1,63 +1,3 @@
-#1447263636
-sudo LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib:${P4FACTORY}/install/lib ${P4FACTORY}/install/bin/switchd ${P4FACTORY}/install/share/switchd/tofino-driver1.json /home/vkumar/code/p4factory/install/share/p4/targets/bfd_test.conf 
-#1447263700
-vim install/share/switchd/tofino-driver.json 
-#1447263725
-vimdiff install/share/switchd/tofino-driver.json install/share/switchd/tofino-driver1.json 
-#1447264027
-sudo LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib:${P4FACTORY}/install/lib ${P4FACTORY}/install/bin/switchd ${P4FACTORY}/install/share/switchd/tofino-driver1.json /home/vkumar/code/p4factory/install/share/p4/targets/bfd_test.conf 
-#1447264411
-reset
-#1447264430
-sudo LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib:${P4FACTORY}/install/lib gdb --args ${P4FACTORY}/install/bin/switchd ${P4FACTORY}/install/share/switchd/tofino-driver1.json /home/vkumar/code/p4factory/install/share/p4/targets/bfd_test.conf 
-#1447266894
-sudo LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib:${P4FACTORY}/install/lib gdb --args ${P4FACTORY}/install/bin/switchd ${P4FACTORY}/install/share/switchd/tofino-driver1.json ${P4FACTORY}/install/share/p4/targets/switch.conf 
-#1447266931
-sudo LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib:${P4FACTORY}/install/lib gdb --args ${P4FACTORY}/install/bin/switchd ${P4FACTORY}/install/share/switchd/tofino-driver1.json ${P4FACTORY}/install/share/p4/targets/bfd_test.conf 
-#1447440653
-r
-#1447440655
-sudo LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib:${P4FACTORY}/install/lib gdb --args ${P4FACTORY}/install/bin/switchd ${P4FACTORY}/install/share/switchd/tofino-driver1.json ${P4FACTORY}/install/share/p4/targets/bfd_test.conf 
-#1447445966
-sudo LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib:${P4FACTORY}/install/lib  ${P4FACTORY}/install/bin/switchd ${P4FACTORY}/install/share/switchd/tofino-driver1.json ${P4FACTORY}/install/share/p4/targets/bfd_test.conf 
-#1447452161
-sudo pip install memprof
-#1447452224
-sudo LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib:${P4FACTORY}/install/lib  ${P4FACTORY}/install/bin/switchd ${P4FACTORY}/install/share/switchd/tofino-driver1.json ${P4FACTORY}/install/share/p4/targets/bfd_test.conf 
-#1447787998
-ls
-#1447788070
-vim install/bin/p4-tofino-test 
-#1447788095
-sudo LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib:${P4FACTORY}/install/lib  ${P4FACTORY}/install/bin/switchd ${P4FACTORY}/install/share/switchd/bf-switchd.json ${P4FACTORY}/install/share/p4/targets/bfd_test.conf 
-#1447788630
-r
-#1447788631
-sudo LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib:${P4FACTORY}/install/lib  ${P4FACTORY}/install/bin/switchd ${P4FACTORY}/install/share/switchd/bf-switchd.json ${P4FACTORY}/install/share/p4/targets/bfd_test.conf 
-#1447802386
-reset
-#1447802411
-sudo LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib:${P4FACTORY}/install/lib gdb --args ${P4FACTORY}/install/bin/switchd ${P4FACTORY}/install/share/switchd/bf-switchd.json ${P4FACTORY}/install/share/p4/targets/bfd_test.conf 
-#1442353295
-git push origin vk_move 
-#1446664542
-cd ../..
-#1446664543
-git status
-#1446664555
-git pull origin master 
-#1446664568
-git stat6us
-#1446664570
-git status
-#1446680106
-git pull origin master 
-#1446680111
-git status
-#1446680114
-git submodule update --init --recursive
-#1446680116
-git status
 #1446680119
 cd submodules/model/
 #1446680120
@@ -1998,3 +1938,63 @@ q
 tools/run_p4_tests.sh -p drivers_test -f ptf-tests/drivers_test/ports.json --drv-test-info drivers-test-info.json --seed 1234
 #1481217865
 tools/run_p4_tests.sh -p drivers_test -f ptf-tests/drivers_test/ports.json --drv-test-info drivers-test-info.json --seed 25789
+#1485384443
+tools/run_p4_tests.sh -p drivers_test -f ptf-tests/drivers_test/ports.json --drv-test-info drivers-test-info.json --seed 1234
+#1486697717
+cd ptf-tests/
+#1486697728
+grep -r . stage1 *
+#1486697732
+grep -r . stage1 *.py
+#1486697738
+reset
+#1486697743
+grep -r . stage1 * 
+#1486697748
+reset
+#1486697754
+grep -r  stage1 * 
+#1486697804
+cd ..
+#1486698417
+tools/run_p4_tests.sh -p drivers_test -f ptf-tests/drivers_test/ports.json --drv-test-info drivers-test-info.json --seed 1234
+#1486768880
+tools/run_p4_tests.sh -p pcie_pkt_test
+#1486772095
+ls
+#1486772180
+tools/run_p4_tests.sh -p pcie_pkt_test
+#1486772902
+ls
+#1486772903
+tools/run_p4_tests.sh -p pcie_pkt_test
+#1486958279
+ls
+#1486958352
+tools/run_p4_tests.sh -p pcie_pkt_test
+#1486958929
+reset
+#1486958992
+tools/run_p4_tests.sh -p pcie_pkt_test
+#1486959684
+reset
+#1486959788
+tools/run_p4_tests.sh -p pcie_pkt_test
+#1486960296
+ls
+#1486960364
+tools/run_p4_tests.sh -p pcie_pkt_test
+#1486960692
+q
+#1486960692
+ls
+#1486960694
+reset
+#1486960775
+tools/run_p4_tests.sh -p pcie_pkt_test
+#1486964580
+ls
+#1486964581
+reset
+#1486964621
+tools/run_p4_tests.sh -p pcie_pkt_test

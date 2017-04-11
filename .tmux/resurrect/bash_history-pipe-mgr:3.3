@@ -1,87 +1,3 @@
-#1450455358
-cd ../..
-#1450455359
-git status
-#1450455369
-git commit -a -m "Updating switch with Krishna's fix"
-#1450455372
-git push origin thrift-exceptions 
-#1450455510
-git submodule status 
-#1450480102
-git status
-#1450480109
-git pull origin thrift-exceptions 
-#1450480112
-git status
-#1450480415
-git pull origin master 
-#1450480431
-git status
-#1450480435
-cd submodules/bf-drivers/
-#1450480436
-git status
-#1450480439
-git checkout master 
-#1450480442
-git pull origin master 
-#1450480446
-git status
-#1450480448
-cd ../..
-#1450480449
-git status
-#1450480453
-cd submodules/switch/
-#1450480455
-git checkout master 
-#1450480458
-git pull origin master 
-#1450480492
-cd ../bf-drivers/
-#1450480494
-git checkout 6cfc378
-#1450480503
-cd ../p4c-tofino/
-#1450480514
-git checkout 3278744
-#1450480517
-cd ../switch/
-#1450480527
-git checkout 81924ee
-#1450480529
-cd ../..
-#1450480530
-git status
-#1450480534
-git add submodules/bf-drivers/
-#1450480539
-git add submodules/switch/
-#1450480548
-git add submodules/p4c-tofino/
-#1450480550
-git status
-#1450480553
-git commit
-#1450480557
-git status
-#1450480561
-git push origin thrift-exceptions 
-#1450481657
-git status
-#1450481660
-git checkout master 
-#1450481662
-git pull origin master 
-#1450481666
-git status
-#1450481668
-git submodule update --init --recursive
-#1450481672
-cd submodules/bf-drivers/
-#1450481679
-git fetch -p
 #1450481685
 git checkout vk_idle_sym 
 #1450481687
@@ -1998,3 +1914,87 @@ vim bf_log.py
 fg
 #1481223101
 vim test.py
+#1485906469
+cd ../exm_direct
+#1485906472
+vim test.py 
+#1485906489
+cd ../../programs/
+#1485906492
+grep atcam *
+#1485906493
+grep atcam * -r
+#1485906501
+cd ../ptf-tests/smoke_large_tbls/
+#1485906502
+vim test.py 
+#1485979712
+cd ../drivers_test/
+#1485979714
+vim test.py 
+#1486697437
+cd ..
+#1486697445
+grep -r stage1 *
+#1486697449
+cd drivers_test/
+#1486697450
+vim test.py 
+#1486768893
+cd ../pcie_pkt_test/
+#1486768896
+vim test.py 
+#1486961110
+cd ../
+#1486961115
+grep stage1 * -r
+#1486961121
+vim fast_reconfig/test.py 
+#1486961447
+grep stage1 * -r
+#1486961458
+cd drivers_test/
+#1486961460
+vim test.py 
+#1486961491
+:q
+#1486961520
+cd ../pcie_pkt_test/
+#1486961522
+vim test.py
+#1487012461
+cd ../drivers_test/
+#1487012462
+vim test.py 
+#1487019565
+cd ../../
+#1487019571
+cd submodules/switch/
+#1487019575
+cd p4src/
+#1487019576
+ls
+#1487019580
+vim switch.p4 
+#1487019595
+grep ingress_port_mapping *
+#1487019598
+vim port.p4 
+#1488929377
+cd ../../../ptf-tests/drivers_test/
+#1488929381
+vim bf_tables.py 
+#1489183406
+cd ../basic_ipv4/
+#1489183408
+vim test.py 
+#1489702599
+uname -a
+#1489702695
+lsb_release -a 
+#1490056293
+cd ../mau_test/dv_tests/
+#1490056293
+ls
+#1490056295
+vim test.py 

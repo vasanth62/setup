@@ -1,23 +1,3 @@
-#1436983902
-sudo ./run_tests.py --test-dir of-tests/tests/ test.TestRange TestRange2
-#1436983910
-sudo ./run_tests.py --test-dir of-tests/tests/ test.TestTcamRange TestTcamRange2
-#1436983915
-vim of-tests/tests/test.py
-#1436983933
-sudo ./run_tests.py --test-dir of-tests/tests/ test.TestRange test.TestRange2
-#1436984103
-touch p4src/basic_ipv4.p4 
-#1436984196
-fg
-#1436984201
-vim of-tests/tests/test.py
-#1436984249
-sudo ./run_tests.py --test-dir of-tests/tests/ test.TestRange2
-#1436984738
-fg
-#1436984742
-vim of-tests/tests/test.py
 #1436991067
 vim p4src/basic_ipv4.p4 
 #1436991081
@@ -1998,3 +1978,23 @@ export WORKSPACE=~/code/switch/
 ./tools/run_p4_tests.sh -p mau_test -f ptf-tests/mau_test/ports.json -s test.TestMoveRegT2
 #1481222874
 fg
+#1487281754
+./tools/run_p4_tests.sh -p exm_direct -s test.TestSelectorDetailedTCAM
+#1487281852
+vim ptf-tests/exm_direct/test.py
+#1487282023
+./tools/run_p4_tests.sh -p exm_direct -s test.TestSelectorDetailedTCAM
+#1487282228
+vim ptf-tests/exm_direct/test.py
+#1487282307
+./tools/run_p4_tests.sh -p exm_direct -s test.TestSelectorDetailedTCAM
+#1487282675
+fg
+#1487282681
+vim ptf-tests/exm_direct/test.py
+#1487282796
+./tools/run_p4_tests.sh -p exm_direct -s test.TestSelectorDetailedTCAM
+#1489175425
+sudo PATH=./install/bin:$PATH python ./install/lib/python2.7/site-packages/p4testutils/run_ptf_tests.py --test-dir submodules/switch/ptf-tests/base/pd-tests --device-type asic  
+#1489175481
+sudo PATH=./install/bin:$PATH python ./install/lib/python2.7/site-packages/p4testutils/run_ptf_tests.py --test-dir submodules/switch/ptf-tests/base/api-tests --device-type asic 

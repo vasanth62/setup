@@ -1,9 +1,3 @@
-#1445018670
-git status
-#1445018676
-cd submodules/bf-drivers/
-#1445018677
-git status
 #1445018680
 git checkout master 
 #1445018684
@@ -1998,3 +1992,9 @@ tools/run_tofino_model.sh -p smoke_large_tbls -g
 python tools/drivers_test_comb.py . -p -n 0-35 -m atcam 
 #1480549277
 tools/run_tofino_model.sh -p drivers_test -f ptf-tests/drivers_test/ports.json -gq
+#1484774810
+tmux kill-ses -t 0
+#1485384399
+tools/run_tofino_model.sh -p drivers_test -f ptf-tests/drivers_test/ports.json -gq
+#1486768828
+tools/run_tofino_model.sh -p pcie_pkt_test -g
