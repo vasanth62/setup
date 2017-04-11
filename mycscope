@@ -1,0 +1,16 @@
+rm cscope.out
+rm cscope.files
+find . -name "*.c" > cscope.files
+find . -name "*.h" >> cscope.files
+find . -name "*.cpp" >> cscope.files
+find . -name "*.cc" >> cscope.files
+find . -name "*.ipp" >> cscope.files
+find . -name "*.hpp" >> cscope.files
+find . -name "Makefile" >> cscope.files
+find . -name "*.mk" >> cscope.files
+find . -name "*.p4" >> cscope.files
+find . -name "*.py" >> cscope.files
+find . -name "*.thrift" >> cscope.files
+find . -name "Makefile.am" >> cscope.files
+find . -name "*.sh" >> cscope.files
+cscope
