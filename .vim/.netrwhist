@@ -1,2 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =0
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/home/vkumar/code/p4factory/submodules/bf-drivers/pd_api_gen'
+let g:netrw_dirhist_2='/home/vkumar/code/switch/ptf-tests/drivers_test'
+let g:netrw_dirhist_3='/home/vkumar/code/switch/ptf-tests'
+let g:netrw_dirhist_4='/home/vkumar/code/switch/ptf-tests/drivers_test'

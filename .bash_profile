@@ -44,7 +44,7 @@ else
     start_agent;
 fi
 
-setterm -blength 0
+#setterm -blength 0
 
 export HISTTIMEFORMAT="%Y-%m-%d %T "
 export TIMEOUT=20

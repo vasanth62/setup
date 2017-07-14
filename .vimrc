@@ -43,8 +43,8 @@ set vb
 
 filetype plugin indent on
 
-map <C-K> :pyf /home/vkumar/clang-format-tools/clang-format.py<cr>
-imap <C-K> <c-o>:pyf /home/vkumar/clang-format-tools/clang-format.py<cr>
+map <C-K> :py3f /home/vkumar/clang-format-tools/clang-format.py<cr>
+imap <C-K> <c-o>:py3f /home/vkumar/clang-format-tools/clang-format.py<cr>
 
 "Get the function
 map [[ ?^\h<CR>
