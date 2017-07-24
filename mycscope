@@ -13,4 +13,5 @@ find . -name "*.py" >> cscope.files
 find . -name "*.thrift" >> cscope.files
 find . -name "Makefile.am" >> cscope.files
 find . -name "*.sh" >> cscope.files
+find . -name "*.proto" >> cscope.files
 cscope

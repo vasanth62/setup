@@ -41,7 +41,7 @@ end
 "Disable the beep sound
 set vb
 
-filetype plugin indent on
+"filetype plugin indent on
 
 "map <C-K> :py3f /home/vkumar/clang-format-tools/clang-format.py<cr>
 "imap <C-K> <c-o>:py3f /home/vkumar/clang-format-tools/clang-format.py<cr>
@@ -49,3 +49,5 @@ filetype plugin indent on
 "Get the function
 "map [[ ?^\h<CR>
 "map ]] /^\h<CR>
+
+execute pathogen#infect()
