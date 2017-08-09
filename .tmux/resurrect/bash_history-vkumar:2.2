@@ -1,0 +1,2000 @@
+#1500940430
+cat ~/.ssh/id_rsa.pub
+#1500940430
+pwd
+#1500940430
+mkdir tmp
+#1500940430
+mkdir code
+#1500940430
+cd code/
+#1500940430
+git clone git@github.com:vasanth62/setup.git
+#1500940430
+cd setup/
+#1500940430
+ls
+#1500940430
+ls -al
+#1500940430
+mkdir ~/bin
+#1500940430
+cp mycscope ~/bin/
+#1500940430
+cp -r .vim* ~/
+#1500940430
+cp .tmux.conf ~/
+#1500940430
+cd .tmux/
+#1500940430
+ls -al
+#1500940430
+cd plugins/
+#1500940430
+ls
+#1500940430
+cd tpm/
+#1500940430
+ls
+#1500940430
+cd ..
+#1500940430
+cd ../..
+#1500940430
+git status
+#1500940430
+git submodule status 
+#1500940430
+cp -r .tmux ~/
+#1500940430
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+#1500940430
+cd ..
+#1500940430
+sudo reboot
+#1500940430
+history -r '/home/vkumar/.tmux/resurrect/bash_history-vkumar:2.2'
+#1500940430
+export GOROOT=/usr/bin/go
+#1500940430
+export GOPATH=$HOME/go
+#1500940430
+export PATH=$PATH\:/sbin\:/usr/sbin\:$HOME/bin\:$GOROOT/bin\:$GOPATH/bin
+#1500940430
+wget https://github.com/google/protobuf/releases/download/v3.3.0/protoc-3.3.0-linux-x86_64.zip
+#1500940430
+unzip protoc-3.3.0-linux-x86_64.zip -d protoc-dir
+#1500940430
+sudo apt install unzip
+#1500940430
+sudo apt install gcc
+#1500940430
+g++
+#1500940430
+sudo apt install g++
+#1500940430
+g++
+#1500940430
+unzip protoc-3.3.0-linux-x86_64.zip -d protoc-dir
+#1500940430
+sudo mv protoc-dir/bin/protoc /usr/bin/protoc
+#1500940430
+sudo apt-get install autoconf automake libtool curl make g++ unzip
+#1500940430
+sudo apt-get install pkg-config
+#1500940430
+wget https://github.com/google/protobuf/releases/download/v3.3.0/protobuf-cpp-3.3.0.tar.gz
+#1500940430
+tar xvzf protobuf-cpp-3.3.0.tar.gz
+#1500940430
+cd protobuf-cpp-3.3.0
+#1500940430
+cd protobuf-3.3.0/
+#1500940430
+./autogen.sh
+#1500940430
+./configure
+#1500940430
+make
+#1500940430
+make check
+#1500940430
+sudo make install
+#1500940430
+sudo ldconfig
+#1500940430
+cd ..
+#1500940430
+git clone -b $(curl -L http://grpc.io/release) https://github.com/grpc/grpc
+#1500940430
+cd grpc
+#1500940430
+git submodule update --init
+#1500940430
+make
+#1500940430
+sudo make install
+#1500940430
+cd ..
+#1500940430
+wget https://github.com/protobuf-c/protobuf-c/releases/download/v1.2.1/protobuf-c-1.2.1.tar.gz
+#1500940430
+tar -xvzf protobuf-c-1.2.1.tar.gz
+#1500940430
+cd protobuf-c-1.2.1
+#1500940430
+./configure && make
+#1500940430
+echo $?
+#1500940430
+make install
+#1500940430
+sudo make install
+#1500940430
+cd ..
+#1500940430
+wget https://github.com/grpc/grpc-go/archive/v1.4.2.tar.gz
+#1500940430
+tar -xvzf v1.4.2.tar.gz
+#1500940430
+cd grpc-go-1.4.2
+#1500940430
+sudo apt install golang-go
+#1500940430
+go get google.golang.org/grpc
+#1500940430
+mkdir /usr/bin/go
+#1500940430
+ls -l /usr/bin/go
+#1500940430
+go get google.golang.org/grpc
+#1500940430
+sudo go get google.golang.org/grpc
+#1500940430
+echo $GOPATH
+#1500940430
+mkdir /home/vkumar/go
+#1500940430
+sudo go get google.golang.org/grpc
+#1500940430
+go help gopath
+#1500940430
+sudo go get google.golang.org/grpc
+#1500940430
+echo $PATH
+#1500940430
+mkdir /home/vkumar/go/bin
+#1500940430
+sudo go get google.golang.org/grpc
+#1500940430
+go env
+#1500940430
+sudo go env
+#1500940430
+ls -l /usr/bin/go
+#1500940430
+ls -l ../lib/go-1.6/bin/go
+#1500940430
+ls -l /usr/lib/go-1.6/bin/go
+#1500940430
+sudo chmod 777 /usr/lib/go-1.6/bin/go
+#1500940430
+go env
+#1500940430
+ls -l /usr/bin/go
+#1500940430
+ls -l /usr/lib/go-1.6/bin/go
+#1500940430
+cd /usr/lib/
+#1500940430
+ls
+#1500940430
+ls -l go-1.6/
+#1500940430
+chmod -r 777 go-1.6/
+#1500940430
+sudo chmod -r 777 go-1.6/
+#1500940430
+sudo chmod 777 -r go-1.6/
+#1500940430
+sudo chmod 777  go-1.6/
+#1500940430
+sudo chmod 777 -R go-1.6/
+#1500940430
+cd -
+#1500940430
+go env
+#1500940430
+ls -l /usr/bin/go
+#1500940430
+sudo go env
+#1500940430
+go get google.golang.org/grpc
+#1500940430
+sudo go get google.golang.org/grpc
+#1500940430
+sudo -E go get google.golang.org/grpc
+#1500940430
+sudo -e go get google.golang.org/grpc
+#1500940430
+echo $GOPATH
+#1500940430
+sudo apt remove golang-go
+#1500940430
+go get google.golang.org/grpc
+#1500940430
+sudo apt-get install libboost-all-dev
+#1500940430
+sudo apt-get install python3-pip
+#1500940430
+sudo apt-get install python3-yaml
+#1500940430
+sudo apt-get install python3-ruamel.yaml -y
+#1500940430
+sudo pip3 install scapy-python3
+#1500940430
+sudo pip3 install --upgrade google-api-python-client
+#1500940430
+cd ..
+#1500940430
+wget https://github.com/google/protobuf/releases/download/v3.3.0/protobuf-python-3.3.0.tar.gz
+#1500940430
+tar zxvf protobuf-python-3.3.0.tar.gz
+#1500940430
+cd protobuf-3.3.0/python/
+#1500940430
+sudo python3 setup.py build
+#1500940430
+sudo python3 setup.py install
+#1500940430
+pip install scapy
+#1500940430
+pip install zmq
+#1500940430
+sudo apt install python-pip
+#1500940430
+pip install scapy
+#1500940430
+pip install zmq
+#1500940430
+sudo pip3 install grpcio
+#1500940430
+sudo apt-get install byacc flex
+#1500940430
+sudo apt-get install  libgmp3-dev -y
+#1500940430
+sudo pip install Tenjin enum34
+#1500940430
+sudo apt-get install python-yaml graphviz
+#1500940430
+cd ../..
+#1500940430
+git clone https://github.com/pensando/p4-hlir
+#1500940430
+git clone git://github.com/pensando/p4-hlir
+#1500940430
+git clone git@github.com:pensando/p4-hlir.git
+#1500940430
+cd p4-hlir/
+#1500940430
+git checkout action
+#1500940430
+git pull
+#1500940430
+sudo python setup.py install
+#1500940430
+git status
+#1500940430
+sudo apt-get install libzmq3-dev
+#1500940430
+sudo apt-get install libjudy-dev
+#1500940430
+cd ..
+#1500940430
+ls
+#1500940430
+sudo scp sw-dev1:/home/vijasrin/sknobs.tar /
+#1500940430
+sudo scp vkumar@sw-dev1:/home/vijasrin/sknobs.tar /
+#1500940430
+ssh sw-dev1
+#1500940430
+sudo apt-get install bison
+#1500940430
+cd hack/saratk/nic/
+#1500940430
+vim build.
+#1500940430
+vim build.sh 
+#1500940430
+sudo scp vkumar@sw-dev1:/home/vijasrin/sknobs.tar /
+#1500940430
+sudo scp sw-dev1:/home/vijasrin/sknobs.tar /
+#1500940430
+ssh root@sw-dev1
+#1500940430
+ssh vkumar@srv6.pensando.io
+#1500940430
+cd ../../
+#1500940430
+cd ..
+#1500940430
+sudo scp -r sw-dev1:/home/vijasrin/sknobs .
+#1500940430
+ls
+#1500940430
+cd sknobs/
+#1500940430
+ls
+#1500940430
+cd ..
+#1500940430
+pwd
+#1500940430
+sudo cp -r sknobs/ /
+#1500940430
+ls /
+#1500940430
+cd hack/saratk/nic/
+#1500940430
+vim build.
+#1500940430
+vim build.sh 
+#1500940430
+ls /sknobs/
+#1500940430
+cd /sknobs/
+#1500940430
+ls
+#1500940430
+vim run_model
+#1500940430
+cd ..
+#1500940430
+ls -l sknobs/
+#1500940430
+ls -l 
+#1500940430
+sudo rm -rf sknobs/
+#1500940430
+ssh root@sw-dev1
+#1500940430
+sudo apt-get install python34-devel
+#1500940430
+cd 
+#1500940430
+cd code/
+#1500940430
+sudo apt-get install python34-devel
+#1500940430
+ssh root@sw-dev1
+#1500940430
+cd
+#1500940430
+ls
+#1500940430
+sudo cp sknobs.tar /
+#1500940430
+cd /
+#1500940430
+ls
+#1500940430
+sudo tar -xvf sknobs.tar
+#1500940430
+ls
+#1500940430
+cd 
+#1500940430
+cd code/hack/
+#1500940430
+ls
+#1500940430
+git status
+#1500940430
+git diff .gitmodules
+#1500940430
+git status
+#1500940430
+git checkout tm2
+#1500940430
+git stash
+#1500940430
+git config --global user.email "vasanth62@gmail.com"
+#1500940430
+git config --global user.name "Vasanth Kumar"
+#1500940430
+git stash
+#1500940430
+git status
+#1500940430
+eval "$(ssh-agent -s)"
+#1500940430
+ssh-add -k ~/.ssh/id_rsa
+#1500940430
+git status
+#1500940430
+sudo apt-get install golang-goprotobuf-dev
+#1500940430
+git status
+#1500940430
+git checkout tm2
+#1500940430
+git status
+#1500940430
+git pull origin master 
+#1500940430
+git status
+#1500940430
+git status | more
+#1500940430
+git reset
+#1500940430
+git status
+#1500940430
+git reset --hard
+#1500940430
+git status
+#1500940430
+git checkout dol/
+#1500940430
+git checkout linux-4.8/
+#1500940430
+git status
+#1500940430
+git clean -fxd
+#1500940430
+git status
+#1500940430
+git stash pop
+#1500940430
+git status
+#1500940430
+git stash list
+#1500940430
+git submodule update 
+#1501012809
+git status
+#1501012825
+git diff saratk/nic/p4/
+#1501102688
+git status
+#1501102695
+git diff saratk/nic/proto/
+#1501102703
+git status
+#1501102720
+git diff saratk/nic/proto/Makefile
+#1501102726
+git checkout saratk/nic/proto/Makefile
+#1501102729
+git status
+#1501102740
+git diff saratk/nic/proto/
+#1501106394
+git status
+#1501106404
+git mv saratk/nic/proto/hal/tm.proto saratk/nic/proto/hal/qos.proto
+#1501107319
+git status
+#1501107328
+git mv saratk/nic/proto/hal/qos.proto saratk/nic/proto/hal/tm.proto
+#1501107330
+git status
+#1501116965
+git add saratk/nic/proto/hal/qos.proto
+#1501117594
+git status
+#1501117599
+git rm saratk/nic/proto/hal/tm.proto
+#1501117606
+git status
+#1501118930
+git rm -f saratk/nic/proto/hal/tm.proto
+#1501118932
+git status
+#1501118936
+ls -l saratk/nic/proto/hal/tm.proto
+#1501118983
+git status
+#1501119053
+git commit -am "QOS policers, marking, bufpool, queue protos. Renamed tm.proto to qos.proto. P4 changes to set tm_queues"
+#1501119055
+git status
+#1501119058
+git push origin tm2 
+#1501173984
+git status
+#1501173986
+git diff
+#1501173993
+git status
+#1501174009
+git commit -am "rename QOSConfig to QOSAction"
+#1501174026
+git status
+#1501174027
+git diff
+#1501174242
+git status
+#1501174243
+git diff
+#1501174264
+git status
+#1501174265
+git diff
+#1501174284
+git status
+#1501174498
+git commit --amend
+#1501174504
+git status
+#1501174510
+git add saratk/nic/proto/hal/qos.proto
+#1501174559
+git commit --amend
+#1501174562
+git status
+#1501174564
+git push origin tm2 
+#1501174576
+git status
+#1501174578
+git fetch -p
+#1501174590
+git status
+#1501174594
+git checkout master 
+#1501174603
+git status
+#1501174608
+git pull origin master 
+#1501174611
+git status
+#1501174615
+git submodule update 
+#1501174617
+git status
+#1501174633
+vim .gitmodules 
+#1501174659
+git status
+#1501174664
+git checkout -b qos
+#1501174666
+git status
+#1501174672
+git checkout origin/tm2 saratk/nic/p4/nw/flow.p4
+#1501174674
+git status
+#1501174702
+git reset 
+#1501174703
+git status
+#1501174706
+git checkout saratk/
+#1501174707
+git status
+#1501174710
+git checkout tm2
+#1501174726
+git status
+#1501174731
+git add saratk/nic/p4/nw/include/defines.h
+#1501174759
+git status
+#1501174769
+git commit -m "Removing stale define"
+#1501174771
+git status
+#1501174774
+git push origin tm2 
+#1501174781
+git checkout qos
+#1501174787
+git status
+#1501174819
+git checkout origin/tm2 saratk/nic/p4/nw/flow.p4
+#1501174844
+git checkout origin/tm2 saratk/nic/p4/nw/include/defines.h
+#1501174855
+git checkout origin/tm2 saratk/nic/p4/nw/input_mapping.p4
+#1501174867
+git checkout origin/tm2 saratk/nic/p4/nw/iris.p4
+#1501174877
+git checkout origin/tm2 saratk/nic/p4/nw/output_mapping.p4
+#1501174894
+git checkout origin/tm2 saratk/nic/proto/hal/interface.proto
+#1501174908
+git checkout origin/tm2 saratk/nic/proto/hal/l4lb.proto
+#1501174919
+git checkout origin/tm2 saratk/nic/proto/hal/nwsec.proto
+#1501174929
+git checkout origin/tm2 saratk/nic/proto/hal/qos.proto
+#1501174942
+git checkout origin/tm2 saratk/nic/proto/hal/session.proto
+#1501174943
+git status
+#1501174946
+git reset
+#1501174948
+git status
+#1501174957
+git add saratk/nic/proto/hal/qos.proto
+#1501174961
+git diff > diff
+#1501174962
+vim diff
+#1501175539
+git diff > diff2
+#1501175542
+vim diff2
+#1501175718
+git diff > diff3
+#1501175722
+diff diff2 diff3
+#1501175733
+vim ~/.vimrc
+#1501175746
+vim diff3
+#1501175860
+git status
+#1501175864
+git diff > diff4
+#1501175865
+vim diff4
+#1501175878
+git status
+#1501176392
+rm diff*
+#1501176404
+git diff saratk/nic/p4/ > diff_p4
+#1501176406
+vim diff_p4
+#1501176980
+git diff saratk/nic/p4/nw/flow.p4
+#1501177476
+git status
+#1501177484
+git diff saratk/nic/p4/nw/input_mapping.p4
+#1501178706
+git status
+#1501178711
+git diff saratk/nic/p4/nw/iris.p4
+#1501178716
+git diff saratk/nic/p4/nw/output_mapping.p4
+#1501179125
+git status
+#1501181198
+git diff saratk/nic/p4/ > diff_p4_2
+#1501181205
+vimdiff diff_p4 diff_p4_2
+#1501181237
+vim diff
+#1501181240
+vim diff_p4
+#1501181661
+git status
+#1501182230
+vim saratk/nic/p4/nw/input_mapping.p4
+#1501182239
+vim diff_p4
+#1501182266
+vim saratk/nic/p4/nw/iris.p4
+#1501182420
+git status
+#1501182431
+git add -A
+#1501182433
+git status
+#1501182454
+git reset diff_p4
+#1501182459
+git reset diff_p4_2
+#1501182465
+git reset saratk/nic/out
+#1501182467
+git status
+#1501182493
+git commit -am "QOS function proto and P4 changes"
+#1501182495
+git status
+#1501182498
+git push -u origin qos
+#1501183355
+vim ~/.vimrc
+#1501183703
+git status
+#1501184851
+git remote -v
+#1501187737
+git status
+#1501187744
+git checkout master 
+#1501187747
+git pull origin master 
+#1501187752
+git submodule status 
+#1501187755
+git submodule update --init
+#1501187769
+vim .gitmodules 
+#1501187833
+git submodule update --init
+#1501187852
+grep https .git/* 
+#1501187859
+vim .git/config 
+#1501187880
+git submodule update --init
+#1501187883
+git status
+#1501187890
+git checkout .gitmodules
+#1501188415
+git fetch -p
+#1501188419
+git status
+#1501188426
+git pull origin master 
+#1501188430
+git status
+#1501188444
+ls -l saratk/nic/out 
+#1501188451
+vim saratk/nic/out 
+#1501188458
+rm saratk/nic/out 
+#1501188463
+git status
+#1501188479
+git checkout -b tport_lif
+#1501188482
+git status
+#1501188487
+git checkout origin/tm2 saratk/nic/hal/pd/capri/capri_tm_rw.cc
+#1501188503
+vim saratk/nic/hal/pd/capri/Makefile
+#1501188583
+git checkout origin/tm2 saratk/nic/hal/pd/capri/capri_tm_rw.hpp
+#1501188626
+git status
+#1501188633
+git diff
+#1501193975
+git status
+#1501193992
+git log
+#1501194056
+git fetch -p
+#1501194066
+git checkout master 
+#1501194068
+git status
+#1501194070
+git pull origin master 
+#1501194084
+git diff saratk/nic/p4/nw/Makefile
+#1501194092
+git stash
+#1501194096
+git status
+#1501194102
+git pull origin master 
+#1501194107
+git status
+#1501194113
+git submodule update 
+#1501194117
+git submodule status 
+#1501194121
+vim saratk/nic/hal/pd/capri/Makefile
+#1501194133
+vim saratk/nic/p4/nw/Makefile
+#1501194141
+git status
+#1501194145
+git checkout tport_lif 
+#1501194149
+git status
+#1501194158
+git rebase master
+#1501194162
+git status
+#1501194166
+git stash pop
+#1501194171
+git status
+#1501194177
+vim saratk/nic/p4/nw/Makefile
+#1501194188
+git status
+#1501194198
+git reset HEAD saratk/nic/p4/nw/Makefile
+#1501194200
+git status
+#1501194209
+git reset saratk/nic/hal/pd/capri/Makefile
+#1501194211
+git status
+#1501194214
+vim .gitignore
+#1501194226
+git status
+#1501194265
+ls hal/pd/capri/csr
+#1501194268
+cd saratk/
+#1501194270
+ls hal/pd/capri/csr
+#1501194273
+cd nic/
+#1501194274
+ls hal/pd/capri/csr
+#1501194286
+cd hal/pd/capri/
+#1501194286
+ls
+#1501194290
+cd csr/
+#1501194291
+ls
+#1501194298
+cd ../mrl/
+#1501194298
+ls
+#1501194305
+vim cap_pr_csr.cc 
+#1501194344
+cd ..
+#1501194344
+ls
+#1501194356
+ls csr/
+#1501194358
+ls mrl/
+#1501197541
+git status
+#1501197549
+git rebase origin/master 
+#1501197556
+git stash
+#1501197560
+git rebase origin/master 
+#1501197565
+git status
+#1501197567
+git log
+#1501197575
+git fetch -p
+#1501197584
+git rebase origin/master 
+#1501197589
+git log
+#1501197593
+git stash pop
+#1501197597
+git status
+#1501197658
+git diff Makefile
+#1501197988
+git status
+#1501199829
+cd ../../..
+#1501199831
+git status
+#1501199842
+git add hal/pd/capri/Makefile 
+#1501199845
+git status
+#1501199851
+git diff ../../.git
+#1501199853
+git diff ../../.gitignore
+#1501199864
+git status
+#1501199895
+git commit -m "API to program the TM uplink port to lif"
+#1501199896
+git status
+#1501199900
+git push -u origin tport_lif 
+#1501201939
+git status
+#1501201949
+git checkout master 
+#1501201953
+git pull origin master 
+#1501201957
+git status
+#1501201967
+vim model_sim/build/model_cli 
+#1501201974
+type model_sim/build/model_cli 
+#1501201979
+filetype model_sim/build/model_cli 
+#1501201984
+file model_sim/build/model_cli 
+#1501202035
+git status
+#1501202057
+git checkout -b qos_dev
+#1501202060
+git status
+#1501202070
+git checkout master 
+#1501202076
+git branch -d qos_dev
+#1501202077
+git status
+#1501202085
+git checkout qos
+#1501202097
+git checkout ../../.gitignore
+#1501202100
+git checkout qos
+#1501202104
+git status
+#1501202131
+git pull origin qos
+#1501202143
+git checkout -b qos_dev
+#1501202149
+git status
+#1501202155
+git fetch -p
+#1501202159
+git checkout master 
+#1501202162
+git status
+#1501202166
+git checkout qos_dev
+#1501202172
+git status
+#1501202186
+git rebase master
+#1501202386
+git rebase --continue
+#1501202410
+git status
+#1501202413
+git log
+#1501202433
+git status
+#1501203817
+git stash
+#1501203821
+git status
+#1501203830
+git checkout tport_lif 
+#1501203833
+git status
+#1501203924
+git add hal/pd/capri/capri_tm_rw.cc
+#1501203928
+git add hal/pd/capri/capri_tm_rw.hpp
+#1501204652
+git status
+#1501204657
+git add hal/pd/capri/capri_tm_rw.cc
+#1501204661
+git add p4/nw/include/defines.h
+#1501204662
+git status
+#1501204667
+git log
+#1501204717
+git add p4/nw/include/defines.h
+#1501204720
+git status
+#1501204749
+git commit -m "Changing TM port defines according to HW spec and addressing review comments"
+#1501204750
+git status
+#1501204753
+git push origin tport_lif 
+#1501204838
+git status
+#1501204843
+git checkout qos_dev 
+#1501204846
+git status
+#1501204848
+git stash pop
+#1501204852
+git status
+#1501204855
+git diff
+#1501205027
+git status
+#1501205032
+git add hal/svc/qos_svc.hpp
+#1501205098
+vim ../../.git/info/exclude
+#1501205124
+git status
+#1501205128
+vim ../../.git/info/exclude
+#1501205135
+git status
+#1501256709
+git stash
+#1501256715
+git status
+#1501256718
+git checkout qos
+#1501256722
+git pull origin qos
+#1501258799
+host github.com
+#1501258839
+ifconfig
+#1501258969
+sudo /etc/init.d/networking restart
+#1501258983
+ifconfig
+#1501258987
+git pull origin qos
+#1501259000
+vim saratk/nic/asm/nw/flow_hash.asm
+#1501259004
+cd ../..
+#1501259005
+vim saratk/nic/asm/nw/flow_hash.asm
+#1501259046
+vim saratk/nic/asm/nw/flow_hash_overflow.asm
+#1501259083
+vim saratk/nic/asm/nw/flow_info.asm
+#1501259291
+vim saratk/nic/asm/nw/input_properties.asm
+#1501259324
+vim saratk/nic/asm/nw/output_mapping.asm
+#1501259383
+cd saratk/nic/asm/
+#1501259388
+make
+#1501259397
+vim nw/flow_info.asm 
+#1501259419
+git status
+#1501259425
+git diff nw/flow_info.asm
+#1501259432
+git status
+#1501259437
+cd ..
+#1501259438
+make
+#1501259890
+echo $0
+#1501259893
+echo $?
+#1501259897
+git status
+#1501259908
+git add asm/nw/
+#1501259910
+git status
+#1501259915
+git add p4/nw/flow.p4 
+#1501259917
+git status
+#1501259942
+git commit -m "Updating the ASM files to conform to ISA"
+#1501259944
+git status
+#1501259947
+git push origin qos
+#1501259957
+git checkout qos_dev 
+#1501259961
+git stash pop
+#1501262229
+vim nw/flow_info.asm 
+#1501262240
+cd ../../
+#1501262242
+vim saratk/nic/asm/nw/output_mapping.asm
+#1501264987
+git status
+#1501267951
+vim saratk/nic/hal/Makefile
+#1501268627
+cd saratk/nic/hal/
+#1501268629
+make clean
+#1501268633
+make
+#1501268881
+make -j8
+#1501268985
+cd ../..
+#1501278043
+cd nic/
+#1501278071
+vim Makefile 
+#1501279977
+git status
+#1501279992
+git diff hal/Makefile > diff_makefile
+#1501279995
+vim diff_makefile 
+#1501280007
+git stash
+#1501280013
+git status
+#1501280015
+git checkout qos
+#1501280019
+git status
+#1501280022
+git pull origin qos
+#1501280036
+patch -p1 < diff_makefile 
+#1501280040
+cd ../..
+#1501280047
+patch -p1 < saratk/nic/diff_makefile 
+#1501280052
+vim saratk/nic/hal/Makefile.rej
+#1501280069
+vim saratk/nic/hal/Makefile
+#1501280138
+git status
+#1501280144
+git checkout saratk/nic/hal/Makefile
+#1501280146
+git status
+#1501280152
+git fetch -p
+#1501280159
+git checkout master 
+#1501280163
+git pull origin master 
+#1501280167
+git status
+#1501280171
+git checkout qos
+#1501280176
+git rebase master
+#1501280197
+git status
+#1501280201
+vim saratk/nic/hal/Makefile
+#1501280285
+vim saratk/nic/hal/test/Makefile
+#1501280345
+git add saratk/nic/hal/Makefile
+#1501280348
+git add saratk/nic/hal/test/Makefile
+#1501280389
+git rebase --continue
+#1501280392
+git status
+#1501280404
+patch -p1 < saratk/nic/diff_makefile 
+#1501280409
+vim saratk/nic/hal/Makefile.rej
+#1501280413
+git status
+#1501280419
+git checkout saratk/nic/hal/Makefile
+#1501280423
+vim saratk/nic/hal/Makefile
+#1501280771
+git log
+#1501281306
+git status
+#1501281316
+git diff saratk/nic/asm/
+#1501281319
+git status
+#1501281330
+git diff saratk/nic/p4/nw/flow.p4
+#1501281535
+git status
+#1501281545
+git diff saratk/nic/asm/nw/flow_info.asm
+#1501281550
+git diff 
+#1501281561
+git status
+#1501281563
+git diff
+#1501281649
+git status
+#1501281662
+git add saratk/nic/hal/Makefile
+#1501281663
+git status
+#1501281683
+git pull 
+#1501281693
+git stash
+#1501281697
+git pull
+#1501281704
+git status
+#1501281710
+vim saratk/nic/hal/Makefile
+#1501281745
+vim saratk/nic/hal/test/Makefile
+#1501281756
+git status
+#1501281761
+git add saratk/nic/hal/Makefile
+#1501281764
+git add saratk/nic/hal/test/Makefile
+#1501281767
+git commit
+#1501281772
+git status
+#1501281774
+git stash pop
+#1501281783
+git status
+#1501281786
+git diff saratk/nic/hal/Makefile
+#1501281791
+git status
+#1501281794
+git add saratk/nic/hal/Makefile
+#1501281807
+git commit -m "Cleanup HAL makefile"
+#1501281808
+git status
+#1501281812
+git push origin qos
+#1501281908
+git status
+#1501281913
+git pull origin master 
+#1501281917
+git status
+#1501281933
+vim saratk/nic/proto/hal_proto
+#1501281938
+ls -l saratk/nic/proto/hal_proto
+#1501281950
+git diff origin/master 
+#1501282005
+git status
+#1501282016
+git add saratk/nic/p4/nw/include/defines.h
+#1501282020
+git status
+#1501282742
+git commit -m "Cleanup some merge issue"
+#1501282745
+git push origin qos
+#1501282861
+git status
+#1501282866
+git checkout qos_dev 
+#1501282870
+git stash
+#1501282877
+git stash list
+#1501282884
+git stash pop
+#1501282888
+git status
+#1501282891
+git diff
+#1501283010
+git status
+#1501283020
+git checkout saratk/nic/asm/nw/flow_info.asm
+#1501283023
+git checkout saratk/nic/p4/nw/flow.p4
+#1501283032
+git checkout qos-dev
+#1501283035
+git checkout qos_dev
+#1501283037
+git status
+#1501283042
+git rebase qos
+#1501283047
+git status
+#1501283060
+vim rebase --abort
+#1501283065
+git rebase --abort
+#1501283067
+git status
+#1501283072
+git pull origin qos
+#1501283077
+git status
+#1501283082
+vim saratk/nic/asm/nw/flow_hash.asm
+#1501283106
+git add saratk/nic/asm/nw/flow_hash.asm
+#1501283110
+vim saratk/nic/asm/nw/flow_hash_overflow.asm
+#1501283120
+git add saratk/nic/asm/nw/flow_hash_overflow.asm
+#1501283123
+vim saratk/nic/asm/nw/output_mapping.asm
+#1501283146
+git add saratk/nic/asm/nw/output_mapping.asm
+#1501283149
+vim saratk/nic/hal/Makefile
+#1501283165
+vim saratk/nic/hal/test/Makefile
+#1501283173
+git status
+#1501283177
+git add saratk/nic/hal/Makefile
+#1501283181
+git add saratk/nic/hal/test/Makefile
+#1501283182
+git status
+#1501283192
+git commit
+#1501283200
+git status
+#1501283203
+git stash -p
+#1501283210
+git stash list
+#1501283215
+git stash show -p
+#1501283222
+git status
+#1501283225
+git stash pop
+#1501283228
+git status
+#1501283231
+git stash list
+#1501283238
+vim saratk/nic/asm/nw/output_mapping.asm
+#1501283262
+vim saratk/nic/hal/Makefile
+#1501283276
+git status
+#1501283283
+git add saratk/nic/asm/nw/output_mapping.asm
+#1501283286
+git add saratk/nic/hal/Makefile
+#1501283288
+git status
+#1501283294
+git reset HEAD
+#1501283296
+git status
+#1501283302
+git diff saratk/nic/p4/nw/output_mapping.p4
+#1501283307
+git checkout saratk/nic/p4/nw/output_mapping.p4
+#1501283315
+git diff saratk/nic/p4/nw/iris.p4
+#1501283317
+git checkout saratk/nic/p4/nw/iris.p4
+#1501283319
+git status
+#1501283324
+git diff saratk/nic/p4/nw/flow.p4
+#1501283329
+git diff saratk/nic/asm/nw/flow_info.asm
+#1501283332
+git status
+#1501283338
+git diff saratk/nic/hal/Makefile
+#1501283353
+vim saratk/nic/hal/Makefile
+#1501283360
+git status
+#1501283365
+git checkout saratk/nic/hal/Makefile
+#1501283367
+git diff
+#1501283375
+git status
+#1501283382
+git add saratk/nic/hal/pd/iris/qos_pd.cc
+#1501283388
+git add saratk/nic/hal/src/qos.cc
+#1501283391
+git add saratk/nic/hal/src/qos.hpp
+#1501283394
+git add saratk/nic/hal/svc/qos_svc.cc
+#1501283397
+git add saratk/nic/hal/svc/qos_svc.hpp
+#1501283399
+git status
+#1501283402
+git stash show -p
+#1501283407
+git stash drop
+#1501283409
+git stash show -p
+#1501283438
+git status
+#1501283441
+git stash drop
+#1501283443
+git stash list
+#1501283660
+vim saratk/nic/hal/Makefile
+#1501283747
+vim saratk/nic/hal/pd/Makefile 
+#1501283753
+vim saratk/nic/hal/pd/iris/Makefile
+#1501285286
+git status
+#1501285290
+git diff saratk/nic/hal/Makefile
+#1501285295
+vim saratk/nic/hal/Makefile
+#1501285314
+git status
+#1501285321
+git diff saratk/nic/hal/hal_mem.cc
+#1501285325
+git checkout saratk/nic/hal/hal_mem.cc
+#1501285332
+git diff saratk/nic/hal/pd/common/pd_api.hpp
+#1501285336
+git status
+#1501285348
+git diff saratk/nic/hal/pd/iris/Makefile
+#1501485683
+git status
+#1501485699
+git commit -am "Checkpoint"
+#1501485701
+git status
+#1501485714
+git stash list
+#1501485720
+git fetch -p
+#1501485725
+git checkout qos
+#1501485729
+git pull origin qos 
+#1501485731
+git log
+#1501485736
+git show -p 8aeb49bb48fe25ac52c82619e670f6aeac52b62d
+#1501485741
+git status
+#1501521933
+git checkout qos_dev 
+#1501521934
+git status
+#1501521938
+git log
+#1501522009
+git status
+#1501522044
+ps -aef  | grep vim
+#1501523933
+git status
+#1501524058
+rm diff diff_p4 diff_p4_2
+#1501524063
+rm saratk/nic/diff_makefile
+#1501524067
+rm saratk/nic/hal/Makefile.rej
+#1501529812
+git status
+#1501529826
+git move saratk/nic/hal/pd/iris/qos_pd.cc saratk/nic/hal/pd/iris/buf_pool_pd.cc
+#1501529834
+git mv saratk/nic/hal/pd/iris/qos_pd.cc saratk/nic/hal/pd/iris/buf_pool_pd.cc
+#1501529836
+git status
+#1501530257
+git pull origin qos
+#1501530266
+git status
+#1501530281
+git commit -am "checkpoint"
+#1501530283
+git status
+#1501530288
+git pull origin qos
+#1501530298
+git status
+#1501533978
+git checkout qos
+#1501533979
+git status
+#1501537819
+git pull origin master 
+#1501537825
+git status
+#1501537830
+vim saratk/nic/proto/Makefile.protobuf
+#1501537844
+git add saratk/nic/proto/Makefile.protobuf
+#1501537847
+vim saratk/nic/proto/hal/interface.proto
+#1501537892
+git add saratk/nic/proto/hal/interface.proto
+#1501537894
+git status
+#1501537896
+git commit
+#1501537900
+git status
+#1501539022
+git diff
+#1501539091
+vim saratk/nic/proto/Makefile
+#1501539176
+git status
+#1501539204
+git commit -am "ASM changes for the PHV split incurred after ncc fix"
+#1501539205
+git status
+#1501539207
+git push origin qos
+#1501539531
+git status
+#1501539534
+git checkout qos_dev
+#1501539537
+git status
+#1501539538
+git stash list
+#1501539543
+git pull origin qos_de
+#1501539546
+git pull origin qos_dev
+#1501539550
+git pull origin qos
+#1501539555
+git status
+#1501539741
+git clean -fxd
+#1501539743
+git status
+#1501541753
+git add saratk/nic/hal/pd/iris/buf_pool_pd.hpp
+#1501542265
+git status
+#1501542270
+git add saratk/nic/hal/src/export/qos_api.hpp
+#1501542444
+git status
+#1501542452
+vim saratk/nic/hal/pd/iris/Makefile
+#1501542469
+vim saratk/nic/hal/Makefile
+#1501542590
+git status
+#1501542597
+git add saratk/nic/hal/src/qos_api.cc
+#1501542606
+vim saratk/nic/hal/Makefile
+#1501543709
+git status
+#1501543727
+vim saratk/nic/hal/src/export/qos_api.hpp
+#1501543760
+git clean -fxd
+#1501543762
+git status
+#1501543927
+grep -r interface_api *
+#1501544221
+git status
+#1501544226
+git add saratk/nic/include/qos_api.hpp
+#1501545196
+git status
+#1501545377
+git diff
+#1501545386
+git status
+#1501606644
+git fetch -p
+#1501606660
+git diff origin/qos 
+#1501607002
+git checkout origin/qos saratk/nic/asm/nw/flow_info.asm
+#1501607005
+git diff origin/qos  > diff
+#1501607007
+vim diff
+#1501607230
+git checkout origin/qos saratk/nic/p4/nw/flow.p4
+#1501607231
+git status
+#1501607236
+git diff origin/qos  > diff
+#1501607242
+vim diff
+#1501607274
+git clean -fxd
+#1501607276
+git status
+#1501607450
+git log
+#1501607539
+git status
+#1501607555
+git commit -am "buf pool compile"
+#1501607558
+git status
+#1501607567
+git push -u origin qos_dev 
+#1501608072
+git checkout origin/qos saratk/nic/p4/nw/include/defines.h
+#1501608073
+git status
+#1501612369
+git add saratk/nic/hal/pd/iris/*.cc
+#1501612372
+git add saratk/nic/hal/pd/iris/*.hpp
+#1501612373
+git status
+#1501613379
+git diff
+#1501613512
+git status
+#1501613524
+git commit -am "Queue, Policer and Marking Actions"
+#1501613525
+git status
+#1501613533
+git push origin qos_dev 
+#1501613539
+git checkout qos
+#1501613542
+git pull origin qos
+#1501613665
+git clean -fxd
+#1501614153
+git status
+#1501614156
+git diff
+#1501614169
+git status
+#1501614188
+git commit -am "Addressing review comments"
+#1501614190
+git status
+#1501614194
+git pull origin master 
+#1501614199
+git status
+#1501614204
+vim saratk/nic/proto/hal/interface.proto
+#1501614313
+git status
+#1501614329
+git add saratk/nic/proto/hal/interface.proto
+#1501614331
+git status
+#1501614335
+git commit
+#1501614339
+git status
+#1501614344
+git push origin qos
+#1501614354
+git status
+#1501615681
+git checkout qos-dev
+#1501615685
+git checkout qos_dev 
+#1501615691
+git fetch -p
+#1501615694
+git status
+#1501615702
+git branch
+#1501615708
+git pull origin master 
+#1501615713
+git status
+#1501615717
+git push origin qos_dev 
+#1501615793
+git clean -fxd
+#1501616121
+git status
+#1501625478
+cd saratk/nic/
+#1501625478
+ls
+#1501625480
+cd utils/
+#1501625480
+ls
+#1501625485
+cd print/
+#1501625486
+ls
+#1501625489
+vim print.cc 
+#1501625514
+cd ../
+#1501625515
+ls
+#1501625521
+cd bitmap/
+#1501625521
+ls
+#1501625526
+vim bitmap.
+#1501625532
+cd ..
+#1501625533
+ls -l
+#1501625608
+cd indexer/
+#1501625608
+ls
+#1501625612
+vim indexer.hpp 
+#1501628085
+vim indexer.cc 
+#1501628220
+cd ../ht/
+#1501628221
+ls
+#1501628224
+vim ht.hpp
+#1501628281
+cd ../list/
+#1501628282
+ls
+#1501628283
+vim list.hpp 
+#1501702947
+git status
+#1501702948
+cd ../..
+#1501702950
+git status
+#1501705013
+git git status
+#1501705019
+git status
+#1501705021
+git diff
+#1501705028
+git diff > diff
+#1501705029
+vim diff
+#1501708583
+git status
+#1501708590
+git commit -am "buf pool"
+#1501708591
+git status
+#1501708594
+git push origin qos_dev 
+#1501718514
+git status
+#1501718517
+git pull origin master 
+#1501718537
+git status
+#1501803847
+git pull origin master 
+#1501803854
+git status
+#1501803859
+git push origin qos_dev 
+#1501803870
+git commit -am "oqueue checkpoint"
+#1501803873
+git push origin qos_dev 
+#1501828575
+find . -name "tenjin.py"
+#1501828578
+cd tools/ncc/
+#1501828578
+ls
+#1501828583
+vim tenjin.py
+#1501828730
+vim tenjin_wrapper.py
+#1501828737
+vim tenjin.py
+#1501829622
+vim tenjin_wrapper.py
+#1501829772
+cd ../..
+#1501829935
+cd tools/ncc/
+#1501829938
+vim tenjin_wrapper.py
+#1501870027
+cd ../..
+#1501870029
+git status
+#1501870037
+vimdiff hal/pd/capri/capri_tm_rw.cc hal/pd/capri/capri_tm_rw.template.cc
+#1501870078
+cp hal/pd/capri/capri_tm_rw.cc hal/pd/capri/capri_tm_rw.cc_old_backup
+#1501870080
+git status
+#1501870084
+git add hal/pd/capri/capri_tm_rw.template.cc
+#1501870100
+git status
+#1501870104
+git diff hal/pd/capri/capri_tm_rw.cc
+#1501875939
+git status
+#1501875951
+git diff hal/pd/capri/capri_tm_rw.cc > diff
+#1501875952
+vim diff
+#1501884345
+git status
+#1501884356
+git commit -am "queue checkpoint"
+#1501884357
+git status
+#1501884360
+git push origin qos_dev 
+#1502124070
+git status
+#1502124072
+git diff
+#1502124092
+git status
+#1502124094
+git fetch -p
+#1502125340
+sudo ifdown --exclude=lo -a && sudo ifup --exclude=lo -a
+#1502125350
+git fetch -p
+#1502125354
+git status
+#1502125357
+git pull origin master 
+#1502125361
+git status
+#1502125366
+vim hal/Makefile
+#1502125410
+git add hal/Makefile
+#1502125413
+vim hal/hal_mem.cc
+#1502125453
+vim hal/main.cc
+#1502125470
+vim hal/pd/common/pd.hpp
+#1502125490
+vim hal/pd/common/pd_api.hpp
+#1502125520
+vim hal/pd/iris/hal_state_pd.hpp
+#1502125563
+vim include/hal_mem.hpp
+#1502125583
+vim include/hal_state.hpp
+#1502125608
+vim proto/types.proto
+#1502125709
+git status
+#1502125721
+git add hal/hal_mem.cc
+#1502125725
+git add hal/main.cc 
+#1502125728
+git add hal/pd/common/pd.hpp
+#1502125732
+git add hal/pd/common/pd_api.hpp
+#1502125735
+git add hal/pd/iris/hal_state_pd.hpp
+#1502125738
+git add include/hal_mem.hpp
+#1502125741
+git add include/hal_state.hpp
+#1502125744
+git add proto/types.proto
+#1502125746
+git status
+#1502125748
+git commit
+#1502125752
+git status
+#1502125757
+git push origin qos_dev 
+#1502130789
+git status
+#1502130790
+git diff
+#1502130813
+git status
+#1502130817
+git diff proto/hal/qos.proto
+#1502130826
+git status
+#1502130830
+git diff > diff
+#1502130834
+vim diff
+#1502131582
+git status
+#1502131585
+git stash
+#1502131589
+git status
+#1502131591
+git stash list
+#1502132191
+git status
+#1502132194
+git stash pop
+#1502132198
+git status
+#1502132266
+git stash list
+#1502132267
+git status
+#1502138208
+git commit -am "Policer"
+#1502138209
+git status
+#1502138214
+git push origin qos_dev 
+#1502139929
+git status
+#1502139939
+git rm hal/pd/iris/marking_action_pd.*
+#1502139940
+git status
+#1502165671
+git add hal/test/gtests/queue_test.cc
+#1502166208
+git status
+#1502166218
+git add hal/test/gtests/policer_test.cc
+#1502166225
+git diff hal/test/gtests/Makefile
+#1502166232
+git diff hal/test/gtests/Makefile > diff
+#1502166241
+git checkout hal/test/gtests/Makefile
+#1502166245
+vim diff
+#1502166251
+vim hal/test/gtests/Makefile
+#1502166310
+git status
+#1502166335
+git commit -am "Policer, Marking actions and gtests for qos create APIs"
+#1502166336
+git status
+#1502166341
+git push origin qos-de
+#1502166343
+git push origin qos_dev 
+#1502166401
+sudo /etc/init.d/networking restart
+#1502166412
+host github.com
+#1502166416
+git push origin qos_dev 
+#1502166422
+git status
+#1502166428
+ping google.com
+#1502166435
+git push origin qos_dev 
+#1502166440
+git fetch
+#1502166446
+git push origin qos_dev 
+#1502166451
+git status
+#1502166455
+git log
+#1502166458
+git status
+#1502166465
+git push origin qos_dev 
+#1502166507
+git push
+#1502166511
+git status

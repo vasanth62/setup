@@ -1,4 +1,5 @@
 set cindent
+
 set tabstop=4
 set shiftwidth=4
 set expandtab
@@ -51,3 +52,63 @@ set vb
 "map ]] /^\h<CR>
 
 execute pathogen#infect()
+
+call plug#begin('~/.vim/plugged')
+Plug 'junegunn/vim-easy-align'
+call plug#end()
+
+
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap ga <Plug>(EasyAlign)
+
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)
+
+function! GFM()
+  let langs = ['ruby', 'yaml', 'vim', 'c']
+
+  for lang in langs
+    unlet b:current_syntax
+    silent! exec printf("syntax include @%s syntax/%s.vim", lang, lang)
+    exec printf("syntax region %sSnip matchgroup=Snip start='```%s' end='```' contains=@%s",
+                \ lang, lang, lang)
+  endfor
+  let b:current_syntax='mkd'
+
+  syntax sync fromstart
+endfunction
+
+if !exists('g:easy_align_delimiters')
+  let g:easy_align_delimiters = {}
+endif
+let g:easy_align_delimiters['#'] = { 'pattern': '#', 'ignore_groups': ['String'] }
+let g:easy_align_delimiters['d'] = {
+\ 'pattern': ' \ze\S\+\s*[;=]',
+\ 'left_margin': 0, 'right_margin': 0
+\ }
+let g:easy_align_delimiters['c'] = { 'pattern': '//',
+            \ 'filter': 'v/^\/\//',
+            \'ignore_groups': ['String'], 
+            \ 'left_margin': 4, 'right_margin':1 }
+
+
+" Remove whitespaces automatically while saving the file
+" autocmd FileType c,cpp,java,php,cc,hpp,proto autocmd BufWritePre <buffer> %s/\s\+$//e
+:nnoremap <silent> <F4> :let _s=@/ <Bar> :%s/\s\+$//e <Bar> :let @/=_s <Bar> :nohl <Bar> :unlet _s <CR>
+
+" Syntastic stuff below
+" set statusline+=%#warningmsg#
+" set statusline+=%{SyntasticStatuslineFlag()}
+" set statusline+=%*
+
+" let g:syntastic_loc_list_height=1
+" let g:syntastic_always_populate_loc_list = 1
+" let g:syntastic_auto_loc_list = 1
+" let g:syntastic_check_on_open = 0 
+" let g:syntastic_check_on_wq = 0 
+
+" let g:syntastic_cpp_checkers=['cppcheck']
+"
+" let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes':[],'passive_filetypes': [] }
+" nnoremap <C-w>E :SyntasticCheck<CR> :SyntasticToggleMode<CR>
+"

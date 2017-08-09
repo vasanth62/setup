@@ -1,0 +1,33 @@
+pane	vkumar	1	:bash	0	:-	1	:/home/vkumar/code	0	bash	:
+pane	vkumar	1	:bash	0	:-	2	:/home/vkumar/code	0	bash	:
+pane	vkumar	1	:bash	0	:-	3	:/home/vkumar	1	bash	:
+pane	vkumar	2	:bash	1	:*	1	:/home/vkumar/code/hack/saratk/nic/hal/pd/iris	0	bash	:
+pane	vkumar	2	:bash	1	:*	2	:/home/vkumar/code/hack/saratk/nic	1	bash	:
+pane	vkumar	3	:bash	0	:	1	:/home/vkumar/code/hack/saratk/nic	0	cscope	:cscope -d
+pane	vkumar	3	:bash	0	:	2	:/home/vkumar/code/hack/saratk/nic	0	bash	:
+pane	vkumar	3	:bash	0	:	3	:/home/vkumar/code/hack/saratk/nic	1	bash	:
+pane	vkumar	3	:bash	0	:	4	:/home/vkumar/code/hack/saratk/nic	0	bash	:
+pane	vkumar	3	:bash	0	:	5	:/home/vkumar/code/hack/saratk/nic/hal	0	bash	:
+pane	vkumar	3	:bash	0	:	6	:/home/vkumar/code/hack/saratk/nic	0	bash	:
+pane	vkumar	4	:bash	0	:	1	:/home/vkumar/code	1	bash	:
+pane	vkumar	4	:bash	0	:	2	:/home/vkumar/code	0	bash	:
+pane	vkumar	4	:bash	0	:	3	:/home/vkumar/code	0	bash	:
+pane	vkumar	4	:bash	0	:	4	:/home/vkumar/code	0	bash	:
+pane	vkumar	4	:bash	0	:	5	:/home/vkumar/code	0	bash	:
+pane	vkumar	4	:bash	0	:	6	:/home/vkumar/code	0	bash	:
+pane	vkumar	5	:bash	0	:	1	:/home/vkumar/code	0	bash	:
+pane	vkumar	5	:bash	0	:	2	:/home/vkumar/code	0	bash	:
+pane	vkumar	5	:bash	0	:	3	:/home/vkumar/code	0	bash	:
+pane	vkumar	5	:bash	0	:	4	:/home/vkumar/code	1	bash	:
+pane	vkumar	5	:bash	0	:	5	:/home/vkumar/code	0	bash	:
+pane	vkumar	5	:bash	0	:	6	:/home/vkumar/code	0	bash	:
+pane	vkumar	6	:bash	0	:	1	:/home/vkumar/code	0	bash	:
+pane	vkumar	6	:bash	0	:	2	:/home/vkumar/code	0	bash	:
+pane	vkumar	6	:bash	0	:	3	:/home/vkumar/code	1	bash	:
+window	vkumar	1	0	:-	e975,204x58,0,0{95x58,0,0[95x20,0,0,1,95x37,0,21,2],108x58,96,0,3}
+window	vkumar	2	1	:*	b74d,204x58,0,0{104x58,0,0,4,99x58,105,0,5}
+window	vkumar	3	0	:	de87,204x58,0,0{100x58,0,0[100x2,0,0,6,100x2,0,3,7,100x52,0,6,27],103x58,101,0[103x42,101,0,9,103x12,101,43,10,103x2,101,56,11]}
+window	vkumar	4	0	:	2e43,204x58,0,0{106x58,0,0[106x22,0,0,12,106x21,0,23,13,106x13,0,45,14],97x58,107,0[97x24,107,0,15,97x14,107,25,16,97x18,107,40,17]}
+window	vkumar	5	0	:	762e,204x58,0,0{99x58,0,0[99x26,0,0,18,99x17,0,27,19,99x13,0,45,20],104x58,100,0[104x22,100,0,21,104x14,100,23,22,104x20,100,38,23]}
+window	vkumar	6	0	:	2387,204x58,0,0[204x29,0,0,24,204x14,0,30,25,204x13,0,45,26]
+state	vkumar	

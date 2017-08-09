@@ -150,3 +150,5 @@ trap 'preexec' DEBUG
 
 # VK X11 end
 
+#so as not to be disturbed by Ctrl-S ctrl-Q in terminals:
+stty -ixon

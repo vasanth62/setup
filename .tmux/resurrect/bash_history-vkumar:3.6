@@ -1,0 +1,2000 @@
+#1501202386
+git rebase --continue
+#1501202410
+git status
+#1501202413
+git log
+#1501202433
+git status
+#1501203817
+git stash
+#1501203821
+git status
+#1501203830
+git checkout tport_lif 
+#1501203833
+git status
+#1501203924
+git add hal/pd/capri/capri_tm_rw.cc
+#1501203928
+git add hal/pd/capri/capri_tm_rw.hpp
+#1501204652
+git status
+#1501204657
+git add hal/pd/capri/capri_tm_rw.cc
+#1501204661
+git add p4/nw/include/defines.h
+#1501204662
+git status
+#1501204667
+git log
+#1501204717
+git add p4/nw/include/defines.h
+#1501204720
+git status
+#1501204749
+git commit -m "Changing TM port defines according to HW spec and addressing review comments"
+#1501204750
+git status
+#1501204753
+git push origin tport_lif 
+#1501204838
+git status
+#1501204843
+git checkout qos_dev 
+#1501204846
+git status
+#1501204848
+git stash pop
+#1501204852
+git status
+#1501204855
+git diff
+#1501205027
+git status
+#1501205032
+git add hal/svc/qos_svc.hpp
+#1501205098
+vim ../../.git/info/exclude
+#1501205124
+git status
+#1501205128
+vim ../../.git/info/exclude
+#1501205135
+git status
+#1501256709
+git stash
+#1501256715
+git status
+#1501256718
+git checkout qos
+#1501256722
+git pull origin qos
+#1501258799
+host github.com
+#1501258839
+ifconfig
+#1501258969
+sudo /etc/init.d/networking restart
+#1501258983
+ifconfig
+#1501258987
+git pull origin qos
+#1501259000
+vim saratk/nic/asm/nw/flow_hash.asm
+#1501259004
+cd ../..
+#1501259005
+vim saratk/nic/asm/nw/flow_hash.asm
+#1501259046
+vim saratk/nic/asm/nw/flow_hash_overflow.asm
+#1501259083
+vim saratk/nic/asm/nw/flow_info.asm
+#1501259291
+vim saratk/nic/asm/nw/input_properties.asm
+#1501259324
+vim saratk/nic/asm/nw/output_mapping.asm
+#1501259383
+cd saratk/nic/asm/
+#1501259388
+make
+#1501259397
+vim nw/flow_info.asm 
+#1501259419
+git status
+#1501259425
+git diff nw/flow_info.asm
+#1501259432
+git status
+#1501259437
+cd ..
+#1501259438
+make
+#1501259890
+echo $0
+#1501259893
+echo $?
+#1501259897
+git status
+#1501259908
+git add asm/nw/
+#1501259910
+git status
+#1501259915
+git add p4/nw/flow.p4 
+#1501259917
+git status
+#1501259942
+git commit -m "Updating the ASM files to conform to ISA"
+#1501259944
+git status
+#1501259947
+git push origin qos
+#1501259957
+git checkout qos_dev 
+#1501259961
+git stash pop
+#1501262229
+vim nw/flow_info.asm 
+#1501262240
+cd ../../
+#1501262242
+vim saratk/nic/asm/nw/output_mapping.asm
+#1501264987
+git status
+#1501267951
+vim saratk/nic/hal/Makefile
+#1501268627
+cd saratk/nic/hal/
+#1501268629
+make clean
+#1501268633
+make
+#1501268881
+make -j8
+#1501268985
+cd ../..
+#1501278043
+cd nic/
+#1501278071
+vim Makefile 
+#1501279977
+git status
+#1501279992
+git diff hal/Makefile > diff_makefile
+#1501279995
+vim diff_makefile 
+#1501280007
+git stash
+#1501280013
+git status
+#1501280015
+git checkout qos
+#1501280019
+git status
+#1501280022
+git pull origin qos
+#1501280036
+patch -p1 < diff_makefile 
+#1501280040
+cd ../..
+#1501280047
+patch -p1 < saratk/nic/diff_makefile 
+#1501280052
+vim saratk/nic/hal/Makefile.rej
+#1501280069
+vim saratk/nic/hal/Makefile
+#1501280138
+git status
+#1501280144
+git checkout saratk/nic/hal/Makefile
+#1501280146
+git status
+#1501280152
+git fetch -p
+#1501280159
+git checkout master 
+#1501280163
+git pull origin master 
+#1501280167
+git status
+#1501280171
+git checkout qos
+#1501280176
+git rebase master
+#1501280197
+git status
+#1501280201
+vim saratk/nic/hal/Makefile
+#1501280285
+vim saratk/nic/hal/test/Makefile
+#1501280345
+git add saratk/nic/hal/Makefile
+#1501280348
+git add saratk/nic/hal/test/Makefile
+#1501280389
+git rebase --continue
+#1501280392
+git status
+#1501280404
+patch -p1 < saratk/nic/diff_makefile 
+#1501280409
+vim saratk/nic/hal/Makefile.rej
+#1501280413
+git status
+#1501280419
+git checkout saratk/nic/hal/Makefile
+#1501280423
+vim saratk/nic/hal/Makefile
+#1501280771
+git log
+#1501281306
+git status
+#1501281316
+git diff saratk/nic/asm/
+#1501281319
+git status
+#1501281330
+git diff saratk/nic/p4/nw/flow.p4
+#1501281535
+git status
+#1501281545
+git diff saratk/nic/asm/nw/flow_info.asm
+#1501281550
+git diff 
+#1501281561
+git status
+#1501281563
+git diff
+#1501281649
+git status
+#1501281662
+git add saratk/nic/hal/Makefile
+#1501281663
+git status
+#1501281683
+git pull 
+#1501281693
+git stash
+#1501281697
+git pull
+#1501281704
+git status
+#1501281710
+vim saratk/nic/hal/Makefile
+#1501281745
+vim saratk/nic/hal/test/Makefile
+#1501281756
+git status
+#1501281761
+git add saratk/nic/hal/Makefile
+#1501281764
+git add saratk/nic/hal/test/Makefile
+#1501281767
+git commit
+#1501281772
+git status
+#1501281774
+git stash pop
+#1501281783
+git status
+#1501281786
+git diff saratk/nic/hal/Makefile
+#1501281791
+git status
+#1501281794
+git add saratk/nic/hal/Makefile
+#1501281807
+git commit -m "Cleanup HAL makefile"
+#1501281808
+git status
+#1501281812
+git push origin qos
+#1501281908
+git status
+#1501281913
+git pull origin master 
+#1501281917
+git status
+#1501281933
+vim saratk/nic/proto/hal_proto
+#1501281938
+ls -l saratk/nic/proto/hal_proto
+#1501281950
+git diff origin/master 
+#1501282005
+git status
+#1501282016
+git add saratk/nic/p4/nw/include/defines.h
+#1501282020
+git status
+#1501282742
+git commit -m "Cleanup some merge issue"
+#1501282745
+git push origin qos
+#1501282861
+git status
+#1501282866
+git checkout qos_dev 
+#1501282870
+git stash
+#1501282877
+git stash list
+#1501282884
+git stash pop
+#1501282888
+git status
+#1501282891
+git diff
+#1501283010
+git status
+#1501283020
+git checkout saratk/nic/asm/nw/flow_info.asm
+#1501283023
+git checkout saratk/nic/p4/nw/flow.p4
+#1501283032
+git checkout qos-dev
+#1501283035
+git checkout qos_dev
+#1501283037
+git status
+#1501283042
+git rebase qos
+#1501283047
+git status
+#1501283060
+vim rebase --abort
+#1501283065
+git rebase --abort
+#1501283067
+git status
+#1501283072
+git pull origin qos
+#1501283077
+git status
+#1501283082
+vim saratk/nic/asm/nw/flow_hash.asm
+#1501283106
+git add saratk/nic/asm/nw/flow_hash.asm
+#1501283110
+vim saratk/nic/asm/nw/flow_hash_overflow.asm
+#1501283120
+git add saratk/nic/asm/nw/flow_hash_overflow.asm
+#1501283123
+vim saratk/nic/asm/nw/output_mapping.asm
+#1501283146
+git add saratk/nic/asm/nw/output_mapping.asm
+#1501283149
+vim saratk/nic/hal/Makefile
+#1501283165
+vim saratk/nic/hal/test/Makefile
+#1501283173
+git status
+#1501283177
+git add saratk/nic/hal/Makefile
+#1501283181
+git add saratk/nic/hal/test/Makefile
+#1501283182
+git status
+#1501283192
+git commit
+#1501283200
+git status
+#1501283203
+git stash -p
+#1501283210
+git stash list
+#1501283215
+git stash show -p
+#1501283222
+git status
+#1501283225
+git stash pop
+#1501283228
+git status
+#1501283231
+git stash list
+#1501283238
+vim saratk/nic/asm/nw/output_mapping.asm
+#1501283262
+vim saratk/nic/hal/Makefile
+#1501283276
+git status
+#1501283283
+git add saratk/nic/asm/nw/output_mapping.asm
+#1501283286
+git add saratk/nic/hal/Makefile
+#1501283288
+git status
+#1501283294
+git reset HEAD
+#1501283296
+git status
+#1501283302
+git diff saratk/nic/p4/nw/output_mapping.p4
+#1501283307
+git checkout saratk/nic/p4/nw/output_mapping.p4
+#1501283315
+git diff saratk/nic/p4/nw/iris.p4
+#1501283317
+git checkout saratk/nic/p4/nw/iris.p4
+#1501283319
+git status
+#1501283324
+git diff saratk/nic/p4/nw/flow.p4
+#1501283329
+git diff saratk/nic/asm/nw/flow_info.asm
+#1501283332
+git status
+#1501283338
+git diff saratk/nic/hal/Makefile
+#1501283353
+vim saratk/nic/hal/Makefile
+#1501283360
+git status
+#1501283365
+git checkout saratk/nic/hal/Makefile
+#1501283367
+git diff
+#1501283375
+git status
+#1501283382
+git add saratk/nic/hal/pd/iris/qos_pd.cc
+#1501283388
+git add saratk/nic/hal/src/qos.cc
+#1501283391
+git add saratk/nic/hal/src/qos.hpp
+#1501283394
+git add saratk/nic/hal/svc/qos_svc.cc
+#1501283397
+git add saratk/nic/hal/svc/qos_svc.hpp
+#1501283399
+git status
+#1501283402
+git stash show -p
+#1501283407
+git stash drop
+#1501283409
+git stash show -p
+#1501283438
+git status
+#1501283441
+git stash drop
+#1501283443
+git stash list
+#1501283660
+vim saratk/nic/hal/Makefile
+#1501283747
+vim saratk/nic/hal/pd/Makefile 
+#1501283753
+vim saratk/nic/hal/pd/iris/Makefile
+#1501285286
+git status
+#1501285290
+git diff saratk/nic/hal/Makefile
+#1501285295
+vim saratk/nic/hal/Makefile
+#1501285314
+git status
+#1501285321
+git diff saratk/nic/hal/hal_mem.cc
+#1501285325
+git checkout saratk/nic/hal/hal_mem.cc
+#1501285332
+git diff saratk/nic/hal/pd/common/pd_api.hpp
+#1501285336
+git status
+#1501285348
+git diff saratk/nic/hal/pd/iris/Makefile
+#1501485683
+git status
+#1501485699
+git commit -am "Checkpoint"
+#1501485701
+git status
+#1501485714
+git stash list
+#1501485720
+git fetch -p
+#1501485725
+git checkout qos
+#1501485729
+git pull origin qos 
+#1501485731
+git log
+#1501485736
+git show -p 8aeb49bb48fe25ac52c82619e670f6aeac52b62d
+#1501485741
+git status
+#1501521933
+git checkout qos_dev 
+#1501521934
+git status
+#1501521938
+git log
+#1501522009
+git status
+#1501522044
+ps -aef  | grep vim
+#1500940430
+history -r '/home/vkumar/.tmux/resurrect/bash_history-vkumar:3.1'
+#1500941021
+cd ~/code/hack/saratk/nic/hal/pd/capri
+#1500941024
+make -j8 all
+#1500941086
+cd ../../../proto/
+#1500941089
+vim Makefile 
+#1500941099
+cd ..
+#1500941101
+./build.sh 
+#1500943413
+vim proto/Makefile 
+#1500943431
+cd hal/pd/capri/
+#1500943433
+make -j4 all
+#1500940430
+history -r '/home/vkumar/.tmux/resurrect/bash_history-vkumar:3.2'
+#1501015064
+cd hack/saratk/nic/hal/
+#1501015065
+ls
+#1501015068
+mycscope
+#1501098341
+pwd
+#1501098344
+cscope -d
+#1501098629
+cd ..
+#1501098631
+ls
+#1501098634
+cd utils/
+#1501098634
+ls
+#1501098639
+mycscope
+#1501098643
+cd ..
+#1501098646
+cd utils/
+#1501098649
+mycscope
+#1501102185
+cd ../
+#1501102186
+mycscope
+#1501522068
+sudo poweroff
+#1500940430
+history -r '/home/vkumar/.tmux/resurrect/bash_history-vkumar:3.3'
+#1501022538
+cd 
+#1501022540
+cd .vim/
+#1501022540
+ls
+#1501022541
+cd autoload/
+#1501022542
+ls
+#1501022545
+wget https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+#1501022546
+ls
+#1501022578
+cd ../..
+#1501022580
+vim .vimrc
+#1501022676
+vim .vimrc 
+#1501022738
+vim test
+#1501022955
+vim .vimrc
+#1501022963
+vim test
+#1501023013
+vim .vimrc
+#1501023104
+vim test
+#1501023115
+vim .vimrc
+#1501023170
+vim test
+#1501023370
+cd .vim/
+#1501023371
+ls
+#1501023374
+cd bundle/
+#1501023375
+ls
+#1501023380
+cd ../plug
+#1501023380
+ls
+#1501023383
+cd ../plugged
+#1501023383
+ls
+#1501023399
+vim vim-easy-align/plugin/easy_align.vim 
+#1501023424
+cd 
+#1501023427
+vim test 
+#1501023459
+vim /home/vkumar/.vim/plugged/vim-easy-align/plugin/easy_align.vim
+#1501023509
+vim .vimrc
+#1501023548
+vim test
+#1501023746
+vim /home/vkumar/.vim/plugged/vim-easy-align/plugin/easy_align.vim
+#1501027171
+vim .vimrc
+#1501118695
+cd code/hack/saratk/nic/proto/
+#1501118700
+make -j8 all
+#1501118905
+vim Makefile 
+#1501118942
+make -j8 all
+#1501175886
+cd ../
+#1501175888
+git status
+#1501175889
+ls
+#1501175896
+vim Makefile 
+#1501175967
+pwd
+#1501175970
+ls
+#1501175974
+vim build.mk 
+#1501175981
+make clean
+#1501175985
+ls
+#1501175988
+vim Makefile 
+#1501175993
+cd proto/
+#1501175993
+ls
+#1501175997
+vim Makefile
+#1501176041
+cd ..
+#1501176049
+make all
+#1501176493
+cd p4/
+#1501176494
+ls
+#1501176496
+cd nw/
+#1501176497
+ls
+#1501176498
+make
+#1501176548
+cd ../../asm/nw/
+#1501176548
+ls
+#1501176578
+vim flow_info.asm 
+#1501179100
+vim flow_hash.asm
+#1501179139
+cd ../../
+#1501183387
+cd p4/nw/
+#1501183389
+vim Makefile
+#1501183392
+make 
+#1501188638
+cd ../..
+#1501188640
+make -j8
+#1501188911
+cd p4/nw/
+#1501188912
+ls
+#1501188917
+vim Makefile
+#1501188931
+cd ../..
+#1501188937
+make -j8
+#1501190564
+cd hal/pd/capri/
+#1501190565
+make
+#1501190655
+vim Makefile
+#1501190661
+cd ../
+#1501190661
+ls
+#1501190665
+vim Makefile 
+#1501190682
+cd iris/
+#1501190683
+ls
+#1501190685
+vim Makefile
+#1501190696
+cd ../capri/
+#1501190699
+vim Makefile
+#1501190706
+make
+#1501190807
+cd ../../..
+#1501190812
+make -j8 all
+#1501191131
+echo $?
+#1501197644
+make -j8 all
+#1501197921
+find . -name "ddos_src_dst_policer_action.asm"
+#1501197926
+vim ./asm/nw/ddos_src_dst_policer_action.asm
+#1501197972
+git status
+#1501197980
+make clean
+#1501197984
+make -j8 all
+#1501198345
+sudo apt-get install python34-devel
+#1501198513
+yacc
+#1501198524
+git status
+#1501198535
+git diff hal/pd/capri/Makefile
+#1501198545
+cd hal/pd/
+#1501198550
+cd capri/
+#1501198552
+make -j8 all
+#1501198629
+cd ../../..
+#1501198631
+git status
+#1501198637
+git clean -fxd
+#1501198639
+git status
+#1501198646
+ls
+#1501198649
+make -j8 all
+#1501199003
+grep bison * -r
+#1501199010
+vim box-deps.rb 
+#1501199094
+sudo apt-get install flex
+#1501199181
+cd capsim/
+#1501199184
+make clean 
+#1501199185
+make all
+#1501199209
+cd ..
+#1501199214
+make -j8
+#1501199278
+git status
+#1501199280
+git log
+#1501199286
+git submodule update 
+#1501199300
+cd capsim/
+#1501199302
+git log
+#1501199316
+git status
+#1501199318
+git checkout master 
+#1501199320
+git pull origin master 
+#1501199323
+git log
+#1501199330
+cd ../..
+#1501199331
+git status
+#1501199333
+cd nic/
+#1501199335
+git status
+#1501199362
+make -j8 all 
+#1501199703
+echo $?
+#1501202427
+make -j8 all
+#1501202651
+find . -name "pa.log"
+#1501202774
+vim ./gen/iris/logs/pa.log
+#1501202837
+make -j8 all
+#1501204625
+cd hal/pd/capri/
+#1501204626
+make 
+#1501278056
+cd ../../..
+#1501278058
+make clean
+#1501278061
+make -j8 all
+#1501278575
+cd p4/nw/
+#1501278578
+make -j8 all
+#1501278742
+vim flow.p4 
+#1501278764
+vim iris.p4 
+#1501278775
+vim output_mapping.p4 
+#1501278800
+cd ../../asm/nw/
+#1501278801
+make
+#1501278811
+ls
+#1501278813
+make
+#1501278819
+git status
+#1501278824
+git submodule status 
+#1501278830
+cd ../..
+#1501278837
+make -j8 all
+#1501278928
+cd asm/nw/
+#1501278943
+grep egress_tm_oqueue *
+#1501278948
+vim flow_info.asm 
+#1501278957
+vim output_mapping.
+#1501278959
+vim output_mapping.asm 
+#1501278969
+make
+#1501278972
+cd ../..
+#1501278975
+make -j8 all
+#1501279335
+cd hal/
+#1501279338
+vim Makefile
+#1501279371
+make 
+#1501279475
+vim Makefile
+#1501279623
+make 
+#1501279703
+cd ../
+#1501279705
+make -j8 all
+#1501279963
+echo $?
+#1501280750
+cd hal/
+#1501280753
+make clean
+#1501280757
+make -j8 all
+#1501280839
+cd ../
+#1501280848
+make -j8 all
+#1501281140
+vim Makefile 
+#1501281152
+make -j8 all
+#1501281227
+cd asm/nw/
+#1501281249
+vim flow_info.asm 
+#1501281270
+make
+#1501281273
+cd ../../
+#1501281275
+make -j8 all
+#1501281969
+make clean
+#1501281973
+make -j8 all
+#1501282713
+echo $?
+#1501283774
+cd hal/
+#1501283778
+make -j8 all
+#1501283956
+vim ../proto/Makefile.protobuf 
+#1501284062
+make -j8 all
+#1501284412
+vim Makefile
+#1501284541
+make 
+#1501285231
+g++ -I/usr/local/include -std=c++11 -pthread -g -c -Wall -Werror -I. -I../gen -I../gen/protobuf -Isvc -Isrc -I../utils/ -Ipd/common -I../include -Ipd -I../third-party/googletest-release-1.8.0/googletest/include -I../third-party/spdlog/include -fpic svc/qos_svc.cc -o ../obj/qos_svc.o
+#1501285240
+g++ -I/usr/local/include -std=c++11 -pthread -g -c -Wall -Werror -I. -I../gen -I../gen/protobuf -Isvc -Isrc -I../utils/ -Ipd/common -I../include -Ipd -I../third-party/googletest-release-1.8.0/googletest/include -I../third-party/spdlog/include -fpic src/qos.cc -o ../obj/qos.o
+#1501285277
+g++ -I/usr/local/include -std=c++11 -pthread -g -c -Wall -Werror -I. -I../gen -I../gen/protobuf -Isvc -Isrc -I../utils/ -Ipd/common -I../include -Ipd -I../third-party/googletest-release-1.8.0/googletest/include -I../third-party/spdlog/include -fpic svc/qos_svc.cc -o ../obj/qos_svc.o
+#1501285361
+make clean
+#1501285365
+make -j8 all
+#1501286047
+cd ..
+#1501286050
+make -j8 all
+#1501286453
+cd hal/pd/iris/
+#1501286455
+make
+#1501286463
+cd ../../
+#1501286464
+cd ..
+#1501286467
+make -j8 all
+#1501286922
+cd /home/vkumar/code/hack/saratk/nic/hal
+#1501286925
+make -j8 all
+#1501287902
+cd ..
+#1501287903
+make -j8 all
+#1501522018
+git status
+#1501522027
+make clean
+#1500940430
+vim bld_cscope.sh 
+#1500940464
+ls
+#1500940468
+cscope -d
+#1500940473
+sudo apt install cscope
+#1500940515
+ls
+#1500940522
+vim Vagrantfile 
+#1500940591
+mycscope
+#1501285949
+find . -name "ostr.h"
+#1501285958
+mycscope
+#1500940430
+history -r '/home/vkumar/.tmux/resurrect/bash_history-vkumar:4.1'
+#1500940430
+history -r '/home/vkumar/.tmux/resurrect/bash_history-vkumar:4.2'
+#1500940430
+history -r '/home/vkumar/.tmux/resurrect/bash_history-vkumar:4.3'
+#1500940430
+history -r '/home/vkumar/.tmux/resurrect/bash_history-vkumar:4.4'
+#1500940430
+history -r '/home/vkumar/.tmux/resurrect/bash_history-vkumar:4.5'
+#1500940430
+history -r '/home/vkumar/.tmux/resurrect/bash_history-vkumar:4.6'
+#1500940430
+history -r '/home/vkumar/.tmux/resurrect/bash_history-vkumar:5.1'
+#1500940430
+history -r '/home/vkumar/.tmux/resurrect/bash_history-vkumar:5.2'
+#1500940430
+history -r '/home/vkumar/.tmux/resurrect/bash_history-vkumar:5.3'
+#1500940430
+history -r '/home/vkumar/.tmux/resurrect/bash_history-vkumar:5.4'
+#1500940430
+history -r '/home/vkumar/.tmux/resurrect/bash_history-vkumar:5.5'
+#1500940430
+history -r '/home/vkumar/.tmux/resurrect/bash_history-vkumar:5.6'
+#1500940430
+history -r '/home/vkumar/.tmux/resurrect/bash_history-vkumar:6.1'
+#1500940430
+history -r '/home/vkumar/.tmux/resurrect/bash_history-vkumar:6.2'
+#1500940430
+history -r '/home/vkumar/.tmux/resurrect/bash_history-vkumar:6.3'
+#1501284381
+cd hack/saratk/nic/
+#1501284382
+vim Makefile 
+#1501285577
+cd ~/.vim/bundle && \
+#1501287578
+sudo apt-get install cppcheck
+#1501287783
+cppcheck hack/saratk/nic/hal/main.cc 
+#1501485757
+cd hack/saratk/nic/p4
+#1501485758
+ls
+#1501485762
+cd nw/
+#1501485763
+ls
+#1501485769
+make -j8 all
+#1500940430
+history -r '/home/vkumar/.tmux/resurrect/bash_history-vkumar:1.1'
+#1501523869
+history -r '/home/vkumar/.tmux/resurrect/bash_history-vkumar:3.6'
+#1501283982
+tmux
+#1501283982
+tmux kill-ses -t 0
+#1501283982
+tmux -V
+#1501283982
+ssh-keygen -t rsa -b 4096 -C "vasanth62@gmail.com"
+#1501283982
+eval "$(ssh-agent -s)"
+#1501283982
+ssh-add -K ~/.ssh/id_rsa
+#1501283982
+ssh-add -k ~/.ssh/id_rsa
+#1501283982
+cat ~/.ssh/id_rsa
+#1501283982
+cat ~/.ssh/id_rsa.pub
+#1501283982
+pwd
+#1501283982
+mkdir tmp
+#1501283982
+mkdir code
+#1501283982
+cd code/
+#1501283982
+git clone git@github.com:vasanth62/setup.git
+#1501283982
+cd setup/
+#1501283982
+ls
+#1501283982
+ls -al
+#1501283982
+mkdir ~/bin
+#1501283982
+cp mycscope ~/bin/
+#1501283982
+cp -r .vim* ~/
+#1501283982
+cp .tmux.conf ~/
+#1501283982
+cd .tmux/
+#1501283982
+ls -al
+#1501283982
+cd plugins/
+#1501283982
+ls
+#1501283982
+cd tpm/
+#1501283982
+ls
+#1501283982
+cd ..
+#1501283982
+cd ../..
+#1501283982
+git status
+#1501283982
+git submodule status 
+#1501283982
+cp -r .tmux ~/
+#1501283982
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+#1501283982
+cd ..
+#1501283982
+sudo reboot
+#1501283982
+history -r '/home/vkumar/.tmux/resurrect/bash_history-vkumar:1.1'
+#1501283982
+history -r '/home/vkumar/.tmux/resurrect/bash_history-vkumar:2.1'
+#1501283982
+sudo visudo
+#1501283982
+git@github.com:pensando/hack.git
+#1501283982
+git clone git@github.com:pensando/hack.git
+#1501283982
+cd hack/
+#1501283982
+vim ~/.bashrc 
+#1501283982
+vimdiff ~/.bashrc ../setup/.bashrc
+#1501283982
+cd
+#1501283982
+ls -al
+#1501283982
+cp code/setup/.bash* .
+#1501283982
+vim .sudo_as_admin_successful 
+#1501283982
+cd .tmux/
+#1501283982
+ls
+#1501283982
+cd plugins/
+#1501283982
+ls
+#1501283982
+cd tpm/
+#1501283982
+ls
+#1501283982
+cd ../../../.vim/
+#1501283982
+ls
+#1501283982
+cd ../
+#1501283982
+vim .vimrc 
+#1501283982
+vimdiff .vimrc code/setup/.vimrc 
+#1501283982
+cd code/setup/
+#1501283982
+git status
+#1501283982
+git checkout new 
+#1501283982
+git status
+#1501283982
+ls -
+#1501283982
+ls -al
+#1501283982
+cp .bash* ~?
+#1501283982
+cp .bash* ~/
+#1501283982
+cp .tmux.conf ~/
+#1501283982
+cp .vimrc ~/
+#1501283982
+cp -r .vim ~/
+#1501283982
+cp mycscope ~/bin/
+#1501283982
+echo $PATH
+#1501283982
+cd ../hack/
+#1501283982
+git status
+#1501283982
+git submodule status 
+#1501283982
+git submodule update --init
+#1501283982
+vim .gitmodules 
+#1501283982
+git submodule update --init
+#1501283982
+vim .gitmodules 
+#1501283982
+git status
+#1501283982
+git submodule status 
+#1501283982
+vim .git/config 
+#1501283982
+git submodule update --init
+#1501283982
+git status
+#1501283982
+git diff
+#1501283982
+ls -l /usr/
+#1501283982
+ls -l /usr/bin/
+#1501283982
+ls -l /usr/lib/
+#1501283982
+echo $GOPATH
+#1501283982
+ls -l /home/vkumar/go/
+#1501283982
+ls -l /home/vkumar/go/bin/
+#1501283982
+ls
+#1501283982
+ls -l /home/vkumar/go/bin/
+#1501283982
+ls -l /home/vkumar/go/
+#1501283982
+ls -l /home/vkumar/
+#1501283982
+cd /usr/lib/go-1.6/
+#1501283982
+ls
+#1501283982
+vim VERSION 
+#1501283982
+cd ..
+#1501283982
+ls -l
+#1501283982
+cd /usr/lib/go-1.6/
+#1501283982
+ls
+#1501283982
+pwd
+#1501283982
+cd ..
+#1501283982
+rm -rf go-1.6/
+#1501283982
+sudo rm -rf go-1.6/
+#1501283982
+cd ../bin/
+#1501283982
+ls
+#1501283982
+cd ..
+#1501283982
+which go
+#1501283982
+go
+#1501283982
+cd ~/code/hack/
+#1501283982
+ls
+#1501283982
+cd saratk/nic/
+#1501283982
+./build.sh 
+#1501283982
+vim proto/Makefile 
+#1501283982
+sudo apt-get install python3-yaml
+#1501283982
+./build.sh 
+#1501283982
+vim build.sh 
+#1501283982
+git status
+#1501283982
+git submodule status 
+#1501283982
+cd capsim/
+#1501283982
+make -j8
+#1501283982
+cd ..
+#1501283982
+vim build.sh 
+#1501283982
+cd asm/nw/
+#1501283982
+make -j8 all
+#1501283982
+cd ../../hal/pd/iris/
+#1501283982
+make -j8 all
+#1501283982
+cd ../../../model_sim/build/
+#1501283982
+make -j8 all
+#1501283982
+cd ../../hal/pd/capri/
+#1501283982
+make -j8 all
+#1501283982
+cd ../utils/
+#1501283982
+make -j8 all
+#1501283982
+cd ..../..
+#1501283982
+cd ../..
+#1501283982
+make -j8 all
+#1501283982
+cd ../model_sim/build/
+#1501283982
+make all
+#1501283982
+echo $?
+#1501283982
+cd ../..
+#1501283982
+./build.sh 
+#1501283982
+echo $?
+#1501283982
+history -r '/home/vkumar/.tmux/resurrect/bash_history-vkumar:2.2'
+#1501283982
+export GOROOT=/usr/bin/go
+#1501283982
+export GOPATH=$HOME/go
+#1501283982
+export PATH=$PATH\:/sbin\:/usr/sbin\:$HOME/bin\:$GOROOT/bin\:$GOPATH/bin
+#1501283982
+wget https://github.com/google/protobuf/releases/download/v3.3.0/protoc-3.3.0-linux-x86_64.zip
+#1501283982
+unzip protoc-3.3.0-linux-x86_64.zip -d protoc-dir
+#1501283982
+sudo apt install unzip
+#1501283982
+sudo apt install gcc
+#1501283982
+g++
+#1501283982
+sudo apt install g++
+#1501283982
+g++
+#1501283982
+unzip protoc-3.3.0-linux-x86_64.zip -d protoc-dir
+#1501283982
+sudo mv protoc-dir/bin/protoc /usr/bin/protoc
+#1501283982
+sudo apt-get install autoconf automake libtool curl make g++ unzip
+#1501283982
+sudo apt-get install pkg-config
+#1501283982
+wget https://github.com/google/protobuf/releases/download/v3.3.0/protobuf-cpp-3.3.0.tar.gz
+#1501283982
+tar xvzf protobuf-cpp-3.3.0.tar.gz
+#1501283982
+cd protobuf-cpp-3.3.0
+#1501283982
+cd protobuf-3.3.0/
+#1501283982
+./autogen.sh
+#1501283982
+./configure
+#1501283982
+make
+#1501283982
+make check
+#1501283982
+sudo make install
+#1501283982
+sudo ldconfig
+#1501283982
+cd ..
+#1501283982
+git clone -b $(curl -L http://grpc.io/release) https://github.com/grpc/grpc
+#1501283982
+cd grpc
+#1501283982
+git submodule update --init
+#1501283982
+make
+#1501283982
+sudo make install
+#1501283982
+cd ..
+#1501283982
+wget https://github.com/protobuf-c/protobuf-c/releases/download/v1.2.1/protobuf-c-1.2.1.tar.gz
+#1501283982
+tar -xvzf protobuf-c-1.2.1.tar.gz
+#1501283982
+cd protobuf-c-1.2.1
+#1501283982
+./configure && make
+#1501283982
+echo $?
+#1501283982
+make install
+#1501283982
+sudo make install
+#1501283982
+cd ..
+#1501283982
+wget https://github.com/grpc/grpc-go/archive/v1.4.2.tar.gz
+#1501283982
+tar -xvzf v1.4.2.tar.gz
+#1501283982
+cd grpc-go-1.4.2
+#1501283982
+sudo apt install golang-go
+#1501283982
+go get google.golang.org/grpc
+#1501283982
+mkdir /usr/bin/go
+#1501283982
+ls -l /usr/bin/go
+#1501283982
+go get google.golang.org/grpc
+#1501283982
+sudo go get google.golang.org/grpc
+#1501283982
+echo $GOPATH
+#1501283982
+mkdir /home/vkumar/go
+#1501283982
+sudo go get google.golang.org/grpc
+#1501283982
+go help gopath
+#1501283982
+sudo go get google.golang.org/grpc
+#1501283982
+echo $PATH
+#1501283982
+mkdir /home/vkumar/go/bin
+#1501283982
+sudo go get google.golang.org/grpc
+#1501283982
+go env
+#1501283982
+sudo go env
+#1501283982
+ls -l /usr/bin/go
+#1501283982
+ls -l ../lib/go-1.6/bin/go
+#1501283982
+ls -l /usr/lib/go-1.6/bin/go
+#1501283982
+sudo chmod 777 /usr/lib/go-1.6/bin/go
+#1501283982
+go env
+#1501283982
+ls -l /usr/bin/go
+#1501283982
+ls -l /usr/lib/go-1.6/bin/go
+#1501283982
+cd /usr/lib/
+#1501283982
+ls
+#1501283982
+ls -l go-1.6/
+#1501283982
+chmod -r 777 go-1.6/
+#1501283982
+sudo chmod -r 777 go-1.6/
+#1501283982
+sudo chmod 777 -r go-1.6/
+#1501283982
+sudo chmod 777  go-1.6/
+#1501283982
+sudo chmod 777 -R go-1.6/
+#1501283982
+cd -
+#1501283982
+go env
+#1501283982
+ls -l /usr/bin/go
+#1501283982
+sudo go env
+#1501283982
+go get google.golang.org/grpc
+#1501283982
+sudo go get google.golang.org/grpc
+#1501283982
+sudo -E go get google.golang.org/grpc
+#1501283982
+sudo -e go get google.golang.org/grpc
+#1501283982
+echo $GOPATH
+#1501283982
+sudo apt remove golang-go
+#1501283982
+go get google.golang.org/grpc
+#1501283982
+sudo apt-get install libboost-all-dev
+#1501283982
+sudo apt-get install python3-pip
+#1501283982
+sudo apt-get install python3-yaml
+#1501283982
+sudo apt-get install python3-ruamel.yaml -y
+#1501283982
+sudo pip3 install scapy-python3
+#1501283982
+sudo pip3 install --upgrade google-api-python-client
+#1501283982
+cd ..
+#1501283982
+wget https://github.com/google/protobuf/releases/download/v3.3.0/protobuf-python-3.3.0.tar.gz
+#1501283982
+tar zxvf protobuf-python-3.3.0.tar.gz
+#1501283982
+cd protobuf-3.3.0/python/
+#1501283982
+sudo python3 setup.py build
+#1501283982
+sudo python3 setup.py install
+#1501283982
+pip install scapy
+#1501283982
+pip install zmq
+#1501283982
+sudo apt install python-pip
+#1501283982
+pip install scapy
+#1501283982
+pip install zmq
+#1501283982
+sudo pip3 install grpcio
+#1501283982
+sudo apt-get install byacc flex
+#1501283982
+sudo apt-get install  libgmp3-dev -y
+#1501283982
+sudo pip install Tenjin enum34
+#1501283982
+sudo apt-get install python-yaml graphviz
+#1501283982
+cd ../..
+#1501283982
+git clone https://github.com/pensando/p4-hlir
+#1501283982
+git clone git://github.com/pensando/p4-hlir
+#1501283982
+git clone git@github.com:pensando/p4-hlir.git
+#1501283982
+cd p4-hlir/
+#1501283982
+git checkout action
+#1501283982
+git pull
+#1501283982
+sudo python setup.py install
+#1501283982
+git status
+#1501283982
+sudo apt-get install libzmq3-dev
+#1501283982
+sudo apt-get install libjudy-dev
+#1501283982
+cd ..
+#1501283982
+ls
+#1501283982
+sudo scp sw-dev1:/home/vijasrin/sknobs.tar /
+#1501283982
+sudo scp vkumar@sw-dev1:/home/vijasrin/sknobs.tar /
+#1501283982
+ssh sw-dev1
+#1501283982
+sudo apt-get install bison
+#1501283982
+cd hack/saratk/nic/
+#1501283982
+vim build.
+#1501283982
+vim build.sh 
+#1501283982
+sudo scp vkumar@sw-dev1:/home/vijasrin/sknobs.tar /
+#1501283982
+sudo scp sw-dev1:/home/vijasrin/sknobs.tar /
+#1501283982
+ssh root@sw-dev1
+#1501283982
+ssh vkumar@srv6.pensando.io
+#1501283982
+cd ../../
+#1501283982
+cd ..
+#1501283982
+sudo scp -r sw-dev1:/home/vijasrin/sknobs .
+#1501283982
+ls
+#1501283982
+cd sknobs/
+#1501283982
+ls
+#1501283982
+cd ..
+#1501283982
+pwd
+#1501283982
+sudo cp -r sknobs/ /
+#1501283982
+ls /
+#1501283982
+cd hack/saratk/nic/
+#1501283982
+vim build.
+#1501283982
+vim build.sh 
+#1501283982
+ls /sknobs/
+#1501283982
+cd /sknobs/
+#1501283982
+ls
+#1501283982
+vim run_model
+#1501283982
+cd ..
+#1501283982
+ls -l sknobs/
+#1501283982
+ls -l 
+#1501283982
+sudo rm -rf sknobs/
+#1501283982
+ssh root@sw-dev1
+#1501283982
+sudo apt-get install python34-devel
+#1501283982
+cd 
+#1501283982
+cd code/
+#1501283982
+sudo apt-get install python34-devel
+#1501283982
+ssh root@sw-dev1
+#1501283982
+cd
+#1501283982
+ls
+#1501283982
+sudo cp sknobs.tar /
+#1501283982
+cd /
+#1501283982
+ls
+#1501283982
+sudo tar -xvf sknobs.tar
+#1501283982
+ls
+#1501283982
+cd 
+#1501283982
+cd code/hack/
+#1501283982
+ls
+#1501283982
+git status
+#1501283982
+git diff .gitmodules
+#1501283982
+git status
+#1501283982
+git checkout tm2
+#1501283982
+git stash
+#1501283982
+git config --global user.email "vasanth62@gmail.com"
+#1501283982
+git config --global user.name "Vasanth Kumar"
+#1501283982
+git stash
+#1501283982
+git status
+#1501283982
+eval "$(ssh-agent -s)"
+#1501283982
+ssh-add -k ~/.ssh/id_rsa
+#1501283982
+git status
+#1501283982
+sudo apt-get install golang-goprotobuf-dev
+#1501283982
+git status
+#1501283982
+git checkout tm2
+#1501283982
+git status
+#1501283982
+git pull origin master 
+#1501283982
+git status
+#1501283982
+git status | more
+#1501283982
+git reset
+#1501283982
+git status
+#1501283982
+git reset --hard
+#1501283982
+git status
+#1501283982
+git checkout dol/
+#1501283982
+git checkout linux-4.8/
+#1501283982
+git status
+#1501283982
+git clean -fxd
+#1501283982
+git status
+#1501283982
+git stash pop
+#1501283982
+git status
+#1501283982
+git stash list
+#1501283982
+git submodule update 
+#1501283982
+history -r '/home/vkumar/.tmux/resurrect/bash_history-vkumar:3.1'
+#1501283982
+history -r '/home/vkumar/.tmux/resurrect/bash_history-vkumar:3.2'
+#1501283982
+history -r '/home/vkumar/.tmux/resurrect/bash_history-vkumar:3.3'
+#1501283982
+history -r '/home/vkumar/.tmux/resurrect/bash_history-vkumar:3.4'
+#1501283982
+ssh srv6.pensando.io
+#1501283982
+cd hack/saratk/nic/
+#1501283982
+ls
+#1501283982
+vim bld_cscope.sh 
+#1501283982
+history -r '/home/vkumar/.tmux/resurrect/bash_history-vkumar:3.5'
+#1501283982
+cd hack/saratk/nic/
+#1501283982
+cd proto/
+#1501283982
+vim Makefile 
+#1501283982
+make -j8 all
+#1501283982
+vim Makefile 
+#1501283982
+make -j8 all
+#1501283982
+sudo poweroff
+#1501283982
+history -r '/home/vkumar/.tmux/resurrect/bash_history-vkumar:3.6'
+#1501283982
+history -r '/home/vkumar/.tmux/resurrect/bash_history-vkumar:4.1'
+#1501283982
+history -r '/home/vkumar/.tmux/resurrect/bash_history-vkumar:4.2'
+#1501283982
+history -r '/home/vkumar/.tmux/resurrect/bash_history-vkumar:4.3'
+#1501283982
+history -r '/home/vkumar/.tmux/resurrect/bash_history-vkumar:4.4'
+#1501283982
+history -r '/home/vkumar/.tmux/resurrect/bash_history-vkumar:4.5'
+#1501283982
+history -r '/home/vkumar/.tmux/resurrect/bash_history-vkumar:4.6'
+#1501283982
+history -r '/home/vkumar/.tmux/resurrect/bash_history-vkumar:5.1'
+#1501283982
+history -r '/home/vkumar/.tmux/resurrect/bash_history-vkumar:5.2'
+#1501283982
+history -r '/home/vkumar/.tmux/resurrect/bash_history-vkumar:5.3'
+#1501283982
+history -r '/home/vkumar/.tmux/resurrect/bash_history-vkumar:5.4'
+#1501283982
+history -r '/home/vkumar/.tmux/resurrect/bash_history-vkumar:5.5'
+#1501283982
+history -r '/home/vkumar/.tmux/resurrect/bash_history-vkumar:5.6'
+#1501283982
+history -r '/home/vkumar/.tmux/resurrect/bash_history-vkumar:6.1'
+#1501283982
+history -r '/home/vkumar/.tmux/resurrect/bash_history-vkumar:6.2'
+#1501283982
+history -r '/home/vkumar/.tmux/resurrect/bash_history-vkumar:6.3'
+#1501283982
+history -r '/home/vkumar/.tmux/resurrect/bash_history-vkumar:1.3'
+#1501283982
+tmux
+#1501283982
+tmux kill-ses -t 0
+#1501283982
+tmux
+#1500940430
+sudo reboot
+#1500940430
+make -j8 all
+#1500940648
+cd ../hal/pd/
+#1500940649
+ls
+#1500940657
+cd capri/
+#1500940658
+ls
+#1500940662
+vim Makefile 
+#1500940680
+make -j8 all
+#1501008066
+cd ../..
+#1501008068
+cscope -d
+#1501008071
+cd ..
+#1501008072
+cscope -d
+#1501090540
+fg
+#1501098708
+mycscope
+#1501179293
+grep -r TrafficClassQueueMap *
+#1501179305
+grep -r TrafficClassQueueMap * > out
+#1501179307
+vim out
+#1501181305
+mycsope
+#1501181309
+mycscope
+#1501181799
+cd tools/
+#1501181800
+ls
+#1501181803
+cd ncc/
+#1501181804
+ls
+#1501181806
+mycscope
+#1501203847
+cd ../../
+#1501203848
+mycscope
+#1501278618
+cd p4/nw/
+#1501278619
+make
+#1500940430
+history -r '/home/vkumar/.tmux/resurrect/bash_history-vkumar:3.6'
+#1501176722
+cd hack/saratk/nic/asm/nw/
+#1501176729
+make 
+#1501176748
+make test
+#1501176790
+vim flow_info.ctl
+#1501179088
+make 
+#1501179114
+make test
+#1501179119
+echo $?
+#1501179230
+cd ../../hal/
+#1501179233
+make -j8
+#1501179427
+vim Makefile
+#1501179597
+make
+#1501179822
+vim ../proto/Makefile
+#1501179844
+cd ../proto/
+#1501179849
+make -j8 all
+#1501179856
+cd -
+#1501179864
+make -j8 all
+#1501179975
+cd ..
+#1501179982
+find . -name "*qos*"
+#1501179997
+find . -name "*interface*"
+#1501180022
+vim Makefile 
+#1501180042
+grep -r l4lb * | grep Make
+#1501180058
+vim proto/Makefile.protobuf 
+#1501180081
+cd proto/
+#1501180086
+make -j8 all
+#1501180096
+cd ../hal
+#1501180106
+make -j8 all
+#1501180186
+cd ..
+#1501180189
+find . -name "*interface*"
+#1501180193
+grep -r l4lb * | grep Make
+#1501180212
+vim gen/protobuf/Makefile 
+#1501180217
+cd gen/
+#1501180217
+ls
+#1501180226
+cd protobuf/
+#1501180229
+make -j8 all
+#1501180371
+cd ../../hal/
+#1501180374
+make -j8 all
+#1501180527
+cd ../
+#1501180529
+ls
+#1501180533
+make clean
+#1501180538
+make -j8 all
+#1501181846
+cd hal/test/
+#1501181846
+ls
+#1501181850
+vim Makefile 
+#1501181899
+make -j8 
+#1501181905
+cd ../..
+#1501181917
+grep -r interface * | grep Make
+#1501181941
+make -j8 all
+#1501183597
+vim Makefile 
+#1501184443
+cd p4/nw/
+#1501184448
+make
+#1501281092
+vim flow.p4 
+#1501281114
+make
+#1501287578
+sudo apt-get install cppcheck
+#1501287783
+cppcheck hack/saratk/nic/hal/main.cc 
+#1501485757
+cd hack/saratk/nic/p4
+#1501485758
+ls
+#1501485762
+cd nw/
+#1501485763
+ls
+#1501485769
+make -j8 all
+#1501535383
+cd ../../asm/nw/
+#1501535384
+make
+#1501799688
+cd ../..
+#1501799693
+find . -name "qos.pb.h"

@@ -1,0 +1,35 @@
+tmux
+tmux kill-ses -t 0
+tmux -V
+ssh-keygen -t rsa -b 4096 -C "vasanth62@gmail.com"
+eval "$(ssh-agent -s)"
+ssh-add -K ~/.ssh/id_rsa
+ssh-add -k ~/.ssh/id_rsa
+cat ~/.ssh/id_rsa
+cat ~/.ssh/id_rsa.pub
+pwd
+mkdir tmp
+mkdir code
+cd code/
+git clone git@github.com:vasanth62/setup.git
+cd setup/
+ls
+ls -al
+mkdir ~/bin
+cp mycscope ~/bin/
+cp -r .vim* ~/
+cp .tmux.conf ~/
+cd .tmux/
+ls -al
+cd plugins/
+ls
+cd tpm/
+ls
+cd ..
+cd ../..
+git status
+git submodule status 
+cp -r .tmux ~/
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+cd ..
+sudo reboot

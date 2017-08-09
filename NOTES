@@ -1,0 +1,17 @@
+- Install TPM 
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+- Open a TMUX session and do below to install tmux-resurrect
+
+ctrl-a shift-I
+
+
+- Install Tubular
+
+
+mkdir -p ~/.vim/bundle
+cd ~/.vim/bundle
+git clone git://github.com/godlygeek/tabular.git
+
+
+
