@@ -1,14 +1,14 @@
 pane	vkumar	1	:bash	0	:-	1	:/home/vkumar/code	0	bash	:
 pane	vkumar	1	:bash	0	:-	2	:/home/vkumar/code	0	bash	:
 pane	vkumar	1	:bash	0	:-	3	:/home/vkumar	1	bash	:
-pane	vkumar	2	:bash	1	:*	1	:/home/vkumar/code/hack/saratk/nic/hal/pd/iris	0	bash	:
-pane	vkumar	2	:bash	1	:*	2	:/home/vkumar/code/hack/saratk/nic	1	bash	:
-pane	vkumar	3	:bash	0	:	1	:/home/vkumar/code/hack/saratk/nic	0	cscope	:cscope -d
-pane	vkumar	3	:bash	0	:	2	:/home/vkumar/code/hack/saratk/nic	0	bash	:
-pane	vkumar	3	:bash	0	:	3	:/home/vkumar/code/hack/saratk/nic	1	bash	:
-pane	vkumar	3	:bash	0	:	4	:/home/vkumar/code/hack/saratk/nic	0	bash	:
-pane	vkumar	3	:bash	0	:	5	:/home/vkumar/code/hack/saratk/nic/hal	0	bash	:
-pane	vkumar	3	:bash	0	:	6	:/home/vkumar/code/hack/saratk/nic	0	bash	:
+pane	vkumar	2	:bash	1	:*	1	:/home/vkumar/code	0	bash	:
+pane	vkumar	2	:bash	1	:*	2	:/home/vkumar/code	1	bash	:
+pane	vkumar	3	:bash	0	:	1	:/home/vkumar/code	0	bash	:
+pane	vkumar	3	:bash	0	:	2	:/home/vkumar/code	0	bash	:
+pane	vkumar	3	:bash	0	:	3	:/home/vkumar/code	1	bash	:
+pane	vkumar	3	:bash	0	:	4	:/home/vkumar/code	0	bash	:
+pane	vkumar	3	:bash	0	:	5	:/home/vkumar/code	0	bash	:
+pane	vkumar	3	:bash	0	:	6	:/home/vkumar/code	0	bash	:
 pane	vkumar	4	:bash	0	:	1	:/home/vkumar/code	1	bash	:
 pane	vkumar	4	:bash	0	:	2	:/home/vkumar/code	0	bash	:
 pane	vkumar	4	:bash	0	:	3	:/home/vkumar/code	0	bash	:
