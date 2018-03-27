@@ -1,10 +1,12 @@
 - Copy files
 
+mkdir ~/tmp
+mkdir ~/bin
+
 cp .tmux.conf ~/
-cp -4 .tmux ~/
+cp -r .tmux ~/
 cp .vimrc ~/
 cp -r .vim ~/
-mkdir ~/bin
 cp mycscope ~/bin/
 cp .bash* ~/
 
