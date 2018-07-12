@@ -29,4 +29,6 @@ cd ~/.vim/bundle
 git clone git://github.com/godlygeek/tabular.git
 
 
+- Install vim-easy-plugin for alignment
 
+Open vim and type :PlugInstall
